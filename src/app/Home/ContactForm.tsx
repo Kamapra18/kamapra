@@ -42,7 +42,7 @@ export default function ContactSection() {
           <div className="flex items-center gap-2 border-b-2 py-2">
             <FaUser className="text-cyan-500" />
             <input
-              className="w-full focus:outline-none p-2"
+              className="w-full focus:outline-none p-2 text-black "
               type="text"
               name="user_name"
               placeholder="Your Name"
@@ -52,7 +52,7 @@ export default function ContactSection() {
           <div className="flex items-center gap-2 border-b-2 py-2">
             <FaEnvelope className="text-cyan-500" />
             <input
-              className="w-full focus:outline-none p-2"
+              className="w-full focus:outline-none p-2 text-black"
               type="email"
               name="user_email"
               placeholder="Your Email"
@@ -62,7 +62,7 @@ export default function ContactSection() {
           <div className="flex items-start gap-2 border-b-2 py-2">
             <FaCommentDots className="text-cyan-500" />
             <textarea
-              className="w-full focus:outline-none p-2"
+              className="w-full focus:outline-none p-2 text-black"
               name="message"
               placeholder="Your Message"
               required></textarea>

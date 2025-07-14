@@ -4,6 +4,7 @@ export interface Data {
   image: string;
   tech: string[];
   link: string;
+  github?: string;
 }
 
 const projects: Data[] = [
@@ -14,14 +15,16 @@ const projects: Data[] = [
     image: "/galeri/brasika.png",
     tech: ["NextJs", "TailwindCSS", "Typescript"],
     link: "https://brasika1.vercel.app",
+    github: "https://github.com/Kamapra18/brasika1",
   },
-    {
+  {
     title: "Warung Mennara – Landing Page",
     description:
       "Landing Page untuk Warung Mennara, sebuah usaha kuliner lokal.",
     image: "/galeri/warungmennara.png",
     tech: ["NextJs", "TailwindCSS"],
     link: "https://warungmennara.vercel.app",
+    github: "https://github.com/Kamapra18/warungmennara",
   },
   {
     title: "Landing Page UTS Pemrograman Web",
@@ -30,6 +33,7 @@ const projects: Data[] = [
     image: "/galeri/uts.png",
     tech: ["NextJs", "TailwindCSS", "Typescript"],
     link: "https://mario-njz.vercel.app",
+    github: "https://github.com/Kamapra18/mario",
   },
   {
     title: "Todo-List Website",
@@ -38,6 +42,7 @@ const projects: Data[] = [
     image: "/galeri/todo-list.png",
     tech: ["HTML", "CSS", "JS"],
     link: "https://todo-list-mario-njz.vercel.app",
+    github: "https://github.com/Kamapra18/todo-list",
   },
   {
     title: "Chordbox Website",
@@ -46,6 +51,7 @@ const projects: Data[] = [
     image: "/galeri/chordbox.png",
     tech: ["HTML", "CSS", "JS"],
     link: "https://chordbox-mario-njz.vercel.app",
+    github: "https://github.com/Kamapra18/chordbox",
   },
   {
     title: "Voice Reader Website",
@@ -54,6 +60,16 @@ const projects: Data[] = [
     image: "/galeri/voice.png",
     tech: ["HTML", "CSS", "JS"],
     link: "https://voice-reader-mario-njz.vercel.app",
+    github: "https://github.com/Kamapra18/voice",
+  },
+  {
+    title: "UAS – Website Koleksi Buku Pribadi",
+    description:
+      "Aplikasi CRUD untuk mengelola koleksi buku pribadi berbasis Supabase dan Next.js.",
+    image: "/galeri/bookcollection.png",
+    tech: ["NextJs", "TailwindCSS", "Supabase", "Typescript"],
+    link: "https://uas-azure.vercel.app",
+    github: "https://github.com/namakamu/uas-koleksi-buku",
   },
 ];
 

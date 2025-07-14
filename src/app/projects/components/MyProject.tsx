@@ -3,7 +3,7 @@
 import Heading from "../../components/Heading";
 import Image from "next/image";
 import projects from "../data/data";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 export default function MyProjects() {
   return (
@@ -13,52 +13,93 @@ export default function MyProjects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="relative group overflow-hidden rounded-xl shadow-md bg-white text-blue-900"
-          >
-            {/* Gambar Proyek */}
+            className="relative group overflow-hidden rounded-xl shadow-md bg-white text-blue-900">
             <div className="relative w-full aspect-video">
               <Image
                 src={project.image}
                 alt={project.title}
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
+                className="object-cover transition-transform duration-700 md:group-hover:scale-110 rounded-t-xl"
               />
             </div>
 
-            {/* Informasi Proyek (muncul saat hover) */}
-            <div
-              className="absolute inset-0 flex flex-col justify-center items-center text-center p-6
-                         bg-white/90 opacity-0 group-hover:opacity-100 group-hover:translate-y-0
-                         translate-y-5 transition-all duration-500 z-10"
-            >
-              <h2 className="text-xl sm:text-2xl font-bold mb-2">
-                {project.title}
-              </h2>
-              <p className="text-black font-bold text-sm sm:text-base mb-3">
-                {project.description}
-              </p>
+            <div className="md:hidden p-4">
+              <h2 className="text-xl font-bold mb-1">{project.title}</h2>
+              <p className="text-sm mb-3">{project.description}</p>
 
-              <div className="flex flex-wrap gap-2 justify-center mb-3">
+              <div className="flex flex-wrap gap-2 mb-3">
                 {project.tech.map((tech, i) => (
                   <span
                     key={i}
-                    className="bg-blue-500 text-white px-2 py-1 sm:px-3 sm:py-1 rounded-md text-xs sm:text-sm"
-                  >
+                    className="bg-blue-500 text-white px-3 py-1 rounded-md text-xs">
                     {tech}
                   </span>
                 ))}
               </div>
 
-              {project.link && (
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-blue-700 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-800 transition-colors"
-                >
-                  <FaExternalLinkAlt className="text-xs" />
-                </a>
-              )}
+              <div className="flex gap-3">
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-blue-700 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-800 transition-colors">
+                    <FaExternalLinkAlt className="text-xs" />
+                    <span>Lihat Proyek</span>
+                  </a>
+                )}
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-gray-800 text-white px-4 py-2 rounded-md text-sm hover:bg-gray-900 transition-colors">
+                    <FaGithub className="text-base" />
+                    <span>Repo</span>
+                  </a>
+                )}
+              </div>
+            </div>
+
+            <div
+              className={`hidden md:flex absolute inset-0 flex-col justify-center items-center text-center p-6
+                bg-white/80 opacity-0 group-hover:opacity-100 translate-y-5 group-hover:translate-y-0
+                transition-all duration-500 z-10`}>
+              <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
+              <p className="text-sm mb-3">{project.description}</p>
+
+              <div className="flex flex-wrap gap-2 mb-3">
+                {project.tech.map((tech, i) => (
+                  <span
+                    key={i}
+                    className="bg-blue-500 text-white px-3 py-1 rounded-md text-xs">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex gap-3">
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-800 transition-colors">
+                    <FaExternalLinkAlt className="text-xs" />
+                    <span>Lihat Proyek</span>
+                  </a>
+                )}
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-md text-sm hover:bg-slate-700 transition-colors">
+                    <FaGithub className="text-base" />
+                    <span>Repo</span>
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         ))}
