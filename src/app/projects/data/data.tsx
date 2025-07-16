@@ -9,11 +9,11 @@ export interface Data {
 
 const projects: Data[] = [
   {
-    title: "Client Personal Company Portfolio Website",
+    title: "Website Brasika Asta Dharma 1",
     description:
-      "A personal portfolio website I created for a client. Built using native tech (HTML, CSS, JS) and ReactJS, TailwindCSS, Typescript.",
+      "Website organisasi pemuda dengan fitur dashboard admin. Dibuat menggunakan Next.js, TailwindCSS, Typescript, dan Supabase.",
     image: "/galeri/brasika.png",
-    tech: ["NextJs", "TailwindCSS", "Typescript"],
+    tech: ["NextJs", "TailwindCSS", "Typescript", "Supabase"],
     link: "https://brasika1.vercel.app",
     github: "https://github.com/Kamapra18/brasika1",
   },
