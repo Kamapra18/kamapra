@@ -21,12 +21,12 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Kamapra",
-    description: "Website Portofolio Kamapra",
-    url: "https://kamapra.vercel.app",
+    description: "Website portofolio I Kadek Mario Prayoga yang mendokumentasikan proses belajar dan karya kecil seputar web development, dari HTML, CSS, Tailwind CSS, Next.js hingga SQL dasar.", 
+    url: "https://www.kamapra.my.id",
     siteName: "Kamapra",
     images: [
       {
-        url: "https://kamapra.vercel.app/Kamapra.png",
+        url: "https://www.kamapra.my.id/Kamapra.png",
         width: 1200,
         height: 630,
         alt: "Logo Kamapra",
@@ -35,6 +35,7 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
 
 export default function RootLayout({
   children,
