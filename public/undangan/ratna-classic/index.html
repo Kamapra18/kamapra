@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kamu & Dia</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Lora:ital,wght@0,400..700;1,400..700&family=Parisienne&display=swap"
+      rel="stylesheet" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ======================== Section: Openner ======================== -->
+    <!-- Halaman pembuka undangan -->
+    <section
+      id="openner"
+      class="d-flex justify-content-center align-items-center"
+      data-aos="fade-down">
+      <div class="container text-center">
+        <div class="text-group-top">
+          <h4 class="top-heading-openner">THE WEDDING OF</h4>
+          <h1 class="heading-openner">Kamu & Dia</h1>
+        </div>
+        <div class="text-group-bottom text-center mx-auto mt-4">
+          <p>Kepada Yth. Bapak/Ibu/Saudara/i</p>
+          <h2 class="fw-bolder text-capitalize" id="receiver"></h2>
+          <p>
+            Tanpa mengurangi rasa hormat, kami mengundang anda untuk hadir pada
+            acara pernikahan kami.
+          </p>
+          <button
+            class="btn btn-primary d-flex mx-auto fw-bold mt-5"
+            id="open-message">
+            <i data-feather="mail" class="me-2"></i>Buka Undangan
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== Section: Jumbotron ======================== -->
+    <!-- Header dengan nama pengantin -->
+    <section id="jumbotron">
+      <div
+        class="container-fluid d-flex justify-content-center align-items-center flex-column position-relative">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12">
+            <img
+              src="asset/icon/text.png"
+              alt=""
+              class="text-header img-fluid"
+              data-aos="zoom-in" />
+          </div>
+        </div>
+        <img
+          src="asset/icon/round.png"
+          alt=""
+          class="header-decoration-center img-fluid" />
+        <img
+          src="asset/icon/corner.png"
+          alt=""
+          class="header-decoration-left img-fluid" />
+        <img
+          src="asset/icon/corner.png"
+          alt=""
+          class="header-decoration-right img-fluid" />
+      </div>
+    </section>
+
+    <!-- ======================== Section: Pengantin ======================== -->
+    <!-- Informasi tentang kedua mempelai dan keluarga -->
+    <section id="pengantin" class="position-relative">
+      <img src="asset/icon/divider-1.png" class="first-divider" />
+      <div class="container">
+        <div class="heading-title text-center" data-aos="fade-up">
+          <img src="asset/icon/topdec-2.svg" class="img-fluid" />
+          <h3>Om Swastyastu</h3>
+        </div>
+        <div class="row justify-content-center" data-aos="fade-up">
+          <div class="col-md-8 col-11">
+            <p class="text-white text-center">
+              Atas Asung Kertha Wara Nugraha Ida Sang Hyang Widhi Wasa/Tuhan
+              Yang Maha Esa kami bermaksud mengundang Bapak/Ibu/Saudara/i pada
+              Upacara Manusa Yadnya Pawiwahan (Pernikahan) kami.
+            </p>
+          </div>
+        </div>
+
+        <!-- pengantin cowok -->
+        <div class="row text-center justify-content-center">
+          <div class="col-md-5" data-aos="fade-right" data-aos-offset="300">
+            <div class="wrapper-foto position-relative">
+              <img
+                src="asset/img/cowok.png"
+                class="rounded-circle img-fluid foto-pengantin" />
+              <img
+                src="asset/icon/mandala-jumbo-1.png"
+                class="img-fluid bg-pengantin" />
+            </div>
+            <div class="nama-pengantin d-flex flex-column align-items-center">
+              <h2>Dia</h2>
+              <h3>Dia Milikmu</h3>
+              <div class="deskripsi-box text-center">
+                <p>
+                  <span class="fw-bold">Putra ketiga dari pasangan</span
+                  ><br />Bapak Dia <br />&<br />
+                  Ibu Dia
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-2 d-flex align-items-center justify-content-center"
+            data-aos="fade-up"
+            data-aos-offset="300">
+            <h1 class="middle-pengantin">&</h1>
+          </div>
+
+          <!-- pengantin cewek -->
+          <div class="col-md-5" data-aos="fade-left" data-aos-offset="300">
+            <div class="wrapper-foto position-relative">
+              <img
+                src="asset/img/cewek.png"
+                class="rounded-circle img-fluid foto-pengantin" />
+              <img
+                src="asset/icon/mandala-jumbo-1.png"
+                class="img-fluid bg-pengantin" />
+            </div>
+            <div class="nama-pengantin d-flex flex-column align-items-center">
+              <h2>Kamu</h2>
+              <h3>Kamu bukan milikku</h3>
+              <div class="deskripsi-box text-center">
+                <p>
+                  <span class="fw-bold">Putri kedua dari pasangan</span><br />
+                  Bapak Kamu<br />&<br />
+                  Ibu Kamu
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- mepandes -->
+        <div class="heading-title text-center mb-4 mt-5" data-aos="fade-up">
+          <img src="asset/icon/topdec-1.svg" class="img-fluid" />
+          <h3>Mepandes/Potong Gigi</h3>
+        </div>
+        <div
+          class="row justify-content-center text-center flex-column align-items-center mepandes position-relative">
+          <div
+            class="col d-flex flex-column justify-content-center align-items-center orang-mepandes"
+            data-aos="fade-left">
+            <h3 class="nama-mepandes fs-5">
+              Emily Rose Carter <br />
+              Olivia Mae Johnson <br />
+              Sophia Grace Williams <br />
+              Isabella Marie Thompson <br />
+              Ava Charlotte Brown <br />
+            </h3>
+
+            <div
+              class="deskripsi-box border-description text-center justify-content-center">
+              <p>
+                <span class="fw-bold">Anak dari pasangan</span><br />
+                Bapak Kamu <br />&<br />
+                Ibu Kamu
+              </p>
+            </div>
+          </div>
+          <div
+            class="col d-flex flex-column justify-content-center align-items-center mt-2 orang-mepandes"
+            data-aos="fade-left">
+            <h3 class="nama-mepandes fs-5">
+              Ethan James Walker <br />
+              Amelia Rose Walker <br />
+            </h3>
+
+            <div
+              class="deskripsi-box text-center border-description justify-content-center">
+              <p>
+                <span class="fw-bold">Child of</span><br />
+                Mr. William Anderson <br />&<br />
+                Mrs. Charlotte Anderson
+              </p>
+            </div>
+          </div>
+
+          <img
+            src="asset/icon/decor.png"
+            class="position-absolute img-fluid bg-mepandes" />
+        </div>
+      </div>
+      <img src="asset/icon/divider-1.png" class="second-divider" />
+    </section>
+
+    <!-- ======================== Section: Hari Bahagia ======================== -->
+    <!-- Countdown menuju hari pernikahan -->
+    <section id="hari-bahagia">
+      <div class="container" data-aos="fade-up">
+        <div class="heading-title-2 text-center">
+          <img src="asset/icon/decoration-top.png" class="img-fluid" />
+          <h3>HARI BAHAGIA</h3>
+        </div>
+        <div class="row waktu justify-content-center">
+          <div class="col-lg-2 col-3">
+            <div class="waktu-wrapper text-center">
+              <h2 class="angka-waktu hari">00</h2>
+              <p class="ket-waktu">HARI</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-3">
+            <div class="waktu-wrapper text-center">
+              <h2 class="angka-waktu jam">00</h2>
+              <p class="ket-waktu">JAM</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-3">
+            <div class="waktu-wrapper text-center">
+              <h2 class="angka-waktu menit">00</h2>
+              <p class="ket-waktu">MENIT</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-3">
+            <div class="waktu-wrapper text-center">
+              <h2 class="angka-waktu detik">00</h2>
+              <p class="ket-waktu">DETIK</p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="asset/icon/dekorasi-waktu.svg"
+          class="text-center img-fluid dekorasi-waktu" />
+      </div>
+    </section>
+
+    <!-- ======================== Section: Lokasi ======================== -->
+    <!-- Detail waktu & tempat acara beserta peta -->
+    <section id="location">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 detail-lokasi">
+            <div class="container mt-3" data-aos="fade-right">
+              <div class="heading-title-2 text-center">
+                <img src="asset/icon/decoration-top.png" class="img-fluid" />
+                <h3>PAWIWAHAN</h3>
+              </div>
+              <div
+                class="row text-white text-center justify-content-center align-items-center flex-column pb-4">
+                <div class="col-sm-7">
+                  <p class="deskripsi-lokasi">
+                    <i data-feather="calendar" class="me-1"></i>Hari/Tanggal
+                    :<br />
+                    <span class="fw-bold"
+                      >Senin, 8 Agustus 2025 <br />
+                      08.00 WITA - Selesai</span
+                    >
+                  </p>
+                </div>
+                <div class="col-sm-7">
+                  <p class="deskripsi-lokasi">
+                    <i data-feather="map-pin"></i> Lokasi Upacara :<br />
+                    <span class="fw-bold"
+                      >Br. Griya, Desa Nyalian, Kec. Banjarangakn
+                      <br />
+                      Klungkung - Bali
+                    </span>
+                  </p>
+                  <a
+                    href="https://maps.app.goo.gl/o61ods5RQkZNKCzz8"
+                    class="btn btn-primary rounded-pill fw-bold"
+                    target="_blank"
+                    >MAP LOKASI</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 g-0" data-aos="fade-left">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d718.2944729424449!2d115.36894068250993!3d-8.497164171946613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd217d9c62d5a3f%3A0xc4ddbe4a865592ca!2sBALAI%20BANJAR%20GRIA!5e1!3m2!1sid!2sid!4v1753684976704!5m2!1sid!2sid"
+              width="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="maps"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== Section: Foto Pernikahan ======================== -->
+    <!-- Galeri foto momen bahagia -->
+    <section id="foto-nikah" class="position-relative pb-5">
+      <img src="asset/icon/divider-1.png" class="first-divider" />
+      <div class="container pt-5 pb-5">
+        <div class="d-flex justify-content-center" data-aos="fade-down">
+          <img
+            src="asset/icon/topdec-2.svg"
+            class="decor-foto-nikah img-fluid" />
+        </div>
+        <h3 class="heading-foto" data-aos="fade-down">MOMENT BAHAGIA</h3>
+        <div class="row mt-3 justify-content-center">
+          <!-- ratio 9:16 -->
+          <div class="col-md-3 col-sm-4 col-8 g-2" data-aos="fade-left">
+            <a href="asset/img/wedding-atas.png" data-fancybox="gallery">
+              <img
+                src="asset/img/wedding-atas.png"
+                class="aspect-ratio-1 img-fluid"
+                width="100%" />
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-4 col-8 g-2" data-aos="fade-right">
+            <a href="asset/img/wedding-atas.png" data-fancybox="gallery">
+              <img
+                src="asset/img/wedding-atas.png"
+                class="aspect-ratio-1 img-fluid"
+                width="100%" />
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-4 col-8 g-2" data-aos="fade-left">
+            <a href="asset/img/wedding-atas.png" data-fancybox="gallery">
+              <img
+                src="asset/img/wedding-atas.png"
+                class="aspect-ratio-1 img-fluid"
+                width="100%" />
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-4 col-8 g-2" data-aos="fade-right">
+            <a href="asset/img/wedding-atas.png" data-fancybox="gallery">
+              <img
+                src="asset/img/wedding-atas.png"
+                class="aspect-ratio-1 img-fluid"
+                width="100%" />
+            </a>
+          </div>
+
+          <!-- ratio 16:9 -->
+          <div class="col-md-3 col-sm-4 col-8 g-2" data-aos="fade-right">
+            <a href="asset/img/wedding-bawah.png" data-fancybox="gallery">
+              <img
+                src="asset/img/wedding-bawah.png"
+                class="aspect-ratio-1 img-fluid"
+                width="100%" />
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-4 col-8 g-2" data-aos="fade-right">
+            <a href="asset/img/wedding-bawah.png" data-fancybox="gallery">
+              <img
+                src="asset/img/wedding-bawah.png"
+                class="aspect-ratio-1 img-fluid"
+                width="100%" />
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-4 col-8 g-2" data-aos="fade-right">
+            <a href="asset/img/wedding-bawah.png" data-fancybox="gallery">
+              <img
+                src="asset/img/wedding-bawah.png"
+                class="aspect-ratio-1 img-fluid"
+                width="100%" />
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-4 col-8 g-2" data-aos="fade-right">
+            <a href="asset/img/wedding-bawah.png" data-fancybox="gallery">
+              <img
+                src="asset/img/wedding-bawah.png"
+                class="aspect-ratio-1 img-fluid"
+                width="100%" />
+            </a>
+          </div>
+          <div
+            class="rotate-1 d-flex justify-content-center"
+            data-aos="fade-up">
+            <img
+              src="asset/icon/topdec-1.svg"
+              class="decor-foto-nikah rotate-180 mt-4" />
+          </div>
+        </div>
+      </div>
+      <img src="asset/icon/Vector.png" class="second-divider-2" />
+    </section>
+
+    <!-- ======================== Section: Pesan dan Harapan ======================== -->
+    <!-- Form dan tampilan pesan dari tamu -->
+    <section id="pesan" class="position-relative pb-3">
+      <!-- <img src="asset/icon/Vector.png" class="first-divider" /> -->
+      <div class="heading-title-2 text-center" data-aos="fade-left">
+        <img src="asset/icon/topdec-1.svg" class="img-fluid" />
+        <h3>PESAN & HARAPAN</h3>
+      </div>
+      <div class="container" data-aos="fade-left">
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-6 col-sm-9">
+            <div
+              class="alert alert-warning alert-dismissible fade show rounded-pill d-none"
+              role="alert">
+              <strong>Pesan anda telah berhasil terkirim!</strong>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close"></button>
+            </div>
+            <form name="titip-pesan">
+              <div class="mb-3">
+                <label class="form-label text-white fw-bold">Nama</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Nama anda"
+                  name="nama"
+                  required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label text-white fw-bold">Pesan</label>
+                <textarea
+                  class="form-control"
+                  rows="3"
+                  placeholder="Tulis pesan anda disini..."
+                  name="pesan"
+                  required></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary rounded-pill fw-bold btn-kirim">
+                KIRIM PESAN
+              </button>
+              <button
+                class="btn btn-primary rounded-pill fw-bold btn-loading d-none"
+                type="button"
+                disabled>
+                <span
+                  class="spinner-border spinner-border-sm"
+                  role="status"
+                  aria-hidden="true"></span>
+                Loading...
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="garis"></div>
+        <div class="container box-message">
+          <div
+            class="row justify-content-center align-items-center"
+            id="message-box"></div>
+        </div>
+      </div>
+      <div
+        class="row justify-content-center align-items-center text-center text-white mt-4">
+        <p class="fw-bolder text-dark">Designed & Developed by :</p>
+        <a href="https://wa.me/6282138569867" target="_blank">
+          <img src="asset/icon/Asset-1.png" class="img-fluid logo-inferno" />
+        </a>
+      </div>
+    </section>
+
+    <!-- ======================== Music Button ======================== -->
+    <!-- Tombol ikon musik -->
+    <div class="music-icon"><i data-feather="music"></i></div>
+    <audio src="asset/music/fell_with_love.mp3"></audio>
+
+    <!-- Keterangan pembuat -->
+    <footer class="d-flex justify-content-center align-items-center">
+      <p class="fw-bolder text-black">
+        Created with <i data-feather="heart"></i> Inferno Creative
+      </p>
+    </footer>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- ======================== Custom Scripts ======================== -->
+    <!-- Script pembuka undangan -->
+    <script src="script/open.js"></script>
+
+    <!-- Script form pesan & tampilannya -->
+    <script src="script/message.js"></script>
+
+    <!-- Script countdown hari bahagia -->
+    <script src="script/countdown.js"></script>
+
+    <!-- AOS Initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 800,
+      });
+    </script>
+  </body>
+</html>
