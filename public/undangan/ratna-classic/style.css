@@ -29,7 +29,7 @@ body {
       rgba(0, 0, 0, 0.436) 0%,
       rgba(0, 0, 0, 0.822) 100%
     ),
-    url("/undangan/ratna-classic/asset/img/wedding-bawah.png");
+    url(asset/img/wedding-bawah.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
