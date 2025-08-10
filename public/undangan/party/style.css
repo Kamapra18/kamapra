@@ -1,0 +1,1148 @@
+:root {
+  --primary-gold: #ffcc5f;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+/* Scrollbar kustom */
+::-webkit-scrollbar {
+  width: 9px;
+  background-color: none;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, #ffcc5f 0%, #473307 100%);
+}
+
+/* SECTION: Openner (Opening) */
+#openner {
+  height: 100vh;
+  position: fixed;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("asset/icon/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  z-index: 12;
+  transition: 0.5s;
+}
+
+.top-heading-openner {
+  font-family: "Afterglow Regular", serif;
+  font-size: 2vmax;
+  color: #d4af37;
+  letter-spacing: 8px;
+}
+
+.heading-openner {
+  font-family: "Great Vibes", cursive;
+  font-size: 3.5rem;
+  color: #d4af37;
+}
+
+.subtext {
+  color: #bfbfbf;
+}
+
+.desc {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.btn-invite {
+  background-color: #d4af37;
+  color: #0f172a;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-invite:hover {
+  background-color: #b99428;
+}
+
+/* SECTION: Jumbotron */
+#jumbotron .container-fluid {
+  height: 100vh;
+  background-image: url(asset/img/lina-bob-de8W9K-Jlwo-unsplash.jpg); /* Ganti dengan gambar yang lebih sesuai kalau ada */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+#jumbotron .container-fluid::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.7) 0%,
+    rgba(15, 23, 42, 0.9) 100%
+  );
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.text-header {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  text-align: center;
+}
+
+.text-header h3 {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+  color: #bfbfbf;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.text-header h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  color: #d4af37;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+}
+
+.text-header .date {
+  font-size: 1.6rem;
+  color: #d4af37;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.text-header .subtitle {
+  font-size: 1.2rem;
+  color: #bfbfbf;
+  font-style: italic;
+  margin: 0.8rem 0;
+}
+
+.header-decoration-center {
+  position: absolute;
+  animation: rotation-mandala 12s infinite linear;
+  bottom: calc(-350px / 2);
+  left: 36%;
+  transform: translateX(-50%);
+  width: 350px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Informasi Pengantin */
+#about-event {
+  background: radial-gradient(
+    116.09% 189.76% at 50.01% 50.02%,
+    #0f172a 0%,
+    #000000 69.58%
+  );
+  padding-bottom: 95px;
+}
+
+.first-divider {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 30px;
+}
+
+#about-event .container {
+  padding-top: 45px;
+}
+
+.heading-title h3 {
+  font-family: "Playfair Display", serif;
+  color: #d4af37;
+  font-size: 2.5rem;
+  margin-top: -4px;
+  text-shadow: 0px 2px 4px #0000006e;
+  font-weight: 600;
+}
+
+.heading-title img {
+  width: 200px;
+}
+
+.event-description {
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin: 30px 0;
+}
+
+.event-highlights {
+  margin: 50px 0;
+}
+
+.highlight-card {
+  background: rgba(123, 77, 163, 0.2);
+  padding: 30px;
+  border-radius: 20px;
+  border-left: 5px solid #d4af37;
+  margin-bottom: 25px;
+  backdrop-filter: blur(10px);
+}
+
+.highlight-card h4 {
+  color: #d4af37;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.highlight-card p {
+  color: #bfbfbf;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.mission-statement {
+  background: linear-gradient(135deg, #d4af37, #f4d03f);
+  color: #0f172a;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 40px 0;
+  box-shadow: 0 20px 40px rgba(212, 175, 55, 0.3);
+}
+
+.mission-statement h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.mission-statement p {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 0;
+}
+
+.second-divider {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  rotate: 180deg;
+}
+
+/* SECTION: Hari Bahagia / Countdown */
+#hari-bahagia {
+  margin-top: 0.8rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #e2e2e2 100%);
+  padding-bottom: 2rem;
+}
+
+.heading-title-2 {
+  margin-top: 20px;
+  font-family: "Playfair Display", serif;
+  color: #d4af37;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.waktu {
+  font-family: Afterglow Regular;
+  color: #cc9933;
+}
+
+.angka-waktu {
+  font-size: 4.2rem;
+}
+
+.ket-waktu {
+  margin-top: -20px;
+  font-size: 1.6rem;
+}
+
+.dekorasi-waktu {
+  display: block;
+  width: 380px;
+  margin: auto;
+}
+
+/* SECTION: Lokasi Pernikahan */
+.detail-lokasi {
+  background: radial-gradient(
+    116.09% 189.76% at 50.01% 50.02%,
+    #161621 0%,
+    #000000 69.58%
+  );
+}
+
+.detail-lokasi .container {
+  max-width: 800px;
+}
+
+.deskripsi-lokasi {
+  font-size: 1.1rem;
+}
+
+.btn-primary {
+  background: linear-gradient(180deg, #ffcc5f 0%, #473307 100%);
+  border: none !important;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 226, 5, 0.5) !important;
+}
+
+.maps {
+  height: 400px;
+}
+
+.music-icon {
+  position: fixed;
+  color: white;
+  background-color: #cc9933;
+  padding: 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 1px 1px 5px #00000052;
+  z-index: 10;
+  transition: 0.4s;
+}
+
+.music-icon:hover {
+  filter: brightness(1.3);
+}
+
+.music-icon.disabled {
+  filter: grayscale();
+}
+
+/* SECTION: Punchline */
+#punchline {
+  background: linear-gradient(135deg, #d4af37 0%, #f4d03f 50%, #d4af37 100%);
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#punchline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="50%" font-size="50" opacity="0.1">🎉</text></svg>')
+    repeat;
+  animation: float 10s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.punchline-container {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.punchline-text {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #0f172a;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  line-height: 1.3;
+  margin-bottom: 40px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.punchline-emoji {
+  font-size: 4rem;
+  margin: 0 20px;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.punchline-subtitle {
+  font-size: 1.5rem;
+  color: #0f172a;
+  font-style: italic;
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+.punchline-box {
+  background: rgba(15, 23, 42, 0.1);
+  border: 3px dashed #0f172a;
+  border-radius: 20px;
+  padding: 40px;
+  margin: 30px 0;
+  backdrop-filter: blur(5px);
+}
+
+.punchline-footer {
+  font-size: 1.2rem;
+  color: #0f172a;
+  margin-top: 40px;
+}
+
+.punchline-footer a {
+  color: #7b4da3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.punchline-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .punchline-text {
+    font-size: 2.5rem;
+  }
+
+  .punchline-emoji {
+    font-size: 3rem;
+    margin: 0 10px;
+  }
+
+  #punchline {
+    padding: 60px 20px;
+  }
+}
+
+/* Footer */
+footer {
+  padding: 15px 0;
+  background: linear-gradient(180deg, #d4af37 0%, #0f172a 100%);
+}
+
+footer p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.heart-icon {
+  color: #ff4757;
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
+@keyframes rotation-mandala {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+/* Responsive Design - FULL VERSION */
+
+/* Extra Large Devices (1400px and up) */
+@media (min-width: 1400px) {
+  .text-header h2 {
+    font-size: 4rem;
+  }
+
+  .heading-openner {
+    font-size: 4rem;
+  }
+
+  .header-decoration-center {
+    width: 450px;
+  }
+
+  .punchline-text {
+    font-size: 4rem;
+  }
+}
+
+/* Large Devices (1200px and up) */
+@media (max-width: 1399px) {
+  .header-decoration-center {
+    width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .highlight-card {
+    padding: 25px;
+  }
+
+  .mission-statement {
+    padding: 35px;
+  }
+}
+
+/* Medium Large Devices (992px to 1199px) */
+@media (max-width: 1199px) {
+  .text-header h2 {
+    font-size: 3.2rem;
+  }
+
+  .text-header h3 {
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+  }
+
+  .heading-openner {
+    font-size: 3.2rem;
+  }
+
+  .top-heading-openner {
+    font-size: 3vmax;
+    letter-spacing: 6px;
+  }
+
+  .header-decoration-center {
+    width: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .heading-title h3,
+  .heading-title-2 {
+    font-size: 2.3rem;
+  }
+
+  .event-highlights {
+    margin: 45px 0;
+  }
+
+  .punchline-text {
+    font-size: 3.2rem;
+  }
+}
+
+/* Medium Devices (768px to 991px) */
+@media (max-width: 991px) {
+  .text-header h2 {
+    font-size: 2.8rem;
+  }
+
+  .text-header h3 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+
+  .text-header .date {
+    font-size: 1.5rem;
+  }
+
+  .heading-openner {
+    font-size: 2.8rem;
+  }
+
+  .top-heading-openner {
+    font-size: 3.5vmax;
+    letter-spacing: 5px;
+  }
+
+  .desc {
+    font-size: 1.1rem;
+  }
+
+  .header-decoration-center {
+    width: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .heading-title h3,
+  .heading-title-2 {
+    font-size: 2.1rem;
+  }
+
+  .heading-title img {
+    width: 180px;
+  }
+
+  .event-description {
+    font-size: 1.15rem;
+    text-align: center;
+  }
+
+  .highlight-card {
+    padding: 22px;
+    margin-bottom: 22px;
+  }
+
+  .highlight-card h4 {
+    font-size: 1.4rem;
+  }
+
+  .mission-statement {
+    padding: 32px 25px;
+  }
+
+  .mission-statement h4 {
+    font-size: 1.7rem;
+  }
+
+  .angka-waktu {
+    font-size: 3.8rem;
+  }
+
+  .ket-waktu {
+    font-size: 1.5rem;
+  }
+
+  .dekorasi-waktu {
+    width: 320px;
+  }
+
+  .deskripsi-lokasi {
+    font-size: 1.05rem;
+  }
+
+  .maps {
+    height: 350px;
+  }
+
+  .punchline-text {
+    font-size: 2.8rem;
+  }
+
+  .punchline-emoji {
+    font-size: 3.5rem;
+    margin: 0 15px;
+  }
+
+  .punchline-subtitle {
+    font-size: 1.4rem;
+  }
+}
+
+/* Small Medium Devices (576px to 767px) */
+@media (max-width: 767px) {
+  .text-header h2 {
+    font-size: 2.4rem;
+  }
+
+  .text-header h3 {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+
+  .text-header .date {
+    font-size: 1.3rem;
+  }
+
+  .text-header .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .heading-openner {
+    font-size: 2.4rem;
+  }
+
+  .top-heading-openner {
+    font-size: 4vmax;
+    letter-spacing: 4px;
+  }
+
+  .desc {
+    font-size: 1rem;
+  }
+
+  .btn-invite {
+    padding: 10px 22px;
+    font-size: 0.95rem;
+  }
+
+  .header-decoration-center {
+    width: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(-300px / 2);
+  }
+
+  .heading-title h3,
+  .heading-title-2 {
+    font-size: 1.9rem;
+  }
+
+  .heading-title img {
+    width: 160px;
+  }
+
+  .event-description {
+    font-size: 1.1rem;
+    margin: 25px 0;
+  }
+
+  .highlight-card {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .highlight-card h4 {
+    font-size: 1.3rem;
+  }
+
+  .highlight-card p {
+    font-size: 1.05rem;
+  }
+
+  .mission-statement {
+    padding: 28px 20px;
+  }
+
+  .mission-statement h4 {
+    font-size: 1.5rem;
+  }
+
+  .mission-statement p {
+    font-size: 1.1rem;
+  }
+
+  .angka-waktu {
+    font-size: 3.4rem;
+  }
+
+  .ket-waktu {
+    font-size: 1.4rem;
+  }
+
+  .dekorasi-waktu {
+    width: 300px;
+  }
+
+  .deskripsi-lokasi {
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    padding: 10px 25px;
+    font-size: 0.95rem;
+  }
+
+  .maps {
+    height: 320px;
+  }
+
+  .music-icon {
+    bottom: 18px;
+    right: 18px;
+    padding: 11px;
+  }
+
+  .punchline-text {
+    font-size: 2.4rem;
+  }
+
+  .punchline-emoji {
+    font-size: 3.2rem;
+    margin: 0 12px;
+  }
+
+  .punchline-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .punchline-box {
+    padding: 28px 20px;
+  }
+
+  .punchline-footer {
+    font-size: 1.1rem;
+  }
+
+  #punchline {
+    padding: 55px 20px;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}
+
+/* Small Devices (480px to 575px) */
+@media (max-width: 575px) {
+  .text-header h2 {
+    font-size: 2rem;
+  }
+
+  .text-header h3 {
+    font-size: 1.2rem;
+  }
+
+  .text-header .date {
+    font-size: 1.2rem;
+  }
+
+  .text-header .subtitle {
+    font-size: 1rem;
+  }
+
+  .heading-openner {
+    font-size: 2rem;
+  }
+
+  .top-heading-openner {
+    font-size: 5vmax;
+    letter-spacing: 3px;
+  }
+
+  .desc {
+    font-size: 0.95rem;
+  }
+
+  .btn-invite {
+    padding: 9px 20px;
+    font-size: 0.9rem;
+  }
+
+  .header-decoration-center {
+    width: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(-280px / 2);
+  }
+
+  .heading-title h3,
+  .heading-title-2 {
+    font-size: 1.7rem;
+  }
+
+  .heading-title img {
+    width: 140px;
+  }
+
+  .event-description {
+    font-size: 1rem;
+    margin: 20px 0;
+  }
+
+  .highlight-card {
+    padding: 18px;
+    margin-bottom: 18px;
+  }
+
+  .highlight-card h4 {
+    font-size: 1.2rem;
+  }
+
+  .highlight-card p {
+    font-size: 1rem;
+  }
+
+  .mission-statement {
+    padding: 25px 18px;
+  }
+
+  .mission-statement h4 {
+    font-size: 1.4rem;
+  }
+
+  .mission-statement p {
+    font-size: 1rem;
+  }
+
+  .angka-waktu {
+    font-size: 3rem;
+  }
+
+  .ket-waktu {
+    font-size: 1.3rem;
+    margin-top: -18px;
+  }
+
+  .dekorasi-waktu {
+    width: 280px;
+  }
+
+  .deskripsi-lokasi {
+    font-size: 0.95rem;
+  }
+
+  .btn-primary {
+    padding: 9px 22px;
+    font-size: 0.9rem;
+  }
+
+  .maps {
+    height: 280px;
+  }
+
+  .music-icon {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px;
+  }
+
+  .punchline-text {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .punchline-emoji {
+    font-size: 2.8rem;
+    margin: 0 8px;
+  }
+
+  .punchline-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .punchline-box {
+    padding: 25px 18px;
+  }
+
+  .punchline-footer {
+    font-size: 1rem;
+  }
+
+  #punchline {
+    padding: 45px 18px;
+  }
+
+  footer p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra Small Devices (400px to 479px) */
+@media (max-width: 479px) {
+  .text-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .text-header h3 {
+    font-size: 1.1rem;
+  }
+
+  .text-header .date {
+    font-size: 1.1rem;
+  }
+
+  .heading-openner {
+    font-size: 1.8rem;
+  }
+
+  .top-heading-openner {
+    font-size: 6vmax;
+    letter-spacing: 2px;
+  }
+
+  .header-decoration-center {
+    width: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(-250px / 2);
+  }
+
+  .heading-title h3,
+  .heading-title-2 {
+    font-size: 1.5rem;
+  }
+
+  .heading-title img {
+    width: 120px;
+  }
+
+  .highlight-card {
+    padding: 15px;
+  }
+
+  .highlight-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .mission-statement {
+    padding: 22px 15px;
+  }
+
+  .mission-statement h4 {
+    font-size: 1.3rem;
+  }
+
+  .angka-waktu {
+    font-size: 2.6rem;
+  }
+
+  .ket-waktu {
+    font-size: 1.2rem;
+  }
+
+  .dekorasi-waktu {
+    width: 250px;
+  }
+
+  .maps {
+    height: 250px;
+  }
+
+  .punchline-text {
+    font-size: 1.8rem;
+  }
+
+  .punchline-emoji {
+    font-size: 2.4rem;
+    margin: 0 5px;
+  }
+
+  .punchline-box {
+    padding: 20px 15px;
+  }
+
+  #punchline {
+    padding: 40px 15px;
+  }
+}
+
+/* Ultra Small Devices (320px to 399px) */
+@media (max-width: 399px) {
+  .text-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .text-header h3 {
+    font-size: 1rem;
+  }
+
+  .heading-openner {
+    font-size: 1.6rem;
+  }
+
+  .top-heading-openner {
+    font-size: 7vmax;
+    letter-spacing: 1px;
+  }
+
+  .header-decoration-center {
+    width: 220px;
+    left: 21%;
+    transform: translateX(-50%);
+    bottom: calc(-220px / 2);
+  }
+
+  .heading-title h3,
+  .heading-title-2 {
+    font-size: 1.4rem;
+  }
+
+  .angka-waktu {
+    font-size: 2.4rem;
+  }
+
+  .ket-waktu {
+    font-size: 1.1rem;
+  }
+
+  .dekorasi-waktu {
+    width: 220px;
+  }
+
+  .maps {
+    height: 220px;
+  }
+
+  .punchline-text {
+    font-size: 1.6rem;
+  }
+
+  .punchline-emoji {
+    font-size: 2.2rem;
+  }
+
+  .punchline-subtitle {
+    font-size: 1rem;
+  }
+
+  footer p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Landscape Orientation for Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+  .header-decoration-center {
+    width: 200px;
+    bottom: calc(-200px / 2);
+    left: 20%;
+  }
+
+  .text-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .heading-openner {
+    font-size: 1.8rem;
+  }
+
+  .angka-waktu {
+    font-size: 2.2rem;
+  }
+
+  #punchline {
+    padding: 30px 15px;
+  }
+}

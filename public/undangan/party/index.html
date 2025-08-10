@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kamu & Dia</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&display=swap"
+      rel="stylesheet" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ======================== Section: Openner ======================== -->
+    <!-- Halaman pembuka undangan -->
+    <section
+      id="openner"
+      class="d-flex justify-content-center align-items-center"
+      data-aos="fade-down">
+      <div class="container text-center text-white">
+        <div class="text-group-top">
+          <h4 class="top-heading-openner">FREEDOM FEAST NIGHT</h4>
+          <h1 class="heading-openner">All You Can Eat & Party</h1>
+        </div>
+
+        <div class="text-group-bottom text-center mx-auto mt-4">
+          <p class="subtext">Kepada Yth. Bapak/Ibu/Saudara/i</p>
+          <h2 class="fw-bolder text-capitalize" id="receiver"></h2>
+          <p class="desc">
+            Kami mengundang Anda untuk merayakan pesta spesial Hari Kemerdekaan
+            RI bersama kami.
+            <br />
+            🎉 Makan dan minum sepuasnya! Live Music & Doorprize!
+          </p>
+          <button class="btn-invite fw-bold mt-5" id="open-message">
+            <i data-feather="mail" class="me-2"></i> Buka Undangan
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== Section: Jumbotron ======================== -->
+    <!-- Header dengan nama pengantin -->
+    <section id="jumbotron">
+      <div
+        class="container-fluid d-flex justify-content-center align-items-center flex-column position-relative">
+        <!-- Ornamen sudut -->
+        <div class="corner-ornament top-left"></div>
+        <div class="corner-ornament top-right"></div>
+
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12 text-center text-header" data-aos="zoom-in">
+            <h3>Dengan Hormat Mengundang Anda</h3>
+            <h2>Party Spesial</h2>
+            <p class="subtitle">
+              Menyambut Hari Kemerdekaan Republik Indonesia ke-80
+            </p>
+            <h3 class="date">17 Agustus 2025</h3>
+          </div>
+        </div>
+
+        <!-- Ornamen tengah dengan efek emas -->
+        <img
+          src="asset/icon/27-removebg-preview.png"
+          alt="Ornamen Kemerdekaan"
+          class="header-decoration-center img-fluid" />
+      </div>
+    </section>
+
+    <!-- ======================== Section: Pengantin ======================== -->
+    <!-- Informasi tentang kedua mempelai dan keluarga -->
+    <section id="about-event" class="position-relative">
+      <img src="asset/icon/divider-1.png" class="first-divider" />
+      <div class="container">
+        <div class="heading-title text-center" data-aos="fade-up">
+          <img src="asset/icon/topdec-2.svg" class="img-fluid" />
+          <h3>Tentang Acara</h3>
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up">
+          <div class="col-md-10 col-11">
+            <p class="event-description text-center">
+              Dalam rangka memperingati Hari Kemerdekaan Republik Indonesia yang
+              ke-80, kami dengan bangga mempersembahkan sebuah acara istimewa
+              yang menggabungkan nilai-nilai patriotisme dengan kemewahan dan
+              keanggunan. Acara ini dirancang khusus untuk para undangan
+              terpilih yang ingin merayakan kemerdekaan dengan cara yang
+              berkesan dan bermakna.
+            </p>
+          </div>
+        </div>
+
+        <div class="event-highlights" data-aos="fade-up">
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <div class="highlight-card">
+                <h4>🎭 Entertainment Eksklusif</h4>
+                <p>
+                  Pertunjukan seni budaya tradisional dan modern yang memukau,
+                  menampilkan talenta-talenta terbaik untuk malam yang tak
+                  terlupakan.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="highlight-card">
+                <h4>🍽️ Kuliner Premium</h4>
+                <p>
+                  Hidangan gourmet khas nusantara dan internasional yang
+                  disajikan dengan standar fine dining terbaik.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="highlight-card">
+                <h4>🎁 Door Prize Mewah</h4>
+                <p>
+                  Hadiah-hadiah istimewa untuk para tamu undangan, termasuk
+                  voucher liburan dan produk premium lainnya.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <div class="highlight-card">
+                <h4>📸 Photo Experience</h4>
+                <p>
+                  Sesi foto profesional dengan backdrop tematik kemerdekaan dan
+                  properti eksklusif untuk kenangan abadi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mission-statement" data-aos="zoom-in">
+          <h4>"Merayakan Kemerdekaan dengan Gaya"</h4>
+          <p>
+            Bergabunglah dengan kami dalam malam yang penuh makna, dimana
+            patriotisme bertemu dengan elegance dalam suasana yang tak akan
+            pernah Anda lupakan.
+          </p>
+        </div>
+      </div>
+
+      <img src="asset/icon/divider-1.png" class="second-divider" />
+    </section>
+
+    <!-- ======================== Section: Hari Bahagia ======================== -->
+    <!-- Countdown menuju hari pernikahan -->
+    <section id="hari-bahagia">
+      <div class="container" data-aos="fade-up">
+        <div class="heading-title-2 text-center">
+          <h3>HARI ACARA</h3>
+        </div>
+        <div class="row waktu justify-content-center">
+          <div class="col-lg-2 col-3">
+            <div class="waktu-wrapper text-center">
+              <h2 class="angka-waktu hari">00</h2>
+              <p class="ket-waktu">HARI</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-3">
+            <div class="waktu-wrapper text-center">
+              <h2 class="angka-waktu jam">00</h2>
+              <p class="ket-waktu">JAM</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-3">
+            <div class="waktu-wrapper text-center">
+              <h2 class="angka-waktu menit">00</h2>
+              <p class="ket-waktu">MENIT</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-3">
+            <div class="waktu-wrapper text-center">
+              <h2 class="angka-waktu detik">00</h2>
+              <p class="ket-waktu">DETIK</p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="asset/icon/dekorasi-waktu.svg"
+          class="text-center img-fluid dekorasi-waktu" />
+      </div>
+    </section>
+
+    <!-- ======================== Section: Lokasi ======================== -->
+    <!-- Detail waktu & tempat acara beserta peta -->
+    <section id="location">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 detail-lokasi">
+            <div class="container mt-3" data-aos="fade-right">
+              <div class="heading-title-2 text-center">
+                <h3>TANGGAL DAN LOKASI ACARA</h3>
+              </div>
+              <div
+                class="row text-white text-center justify-content-center align-items-center flex-column pb-4">
+                <div class="col-sm-7">
+                  <p class="deskripsi-lokasi">
+                    <i data-feather="calendar" class="me-1"></i>Hari/Tanggal
+                    :<br />
+                    <span class="fw-bold"
+                      >Senin, 17 Agustus 2025 <br />
+                      08.00 WITA - Selesai</span
+                    >
+                  </p>
+                </div>
+                <div class="col-sm-7">
+                  <p class="deskripsi-lokasi">
+                    <i data-feather="map-pin"></i> Lokasi Upacara :<br />
+                    <span class="fw-bold"
+                      >Br. Griya, Desa Nyalian, Kec. Banjarangakn
+                      <br />
+                      Klungkung - Bali
+                    </span>
+                  </p>
+                  <a
+                    href="https://maps.app.goo.gl/o61ods5RQkZNKCzz8"
+                    class="btn btn-primary rounded-pill fw-bold"
+                    target="_blank"
+                    >MAP LOKASI</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 g-0" data-aos="fade-left">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d718.2944729424449!2d115.36894068250993!3d-8.497164171946613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd217d9c62d5a3f%3A0xc4ddbe4a865592ca!2sBALAI%20BANJAR%20GRIA!5e1!3m2!1sid!2sid!4v1753684976704!5m2!1sid!2sid"
+              width="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="maps"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== Section: Pesan dan Harapan ======================== -->
+    <!-- Form dan tampilan pesan dari tamu -->
+    <section id="punchline" class="position-relative">
+      <div class="container">
+        <div class="punchline-container" data-aos="zoom-in">
+          <div class="punchline-box">
+            <p class="punchline-text">
+              <span class="punchline-emoji">😂</span>
+              "Kalau ada acara seperti ini beneran, info ya… saya juga mau hehe"
+              <span class="punchline-emoji">😆</span>
+            </p>
+
+            <p class="punchline-subtitle">
+              ~ Gotcha! Ini cuma undangan bercanda ~
+            </p>
+          </div>
+
+          <div class="punchline-footer">
+            <p>
+              Semoga terhibur! 🎭<br />
+              <strong>Selamat Hari Kemerdekaan RI ke-80! 🇮🇩</strong>
+            </p>
+            <br />
+            <p class="fw-bolder" style="color: #7b4da3">Made with ❤️ by You</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== Music Button ======================== -->
+    <!-- Tombol ikon musik -->
+    <div class="music-icon"><i data-feather="music"></i></div>
+    <audio
+      src="asset/music/wwd.mp3juice.blog - Bengawan Solo - Sundari Soekotjo (Official Video) (192 KBps).mp3"></audio>
+
+    <!-- Keterangan pembuat -->
+    <footer class="d-flex justify-content-center align-items-center">
+      <p class="fw-bolder text-white">
+        Created with <i data-feather="heart" class="heart-icon"></i> by
+        Kementerian Bercanda RI
+      </p>
+    </footer>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- ======================== Custom Scripts ======================== -->
+    <!-- Script pembuka undangan -->
+    <script src="script/open.js"></script>
+
+    <!-- Script form pesan & tampilannya -->
+    <script src="script/message.js"></script>
+
+    <!-- Script countdown hari bahagia -->
+    <script src="script/countdown.js"></script>
+
+    <!-- AOS Initialization -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 800,
+      });
+    </script>
+  </body>
+</html>
