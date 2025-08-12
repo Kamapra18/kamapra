@@ -23,28 +23,31 @@ export default function AboutSection({
 
       <main
         ref={ref}
-        className="flex flex-col lg:flex-row items-center justify-between w-full gap-10 mt-10 0">
+        className="flex flex-col lg:flex-row items-center justify-center w-full gap-10 lg:gap-16 mt-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Foto */}
         <div
           ref={ref}
           className={`transition-all duration-1000 ${
             isInView ? "animate-slideInLeft" : "opacity-0 translate-y-10"
           }`}>
-          <div className="rounded-3xl overflow-hidden flex-shrink-0">
+          <div className="rounded-3xl overflow-hidden flex-shrink-0 w-[280px] sm:w-[320px] lg:w-[350px]">
             <Image
               src="/mario23.jpg"
               alt="profile"
               width={350}
               height={350}
-              className="object-cover"
+              className="object-cover w-full h-full"
             />
           </div>
         </div>
 
-        <div 
-        ref={ref}
-        className={`transition-all duration-1000 ${
-          isInView ? "animate-slideInRight" : "opacity-0 translate-y-10"}`}>
-          <div className="max-w-2xl text-center lg:text-left bg-white p-6 sm:p-10 rounded-3xl shadow-lg">
+        {/* Teks */}
+        <div
+          ref={ref}
+          className={`transition-all duration-1000 ${
+            isInView ? "animate-slideInRight" : "opacity-0 translate-y-10"
+          }`}>
+          <div className="max-w-xl text-center lg:text-left bg-white p-6 sm:p-10 rounded-3xl shadow-lg">
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start mb-4">
               <span className="flex items-center gap-1 text-sm text-blue-600 font-medium">
                 <FaLaptopCode className="text-blue-600" /> Web Learner
@@ -53,38 +56,37 @@ export default function AboutSection({
                 <FaCode className="text-green-600" /> Beginner Dev
               </span>
             </div>
-          <h1 className="text-3xl sm:text-2xl font-bold text-gray-900 mb-4 leading-snug">
-            Perjalanan Belajar Web Development Saya 🚀
-          </h1>
+            <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 leading-snug">
+              Perjalanan Belajar Web Development Saya 🚀
+            </h1>
 
-          <h2 className="text-2xl sm:text-lg text-blue-900 font-bold mb-6">
-            I Kadek Mario Prayoga
-          </h2>
+            <h2 className="text-lg sm:text-2xl text-blue-900 font-bold mb-6">
+              I Kadek Mario Prayoga
+            </h2>
 
-          <p className="text-gray-600 mb-6 text-base leading-relaxed">
-            Hai, saya Mario! Sekarang saya{" "}
-            <strong className="font-medium text-gray-800">
-              lagi mempelajari dasar-dasar web development
-            </strong>{" "}
-            mulai dari HTML, CSS, Tailwind CSS, dan Python (basic). Saya juga
-            baru mulai coba-coba Next.js meskipun belum mendalami JavaScript
-            sepenuhnya. Di sisi database, saya sudah mengenal SQL dasar seperti
-            membuat database, tabel, dan melakukan insert data.
-            <br />
-            <br />
-            Saya suka belajar hal baru dan pelan-pelan membangun proyek kecil
-            untuk ngasah skill saya. Yuk intip karya-karya awal saya!
-          </p>
+            <p className="text-gray-600 mb-6 text-base leading-relaxed">
+              Hai, saya Mario! Sekarang saya{" "}
+              <strong className="font-medium text-gray-800">
+                lagi mempelajari dasar-dasar web development
+              </strong>{" "}
+              mulai dari HTML, CSS, Tailwind CSS, dan Python (basic). Saya juga
+              baru mulai coba-coba Next.js meskipun belum mendalami JavaScript
+              sepenuhnya. Di sisi database, saya sudah mengenal SQL dasar
+              seperti membuat database, tabel, dan melakukan insert data.
+              <br />
+              <br />
+              Saya suka belajar hal baru dan pelan-pelan membangun proyek kecil
+              untuk ngasah skill saya. Yuk intip karya-karya awal saya!
+            </p>
 
-          {isHomePage ? (
-            <Button href="/about">Learn More</Button>
-          ) : (
-            <Button href="/MyCV.pdf" download>
-              Download CV
-            </Button>
-          )}
+            {isHomePage ? (
+              <Button href="/about">Learn More</Button>
+            ) : (
+              <Button href="/MyCV.pdf" download>
+                Download CV
+              </Button>
+            )}
           </div>
-
         </div>
       </main>
 
