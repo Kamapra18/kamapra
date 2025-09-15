@@ -25,7 +25,7 @@ function SocialIcon({ Icon, href }: SocialIconProps) {
 export default function FooterContact() {
   return (
     <div>
-      <h2 className="text-lg font-bold">Get in touch</h2>
+      <h2 className="text-lg font-bold bg-[linear-gradient(135deg,#2563EB,#38BDF8)] bg-clip-text text-transparent">Get in touch</h2>
       <p className="mt-2 text-gray-400">My social media account</p>
       <div className="flex space-x-4 mt-4">
         <SocialIcon

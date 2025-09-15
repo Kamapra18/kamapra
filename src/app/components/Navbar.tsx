@@ -17,7 +17,7 @@ const NavItems: FC<NavItemsProps> = ({ isNavOpen, setIsNavOpen }) => {
   return (
     <div
       className={`
-        fixed top-0 left-0 w-full h-screen z-[45] 
+        fixed top-0 left-0 w-full h-screen z-[49] 
         flex items-center justify-center 
         backdrop-blur-sm transition-all duration-500 transform
         ${
@@ -26,9 +26,9 @@ const NavItems: FC<NavItemsProps> = ({ isNavOpen, setIsNavOpen }) => {
             : "translate-x-full opacity-0 pointer-events-none"
         }
       `}>
-      <div className="relative flex flex-col items-center min-h-screen bg-blue-500 min-w-full opacity-95">
+      <div className="relative flex flex-col items-center min-h-screen bg-[#1E40AF] min-w-full opacity-95">
         <div className="flex flex-col items-center space-y-8 my-auto z-50">
-          <h1 className="text-6xl font-bold text-white">Menu</h1>
+          <h1 className="text-6xl text-white font-bold ">Menu</h1>
           {["home", "about", "projects", "contact"].map((section) => (
             <Link
               key={section}
@@ -64,14 +64,14 @@ const Navbar: FC = () => {
     <>
       <nav
         ref={navRef}
-        className={`navbar px-7 md:px-18 w-screen fixed transition-colors duration-500 ${
+        className={`navbar py-10 px-7 md:px-18 w-screen fixed transition-colors duration-500 ${
           isNavOpen
-            ? "backdrop-blur-md bg-blue-500 bg-opacity-50"
+            ? "backdrop-blur-md bg-b[#1E40AF] bg-opacity-50"
             : "backdrop-blur-md"
         } inset-0 flex justify-between items-center h-16 z-50`}>
         <div className="flex items-center space-x-2">
           <Image
-            src="/Kamapra.png"
+            src="/logo_Kamapra1.png"
             alt="logo"
             width={40}
             height={40}

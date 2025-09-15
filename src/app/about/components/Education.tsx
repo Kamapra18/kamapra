@@ -11,7 +11,7 @@ function Title() {
       ref={ref}
       className={`flex justify-center items-center flex-col my-5 self-start transition-all duration-1000 ${isInView ? "animate-slideIn" : "opacity-0 translate-y-10"}`}>
         <h1 className="text-4xl font-bold text-white">
-          Latar <span className="text-amber-200">Pendidikan</span>
+          Latar <span className="bg-gradient-to-r from-[#2563EB] to-[#38BDF8] bg-clip-text text-transparent">Pendidikan</span>
         </h1>
       </div>
     </div>
@@ -44,10 +44,10 @@ export default function Education() {
           <div
           
           key={index} className="grid gap-4 text-white relative">
-            <div className="aspect-square w-5 bg-amber-200 rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
-            <div className="font-medium text-lg text-white">{item.year}</div>
+            <div className="aspect-square w-5 bg-blue-500 rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
+            <div className="font-medium text-lg bg-[linear-gradient(135deg,#1E40AF,#38BDF8)] bg-clip-text text-transparent">{item.year}</div>
             <div>
-              <h3 className="font-semibold text-xl text-white">
+              <h3 className="font-semibold text-xl bg-[linear-gradient(135deg,#2563EB,#38BDF8)] bg-clip-text text-transparent">
                 {item.school}
               </h3>
               <h4 className="font-light text-md mb-4">{item.degree}</h4>

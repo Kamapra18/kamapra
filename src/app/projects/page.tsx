@@ -9,7 +9,7 @@ import GetContact from "../components/GetContact";
 
 export default function Project() {
   return (
-    <div id="project" className="bg-linear-to-r from-cyan-500 to-blue-500">
+    <div id="project" className="bg-[#1E1E1E]">
       <Navbar />
       <HeroSection text="See What I've Built" ButtonHref="#projects" />
       <MyProjects />

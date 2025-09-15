@@ -7,7 +7,7 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 export default function MyProjects() {
   return (
-    <section id="projects" className="min-h-dvh p-4 sm:p-8 mt-5">
+    <section id="projects" className="p-4 sm:p-8 mt-5">
       <Heading text="My Latest" highlight="Projects" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projects.map((project, index) => (

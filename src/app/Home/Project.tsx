@@ -24,7 +24,11 @@ const ProjectCarousel = () => {
   useEffect(() => {
     setIsClient(true);
 
-    const getItemsPerView = () => (window.innerWidth < 768 ? 1 : 3);
+    const getItemsPerView = () => {
+      if (window.innerWidth < 768) return 1; 
+      if (window.innerWidth < 1024) return 2;
+      return 3; 
+    };
     setItemsPerView(getItemsPerView());
 
     const handleResize = () => setItemsPerView(getItemsPerView());
@@ -41,9 +45,7 @@ const ProjectCarousel = () => {
       }, 3000);
     }
     return () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-      }
+      if (intervalRef.current) clearInterval(intervalRef.current);
     };
   }, [isPlaying, totalSlides]);
 
@@ -57,43 +59,56 @@ const ProjectCarousel = () => {
   return (
     <div
       id="projects"
-      className="py-16 px-4 bg-gradient-to-b from-transparent via-white/5 to-transparent"
-    >
+      className="py-16 px-4 bg-gradient-to-b from-transparent via-white/5 to-transparent">
       <div className="max-w-7xl mx-auto">
+        {/* Heading */}
         <div className="text-center mb-16">
           <Heading text="My Lates" highlight="Project" />
         </div>
 
         <div className="relative">
+          {/* Prev Button */}
           <button
             onClick={prevSlide}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full p-3 text-white hover:bg-white/30 transition-all duration-300 hover:scale-110 shadow-lg"
-          >
+            className="hidden md:flex absolute -left-10 top-1/2 -translate-y-1/2 z-10 
+             bg-white/20 backdrop-blur-sm border border-white/30 
+             rounded-full p-3 text-white hover:bg-white/30 
+             transition-all duration-300 hover:scale-110 shadow-lg">
             <FaChevronLeft size={20} />
           </button>
+
+          {/* Next Button */}
           <button
             onClick={nextSlide}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full p-3 text-white hover:bg-white/30 transition-all duration-300 hover:scale-110 shadow-lg"
-          >
+            className="hidden md:flex absolute -right-10 top-1/2 -translate-y-1/2 z-10 
+             bg-white/20 backdrop-blur-sm border border-white/30 
+             rounded-full p-3 text-white hover:bg-white/30 
+             transition-all duration-300 hover:scale-110 shadow-lg">
             <FaChevronRight size={20} />
           </button>
 
+          {/* Carousel */}
           <div className="overflow-hidden rounded-2xl">
             <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{
-                transform: `translateX(-${currentIndex * (100 / totalSlides)}%)`,
+                transform: `translateX(-${
+                  currentIndex * (100 / totalSlides)
+                }%)`,
                 width: `${(projects.length * 100) / itemsPerView}%`,
-              }}
-            >
+              }}>
               {projects.map((project, index) => (
                 <div
                   key={project.id}
                   className={`${
-                    itemsPerView === 1 ? "w-full" : "w-1/3"
-                  } px-4 py-2`}
-                >
+                    itemsPerView === 1
+                      ? "w-full"
+                      : itemsPerView === 2
+                      ? "w-1/2"
+                      : "w-1/3"
+                  } px-4 py-2`}>
                   <div className="bg-white/20 backdrop-blur-lg border border-white/30 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/30 shadow-lg">
+                    {/* Image */}
                     <div className="relative overflow-hidden h-48">
                       <Image
                         src={project.image}
@@ -106,6 +121,7 @@ const ProjectCarousel = () => {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
                     </div>
 
+                    {/* Content */}
                     <div className="p-6">
                       <h3 className="text-xl font-bold text-white mb-3 drop-shadow-sm">
                         {project.title}
@@ -114,32 +130,31 @@ const ProjectCarousel = () => {
                         {project.description}
                       </p>
 
+                      {/* Tech stack */}
                       <div className="flex flex-wrap gap-2 mb-4">
                         {project.tech.map((tech, techIndex) => (
                           <span
                             key={techIndex}
-                            className="px-2 py-1 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-400/40 rounded-md text-xs text-cyan-100"
-                          >
+                            className="px-2 py-1 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-400/40 rounded-md text-xs text-cyan-100">
                             {tech}
                           </span>
                         ))}
                       </div>
 
+                      {/* Buttons */}
                       <div className="flex gap-3">
                         <a
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 px-4 py-2 bg-white/20 hover:bg-white/30 border border-white/30 rounded-lg text-white text-sm transition-all duration-300 hover:scale-105 shadow-md"
-                        >
+                          className="flex items-center gap-2 px-4 py-2 bg-white/20 hover:bg-white/30 border border-white/30 rounded-lg text-white text-sm transition-all duration-300 hover:scale-105 shadow-md">
                           <FaGithub size={16} /> Code
                         </a>
                         <a
                           href={project.demo}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 rounded-lg text-white text-sm transition-all duration-300 hover:scale-105 shadow-md"
-                        >
+                          className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#2563EB] to-[#38BDF8] hover:from-cyan-600 hover:to-blue-600 rounded-lg text-white text-sm transition-all duration-300 hover:scale-105 shadow-md">
                           <FaExternalLinkAlt size={14} /> Demo
                         </a>
                       </div>
@@ -150,22 +165,22 @@ const ProjectCarousel = () => {
             </div>
           </div>
 
+          {/* Controls */}
           <div className="flex justify-center mt-8">
             <button
               onClick={toggleAutoplay}
-              className="flex items-center justify-center px-6 py-3 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full text-white hover:bg-white/30 transition-all duration-300 shadow-lg hover:scale-105"
-            >
+              className="flex items-center justify-center px-6 py-3 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full text-white hover:bg-white/30 transition-all duration-300 shadow-lg hover:scale-105">
               {isPlaying ? <FaPause size={18} /> : <FaPlay size={18} />}
             </button>
 
             <Link
               href="/projects"
-              className="inline-block px-6 py-3 bg-cyan-600 hover:bg-cyan-700 text-white rounded-full shadow-lg transition-all duration-300 hover:scale-105 ml-4"
-            >
+              className="inline-block px-6 py-3 ml-4 bg-[linear-gradient(135deg,#2563EB,#38BDF8)] text-white rounded-full shadow-lg transition-all duration-300 hover:scale-105">
               View All Projects
             </Link>
           </div>
 
+          {/* Dots */}
           <div className="flex justify-center mt-6 gap-2">
             {Array.from({ length: totalSlides }).map((_, index) => (
               <button

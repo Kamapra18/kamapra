@@ -9,7 +9,7 @@ import GetContact from "../components/GetContact";
 
 export default function About() {
   return (
-    <div className="justify-center items-center bg-gradient-to-r from-cyan-500 to-blue-500">
+    <div className="bg-[#1E1E1E]">
       <Navbar />
       <HeroSection text="Want to Get to Know Me?" ButtonHref="#about" />
       <AboutSection />

@@ -1,12 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import {
-  FaHome,
-  FaUser,
-  FaFolderOpen,
-  FaEnvelope,
-} from "react-icons/fa";
+import { FaHome, FaUser, FaFolderOpen, FaEnvelope } from "react-icons/fa";
 
 const Sidebar = () => {
   const [activeAnchor, setActiveAnchor] = useState<string | null>(null);
@@ -51,7 +46,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <div className="hidden md:flex fixed z-50 bg-gray-700 h-[50vh] w-14 flex-col justify-between items-center p-4 left-0 top-1/4 rounded-e-3xl">
+    <div className="hidden lg:flex fixed z-49 bg-white/[0.04] h-[50vh] w-14 flex-col justify-between items-center p-4 left-0 top-1/4 rounded-e-3xl">
       <ul className="flex flex-col justify-evenly items-center h-full text-gray-50">
         {navItems.map(({ icon, anchor }) => (
           <li key={anchor}>

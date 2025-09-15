@@ -13,14 +13,16 @@ export default function HeroSection({ text, ButtonHref }: TextProps) {
 
   return (
     <div
-    ref={ref}
-    className={`transition-all duration-1000 ${isInView ? "animate-slideIn" : "opacity-0 translate-y-10"}`}>
+      ref={ref}
+      className={`transition-all duration-1000 ${
+        isInView ? "animate-slideIn" : "opacity-0 translate-y-10"
+      }`}>
       <section
         id="home"
-        className="flex w-full flex-col justify-center items-center h-screen px-4 text-center">
-        <div className="h-1 bg-black w-50 sm:w-32 md:w-40 lg:w-52 xl:w-64 mb-1.5"></div>
-        <div className="h-1 bg-black w-70 sm:w-56 md:w-72 lg:w-96 xl:w-[28rem] mb-1.5"></div>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl text-white uppercase font-bold mb-5">
+        className="flex w-full flex-col justify-center items-center h-screen px-5 text-center">
+        <div className="h-1  bg-[linear-gradient(135deg,#1E40AF,#2563EB,#38BDF8)] w-50 sm:w-32 md:w-40 lg:w-52 xl:w-64 mb-4"></div>
+        <div className="h-1  bg-[linear-gradient(135deg,#1E40AF,#2563EB,#38BDF8)] w-70 sm:w-56 md:w-72 lg:w-96 xl:w-[28rem] mb-4"></div>
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl bg-[linear-gradient(135deg,#1E40AF,#2563EB,#38BDF8)] bg-clip-text text-transparent uppercase font-bold mb-8">
           {text}
         </h1>
         <Button href={ButtonHref ?? "#"}>scroll down</Button>

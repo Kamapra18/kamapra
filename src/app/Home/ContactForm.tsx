@@ -35,12 +35,12 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="h-screen p-5 flex flex-col items-center justify-center">
+      className="py-20 px-5 flex flex-col items-center justify-center my-40">
       <Heading text="Contact" highlight="Me" />
       <div className="bg-white p-8 rounded-2xl shadow-lg w-full max-w-md">
         <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
           <div className="flex items-center gap-2 border-b-2 py-2">
-            <FaUser className="text-cyan-500" />
+            <FaUser className="text-blue-500" />
             <input
               className="w-full focus:outline-none p-2 text-black "
               type="text"
@@ -50,7 +50,7 @@ export default function ContactSection() {
             />
           </div>
           <div className="flex items-center gap-2 border-b-2 py-2">
-            <FaEnvelope className="text-cyan-500" />
+            <FaEnvelope className="text-blue-500" />
             <input
               className="w-full focus:outline-none p-2 text-black"
               type="email"
@@ -60,7 +60,7 @@ export default function ContactSection() {
             />
           </div>
           <div className="flex items-start gap-2 border-b-2 py-2">
-            <FaCommentDots className="text-cyan-500" />
+            <FaCommentDots className="text-blue-500" />
             <textarea
               className="w-full focus:outline-none p-2 text-black"
               name="message"
@@ -69,7 +69,7 @@ export default function ContactSection() {
           </div>
           <button
             type="submit"
-            className="mt-4 bg-cyan-500 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+            className="mt-4 bg-blue-500 hover:bg-cyan-500 text-white font-bold py-2 px-4 rounded-full transition duration-300">
             Send Message
           </button>
         </form>

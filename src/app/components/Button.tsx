@@ -22,7 +22,7 @@ export default function Button({
         href={href}
         download
         className={
-          "px-4 py-3 bg-black text-blue-200 rounded-3xl shadow-lg inline-block transition duration-300 hover:bg-blue-950 ${className}"
+          "px-4 py-3  bg-[linear-gradient(135deg,#1E40AF,#2563EB,#38BDF8)] text-blue-200 rounded-3xl shadow-lg inline-block transition duration-300 ${className}"
         }>
         {children}
       </a>
@@ -31,7 +31,7 @@ export default function Button({
   return (
     <Link
       href={href}
-      className={`px-4 py-3 bg-black text-blue-200 rounded-3xl shadow-lg inline-block transition duration-300 hover:bg-blue-950 ${className}`}>
+      className={`px-4 py-3 capitalize bg-[linear-gradient(135deg,#2563EB,#1E40AF)] text-blue-200 rounded-3xl shadow-lg inline-block transition duration-300 ${className}`}>
       {children}
     </Link>
   );

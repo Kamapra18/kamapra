@@ -3,6 +3,20 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"; 
 
+import { Exo_2, Montserrat } from "next/font/google";
+
+const exo2 = Exo_2({
+  subsets: ["latin"],
+  weight: ["600", "700", "800"], 
+  variable: "--font-heading", 
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "500"], 
+  variable: "--font-body", 
+});
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -45,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+         className={`${geistSans.variable} ${geistMono.variable} ${exo2.variable} ${montserrat.variable} antialiased`}
       >
         {children}
         <Analytics /> 
