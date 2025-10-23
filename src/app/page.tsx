@@ -8,7 +8,7 @@ import ProjectCarousel from "./Home/Project";
 import ContactSection from "./Home/ContactForm";
 import FooterSection from "./components/Footer";
 
-import WhatsAppButton from "./components/Wa";
+// import WhatsAppButton from "./components/Wa";
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
       <ProjectCarousel />
       <ContactSection />
       <FooterSection />
-      <WhatsAppButton />
+      {/* <WhatsAppButton /> */}
     </div>
   );
 }

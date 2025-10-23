@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/react"; 
+import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script";
 
 import { Exo_2, Montserrat } from "next/font/google";
 
 const exo2 = Exo_2({
   subsets: ["latin"],
-  weight: ["600", "700", "800"], 
-  variable: "--font-heading", 
+  weight: ["600", "700", "800"],
+  variable: "--font-heading",
 });
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["400", "500"], 
-  variable: "--font-body", 
+  weight: ["400", "500"],
+  variable: "--font-body",
 });
 
 const geistSans = Geist({
@@ -35,7 +36,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Kamapra",
-    description: "Website portofolio I Kadek Mario Prayoga yang mendokumentasikan proses belajar dan karya kecil seputar web development, dari HTML, CSS, Tailwind CSS, Next.js hingga SQL dasar.", 
+    description:
+      "Website portofolio I Kadek Mario Prayoga yang mendokumentasikan proses belajar dan karya kecil seputar web development, dari HTML, CSS, Tailwind CSS, Next.js hingga SQL dasar.",
     url: "https://www.kamapra.my.id",
     siteName: "Kamapra",
     images: [
@@ -50,7 +52,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -59,10 +60,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-         className={`${geistSans.variable} ${geistMono.variable} ${exo2.variable} ${montserrat.variable} antialiased`}
-      >
+        className={`${geistSans.variable} ${geistMono.variable} ${exo2.variable} ${montserrat.variable} antialiased`}>
         {children}
-        <Analytics /> 
+        <Analytics />
+        <Script id="chatbase-config" strategy="afterInteractive">
+          {`
+            window.CHATBASE_CONFIG = {
+              chatbotId: "jKZJ1rGBWq4USeYRJMOmW"
+            };
+          `}
+        </Script>
+
+        <Script
+          src="https://www.chatbase.co/embed.min.js"
+          strategy="afterInteractive"
+          id="jKZJ1rGBWq4USeYRJMOmW"
+          defer
+        />
       </body>
     </html>
   );
