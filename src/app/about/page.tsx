@@ -3,7 +3,7 @@ import HeroSection from "../Home/Hero";
 import AboutSection from "../components/About";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
-import WhatsAppButton from "../components/Wa";
+// import WhatsAppButton from "../components/Wa";
 import FooterSection from "../components/Footer";
 import GetContact from "../components/GetContact";
 
@@ -16,7 +16,7 @@ export default function About() {
       <Skills />
       <Education />
       <GetContact />
-      <WhatsAppButton/>
+      {/* <WhatsAppButton/> */}
       <FooterSection />
     </div>
   );
