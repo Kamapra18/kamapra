@@ -7,6 +7,7 @@ import Education from "./about/components/Education";
 import ProjectCarousel from "./Home/Project";
 import ContactSection from "./Home/ContactForm";
 import FooterSection from "./components/Footer";
+import CertificateSection from "./components/certificattion";
 
 // import WhatsAppButton from "./components/Wa";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Navbar />
       <AboutSection isHomePage={true} />
       <Skills />
+      <CertificateSection />
       <Education />
       <ProjectCarousel />
       <ContactSection />

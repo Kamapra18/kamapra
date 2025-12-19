@@ -71,7 +71,7 @@ const Navbar: FC = () => {
         } inset-0 flex justify-between items-center h-16 z-50`}>
         <div className="flex items-center space-x-2">
           <Image
-            src="/logo_Kamapra1.png"
+            src="/Kamapra.png"
             alt="logo"
             width={40}
             height={40}

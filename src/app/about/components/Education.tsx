@@ -8,10 +8,15 @@ function Title() {
   return (
     <div className="mt-16 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
       <div
-      ref={ref}
-      className={`flex justify-center items-center flex-col my-5 self-start transition-all duration-1000 ${isInView ? "animate-slideIn" : "opacity-0 translate-y-10"}`}>
+        ref={ref}
+        className={`flex justify-center items-center flex-col my-5 self-start transition-all duration-1000 ${
+          isInView ? "animate-slideIn" : "opacity-0 translate-y-10"
+        }`}>
         <h1 className="text-4xl font-bold text-white">
-          Latar <span className="bg-gradient-to-r from-[#2563EB] to-[#38BDF8] bg-clip-text text-transparent">Pendidikan</span>
+          Latar{" "}
+          <span className="bg-gradient-to-r from-[#2563EB] to-[#38BDF8] bg-clip-text text-transparent">
+            Pendidikan
+          </span>
         </h1>
       </div>
     </div>
@@ -22,8 +27,10 @@ function Wrapper({ children }: { children: ReactNode }) {
   const { ref, isInView } = useInView<HTMLDivElement>(0.3);
   return (
     <div
-    ref={ref}
-    className={`mx-auto container gap-10 p-10 grid grid-cols-1 my-10 transition-all duration-1000 ${isInView ? "animate-slideIn" : "opacity-0 translate-y-10"}`}>
+      ref={ref}
+      className={`mx-auto container gap-10 p-10 grid grid-cols-1 my-10 transition-all duration-1000 ${
+        isInView ? "animate-slideIn" : "opacity-0 translate-y-10"
+      }`}>
       <div className="flex justify-center items-start flex-col mb-5">
         <section className="grid gap-8 md:gap-12">
           <div className="relative after:absolute after:inset-y-2 after:w-1 after:bg-gray-700 after:left-[-4px] md:after:left-1 lg:after:left-2 xl:after:left-3 grid gap-8 md:gap-12 pl-6 md:pl-8">
@@ -41,11 +48,11 @@ export default function Education() {
       <Title />
       <Wrapper>
         {educationData.map((item, index) => (
-          <div
-          
-          key={index} className="grid gap-4 text-white relative">
+          <div key={index} className="grid gap-4 text-white relative">
             <div className="aspect-square w-5 bg-blue-500 rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
-            <div className="font-medium text-lg bg-[linear-gradient(135deg,#1E40AF,#38BDF8)] bg-clip-text text-transparent">{item.year}</div>
+            <div className="font-medium text-lg bg-gradient-to-r from-[#0450f3] to-[#38BDF8]  bg-clip-text text-transparent">
+              {item.year}
+            </div>
             <div>
               <h3 className="font-semibold text-xl bg-[linear-gradient(135deg,#2563EB,#38BDF8)] bg-clip-text text-transparent">
                 {item.school}

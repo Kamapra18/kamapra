@@ -6,6 +6,7 @@ import Education from "./components/Education";
 // import WhatsAppButton from "../components/Wa";
 import FooterSection from "../components/Footer";
 import GetContact from "../components/GetContact";
+import CertificateSection from "../components/certificattion";
 
 export default function About() {
   return (
@@ -14,6 +15,7 @@ export default function About() {
       <HeroSection text="Want to Get to Know Me?" ButtonHref="#about" />
       <AboutSection />
       <Skills />
+      <CertificateSection />
       <Education />
       <GetContact />
       {/* <WhatsAppButton/> */}

@@ -4,7 +4,7 @@ export default function FooterLogo() {
   return (
     <div>
       <Image
-        src="/logo_Kamapra1.png"
+        src="/Kamapra.png"
         alt="logo"
         width={100}
         height={100}

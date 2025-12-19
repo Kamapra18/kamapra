@@ -4,6 +4,9 @@
   --background: #ffffff;
   --foreground: #171717;
 
+  --primary: linear-gradient(to right, #2563eb, #38bdf8);
+  --secondary: linear-gradient(135deg, #1e40af, #2563eb, #38bdf8);
+
   --font-heading: "Exo 2", sans-serif;
   --font-body: "Montserrat", sans-serif;
 }
@@ -17,6 +20,7 @@
 html {
   scroll-behavior: smooth;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 body {
   background: var(--background);

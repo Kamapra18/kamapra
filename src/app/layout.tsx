@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
-
+import Snowfall from "./components/Snowfall"
 import { Exo_2, Montserrat } from "next/font/google";
 
 const exo2 = Exo_2({
@@ -61,6 +61,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${exo2.variable} ${montserrat.variable} antialiased`}>
+        <Snowfall />
         {children}
         <Analytics />
         <Script id="chatbase-config" strategy="afterInteractive">

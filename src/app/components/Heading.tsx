@@ -23,7 +23,9 @@ export default function Heading({
       } ${className}`}>
       {text}{" "}
       {highlight && (
-        <span className=" bg-gradient-to-r from-[#2563EB] to-[#38BDF8] bg-clip-text text-transparent">{highlight}</span>
+        <span className=" bg-gradient-to-r from-[#2563EB] to-[#38BDF8] bg-clip-text text-transparent">
+          {highlight}
+        </span>
       )}
     </h1>
   );
