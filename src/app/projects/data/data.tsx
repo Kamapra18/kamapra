@@ -9,11 +9,20 @@ export interface Data {
 
 const projects: Data[] = [
   {
+    title: "GoalFin - Aplikasi Pengelola Keuangan Pribadi",
+    description:
+      "Aplikasi mobile untuk mengelola keuangan pribadi dan mencapai target finansial. Fitur utama mencakup pencatatan pemasukan/pengeluaran, kategorisasi transaksi otomatis, pembuatan goals keuangan dengan tracking progress real-time, dashboard dengan statistik dan grafik, serta sistem autentikasi yang aman dengan penyimpanan data cloud.",
+    image: "/",
+    tech: ["Expo", "TypeScript", "Supabase", "PostgreSQL"],
+    link: "https://expo.dev/accounts/kamapra/projects/goalfin/builds/e4068660-50c2-4105-b4c2-5ff9bb509810",
+    github: "https://github.com/Kamapra18/goalfin",
+  },
+  {
     title: "Website Brasika Asta Dharma 1",
     description:
-      "Website organisasi pemuda dengan fitur dashboard admin. Dibuat menggunakan Next.js, TailwindCSS, Typescript, dan Supabase.",
+      "Website organisasi pemuda. Dibuat menggunakan Next.js, TailwindCSS, dan Typescript",
     image: "/galeri/brasika.png",
-    tech: ["NextJs", "TailwindCSS", "Typescript", "Supabase"],
+    tech: ["NextJs", "TailwindCSS", "Typescript"],
     link: "https://brasika1.vercel.app",
     github: "https://github.com/Kamapra18/brasika1",
   },

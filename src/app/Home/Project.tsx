@@ -25,9 +25,9 @@ const ProjectCarousel = () => {
     setIsClient(true);
 
     const getItemsPerView = () => {
-      if (window.innerWidth < 768) return 1; 
+      if (window.innerWidth < 768) return 1;
       if (window.innerWidth < 1024) return 2;
-      return 3; 
+      return 3;
     };
     setItemsPerView(getItemsPerView());
 
@@ -67,8 +67,8 @@ const ProjectCarousel = () => {
         </div>
 
         <div className="relative">
-          {/* Prev Button */}
-          <button
+          {/* button next and previus */}
+          {/* <button
             onClick={prevSlide}
             className="hidden md:flex absolute -left-10 top-1/2 -translate-y-1/2 z-10 
              bg-white/20 backdrop-blur-sm border border-white/30 
@@ -77,7 +77,6 @@ const ProjectCarousel = () => {
             <FaChevronLeft size={20} />
           </button>
 
-          {/* Next Button */}
           <button
             onClick={nextSlide}
             className="hidden md:flex absolute -right-10 top-1/2 -translate-y-1/2 z-10 
@@ -85,7 +84,7 @@ const ProjectCarousel = () => {
              rounded-full p-3 text-white hover:bg-white/30 
              transition-all duration-300 hover:scale-110 shadow-lg">
             <FaChevronRight size={20} />
-          </button>
+          </button> */}
 
           {/* Carousel */}
           <div className="overflow-hidden rounded-2xl">

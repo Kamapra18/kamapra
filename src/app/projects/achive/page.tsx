@@ -23,18 +23,16 @@ export default function Page() {
 
       <section
         ref={ref}
-        className="min-h-screen w-full mt-20 p-6 md:p-10 flex flex-col items-center mb-10"
-      >
+        className="min-h-screen w-full mt-20 p-6 md:p-10 flex flex-col items-center mb-10">
         {/* Heading */}
         <div
           className={`self-start mb-10 transition-all duration-1000 ${
             isInView ? "animate-slideInLeft" : "opacity-0 -translate-x-12"
-          }`}
-        >
+          }`}>
           <div className="w-28 h-1 rounded-full mb-3 bg-secondary-gradient" />
           <div className="w-28 h-1 rounded-full mb-3 bg-secondary-gradient" />
 
-          <h1 className="text-3xl font-bold mt-3 bg-secondary-gradient bg-clip-text text-transparent">
+          <h1 className="text-3xl text-blue-500 font-bold mt-3 bg-secondary-gradient bg-clip-text ">
             Archive
           </h1>
         </div>
@@ -43,16 +41,25 @@ export default function Page() {
         <div
           className={`container mx-auto md:px-10 transition-all duration-1000 ${
             isInView ? "animate-fadeIn" : "opacity-0 translate-y-10"
-          }`}
-        >
-          <div className="overflow-x-auto"> {/* Wrapper supaya table tidak pecah di mobile */}
+          }`}>
+          <div className="overflow-x-auto">
+            {" "}
+            {/* Wrapper supaya table tidak pecah di mobile */}
             <table className="w-full border-separate border-spacing-y-4">
               <thead>
-                <tr className="text-left text-[#959595]">
-                  <th className="pb-4">Title</th>
-                  <th className="pb-4">Technology</th>
-                  <th className="pb-4 hidden md:table-cell">Description</th>
-                  <th className="pb-4 text-center">Link</th>
+                <tr className="text-left text-[#d1d5db]">
+                  <th className="border-b border-r border-white pb-4 pl-4">
+                    Title
+                  </th>
+                  <th className="border-b border-r border-white pb-4 pl-4">
+                    Technology
+                  </th>
+                  <th className="border-b border-r border-white pb-4 pl-4 hidden md:table-cell">
+                    Description
+                  </th>
+                  <th className="border-b border-r border-white pb-4 pl-2 text-center">
+                    Link
+                  </th>
                 </tr>
               </thead>
 
@@ -60,28 +67,26 @@ export default function Page() {
                 {projects.map((project: Data, index: number) => (
                   <tr
                     key={index}
-                    className="group bg-[#121212]/50 hover:bg-[#121212] rounded-xl transition-all duration-300"
-                  >
+                    className="group bg-[#121212]/50 hover:bg-[#959595]/40 rounded-xl transition-all duration-300 ">
                     {/* Title */}
                     <td className="py-4 px-4 font-medium rounded-l-xl">
                       <Link
                         href={project.link}
                         target="_blank"
-                        className="hover:underline bg-primary-gradient bg-clip-text text-transparent"
-                      >
+                        className="hover:underline bg-primary-gradient bg-clip-text text-[#d1d5db]">
                         {project.title}
                       </Link>
                     </td>
 
                     {/* Tech */}
-                    <td className="py-4 text-[#959595]">
+                    <td className="py-4 text-[#d1d5db]">
                       <div className="flex flex-wrap gap-1">
                         {project.tech.join(", ")}
                       </div>
                     </td>
 
                     {/* Description */}
-                    <td className="py-4 text-sm text-[#b5b5b5] max-w-md hidden md:table-cell">
+                    <td className="py-4 text-sm text-[##1d5db] max-w-md hidden md:table-cell">
                       {project.description}
                     </td>
 
@@ -93,8 +98,7 @@ export default function Page() {
                           target="_blank"
                           rel="noopener noreferrer"
                           title="Preview"
-                          className="text-blue-500 hover:text-cyan-400 transition-colors"
-                        >
+                          className="text-blue-500 hover:text-cyan-400 transition-colors">
                           <FaExternalLinkAlt className="text-lg" />
                         </a>
 
@@ -104,8 +108,7 @@ export default function Page() {
                             target="_blank"
                             rel="noopener noreferrer"
                             title="GitHub"
-                            className="text-blue-500 hover:text-cyan-400 transition-colors"
-                          >
+                            className="text-blue-500 hover:text-cyan-400 transition-colors">
                             <FaGithub className="text-xl" />
                           </a>
                         )}
