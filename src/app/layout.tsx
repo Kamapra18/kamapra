@@ -29,8 +29,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kamapra.my.id"),
   title: "Kamapra",
   description: "Website Portofolio Kamapra",
+  verification: {
+    google: "8F1KMMvDIzoKs4jCzzr7bVX3Udy2IhSZjST3gnvRnwk",
+  },
   icons: {
     icon: "/Kamapra.png",
   },
@@ -58,7 +62,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="id">
       <head>
         <meta
           name="google-site-verification"
