@@ -51,6 +51,7 @@ const Sidebar = () => {
         {navItems.map(({ icon, anchor }) => (
           <li key={anchor}>
             <button
+              type="button"
               onClick={() => handleMoveToSection(anchor)}
               className={`rounded-full p-3 transition-all duration-300 cursor-pointer
                 ${activeAnchor === anchor ? "bg-gray-500" : "bg-transparent"}

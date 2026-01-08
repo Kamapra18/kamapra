@@ -11,7 +11,7 @@ export interface Certificate {
 export const certificatesData: Certificate[] = [
   {
     id: 1,
-    title: "Frontend Web Developer",
+    title: "Junior Web Developer",
     provider: "VSGA Kominfo",
     description:
       "Program pelatihan intensif pengembangan antarmuka web modern menggunakan standar industri.",

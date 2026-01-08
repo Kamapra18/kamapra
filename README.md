@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kamapra Portfolio
 
-## Getting Started
+Website portofolio pribadi **I Kadek Mario Prayoga**, yang dirancang untuk mendokumentasikan perjalanan belajar, proyek, dan keahlian dalam pengembangan web. Dibangun menggunakan teknologi web modern untuk performa tinggi dan pengalaman pengguna yang menarik.
 
-First, run the development server:
+![Kamapra Preview](/public/Kamapra.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Fitur Utama
+
+- **Desain Modern & Responsif**: Dibangun dengan **Tailwind CSS 4** untuk tampilan yang bersih dan adaptif di semua perangkat.
+- **Performa Tinggi**: Menggunakan **Next.js 16 (App Router)** dan **React 19**.
+- **Animasi Interaktif**: Integrasi **GSAP** untuk animasi halus dan efek **Snowfall** untuk estetika visual.
+- **AI Chatbot**: Dukungan chat cerdas menggunakan integrasi **Chatbase**.
+- **SEO Optimized**: Metadata dinamis dan struktur semantik untuk visibilitas mesin pencari yang optimal.
+- **Analytics**: Pemantauan trafik real-time dengan **Vercel Analytics**.
+
+## 🛠️ Stack Teknologi
+
+- **Framework**: [Next.js 16](https://nextjs.org/)
+- **Bahasa**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Komponen**: React Icons, React Intersection Observer
+- **Animasi**: GSAP, React Snowfall
+- **Deployment**: Vercel
+
+## 📦 Cara Menjalankan
+
+Ikuti langkah-langkah ini untuk menjalankan proyek di lokal komputer Anda:
+
+1.  **Clone repositori:**
+
+    ```bash
+    git clone https://github.com/username/kamapra.git
+    cd kamapra
+    ```
+
+2.  **Instal dependensi:**
+
+    ```bash
+    npm install
+    # atau
+    pnpm install
+    ```
+
+3.  **Jalankan server development:**
+
+    ```bash
+    npm run dev
+    ```
+
+4.  Buka [http://localhost:3000](http://localhost:3000) di browser Anda untuk melihat hasilnya.
+
+## 📂 Struktur Proyek
+
+```
+src/
+├── app/
+│   ├── components/   # Komponen UI (Navbar, Footer, dll)
+│   ├── Home/         # Komponen halaman beranda
+│   ├── about/        # Halaman tentang saya
+│   ├── layout.tsx    # Layout utama (Fonts, Analytics, SEO)
+│   └── page.tsx      # Halaman utama
+└── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📄 Lisensi
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Proyek ini dibuat untuk tujuan portofolio pribadi.

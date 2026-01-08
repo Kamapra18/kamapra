@@ -4,8 +4,8 @@
   --background: #ffffff;
   --foreground: #171717;
 
-  --primary: linear-gradient(to right, #2563eb, #38bdf8);
-  --secondary: linear-gradient(135deg, #1e40af, #2563eb, #38bdf8);
+  --color-primary: linear-gradient(to right, #2563eb, #38bdf8);
+  --color-secondary: linear-gradient(135deg, #1e40af, #2563eb, #38bdf8);
 
   --font-heading: "Exo 2", sans-serif;
   --font-body: "Montserrat", sans-serif;

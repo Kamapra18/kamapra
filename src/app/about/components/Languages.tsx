@@ -26,7 +26,6 @@ export default function Languages() {
         <span className="text-white font-bold">Bootstrap</span> |{" "}
         <span className="text-white font-bold">SQL</span> |{" "}
         <span className="text-white font-medium">NodeJS</span> |{" "}
-        <span className="text-white font-bold">MySQL</span> |{" "}
         <span className="text-white font-medium">Python</span>
       </p>
     </div>

@@ -80,6 +80,7 @@ const Navbar: FC = () => {
           <h1 className="text-2xl font-bold text-white">Kamapra</h1>
         </div>
         <button
+          type="button"
           className="burger button flex flex-col justify-center items-center space-y-1.5"
           onClick={toggleNav}>
           <div
