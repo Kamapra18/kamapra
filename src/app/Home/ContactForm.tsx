@@ -9,6 +9,7 @@ import {
 import Heading from "../components/Heading";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 export default function ContactSection() {
   const form = useRef<HTMLFormElement>(null);
@@ -26,11 +27,23 @@ export default function ContactSection() {
       )
       .then(
         () => {
-          alert("Pesan berhasil dikirim");
+          Swal.fire({
+            title: "Berhasil!",
+            text: "Pesan berhasil dikirim. Terima kasih sudah menghubungi kami!",
+            icon: "success",
+            confirmButtonColor: "#3085d6",
+            confirmButtonText: "Oke",
+          });
+
           form.current?.reset();
         },
         () => {
-          alert("Gagal mengirim pesan");
+          Swal.fire({
+            title: "Gagal!",
+            text: "Pesan gagal dikirim. Silakan coba lagi nanti.",
+            icon: "error",
+            confirmButtonText: "Tutup",
+          });
         }
       );
   };
@@ -39,7 +52,7 @@ export default function ContactSection() {
     <section
       id="contact"
       className="py-24 px-5 flex flex-col items-center justify-center min-h-screen">
-      <Heading text="Contact" highlight="Me" />
+      <Heading text="Get In" highlight="Touch" />
 
       <div className="mt-16 w-full max-w-5xl grid md:grid-cols-5 gap-0 overflow-hidden rounded-3xl border border-white/10 shadow-2xl bg-[#0a0a0a]/50 backdrop-blur-xl">
         {/* Sisi Kiri: Info Singkat (2 Kolom) */}
@@ -66,7 +79,9 @@ export default function ContactSection() {
                 <span className="text-xs text-white/50 uppercase tracking-widest font-semibold">
                   Email
                 </span>
-                <span className="text-lg font-medium">mario@example.com</span>
+                <span className="text-lg font-medium">
+                  marioprayoga18@gmail.com
+                </span>
               </div>
             </div>
           </div>

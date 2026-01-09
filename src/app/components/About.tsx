@@ -21,7 +21,8 @@ export const RevealBento = () => {
         transition={{
           staggerChildren: 0.05,
         }}
-        className="mx-auto grid max-w-4xl grid-flow-dense grid-cols-12 gap-4">
+        className="mx-auto grid max-w-4xl grid-flow-dense grid-cols-12 gap-4"
+        id="about">
         <HeaderBlock />
         <SocialsBlock />
         <AboutBlock />
@@ -73,7 +74,7 @@ const Block = ({ className, ...rest }: BlockProps) => {
 const HeaderBlock = () => (
   <Block className="col-span-12 row-span-2 md:col-span-6">
     <Image
-      src={"/mario15.jpg"}
+      src={"/Mario15.jpg"}
       alt=""
       width={50}
       height={50}
@@ -161,7 +162,7 @@ const SocialsBlock = () => (
 
 const AboutBlock = () => (
   <Block className="col-span-12 text-2xl text-justify leading-snug">
-    <p>
+    <p className="text-white">
       Saat ini saya mahasiswa yang sedang mendalami dunia Web Development.{" "}
       <span className="text-zinc-400">
         Perjalanan ini dimulai dari dasar HTML dan CSS, hingga sekarang saya

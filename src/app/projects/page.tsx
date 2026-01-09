@@ -5,7 +5,7 @@ import HeroSection from "../Home/Hero";
 // import WhatsAppButton from "../components/Wa";
 import FooterSection from "../components/Footer";
 import MyProjects from "./components/MyProject";
-import GetContact from "../components/GetContact";
+// import GetContact from "../components/GetContact";
 
 export default function Project() {
   return (
@@ -13,7 +13,7 @@ export default function Project() {
       <Navbar />
       <HeroSection text="See What I've Built" ButtonHref="#projects" />
       <MyProjects />
-      <GetContact />
+      {/* <GetContact /> */}
       {/* <WhatsAppButton /> */}
       <FooterSection />
     </div>

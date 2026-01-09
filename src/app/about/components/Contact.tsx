@@ -61,9 +61,9 @@ export default function ContactBento() {
   ];
 
   return (
-    <section id="contact" className="py-20 px-5 max-w-5xl mx-auto min-h-screen">
+    <section className="py-20 px-5 max-w-5xl mx-auto min-h-screen">
       <div className="mb-12">
-        <Heading text="Contact" highlight="Me" />
+        <Heading text="Find Me" highlight="On" />
         <p className="text-gray-400">Find me on social media</p>
       </div>
 

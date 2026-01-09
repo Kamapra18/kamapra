@@ -10,6 +10,7 @@ import ContactSection from "./Home/ContactForm";
 import FooterSection from "./components/Footer";
 import CertificateSection from "./components/certificattion";
 import { RevealBento } from "@/app/components/About";
+// import WakaTimeSummary from "./Home/WakatimeSummary";
 
 // import WhatsAppButton from "./components/Wa";
 
@@ -25,6 +26,7 @@ export default function Home() {
       <CertificateSection />
       <Education />
       <ProjectCarousel />
+      {/* <WakaTimeSummary /> */}
       <ContactSection />
       <FooterSection />
       {/* <WhatsAppButton /> */}

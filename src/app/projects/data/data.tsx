@@ -12,7 +12,7 @@ const projects: Data[] = [
     title: "GoalFin - Aplikasi Pengelola Keuangan Pribadi",
     description:
       "Aplikasi mobile untuk mengelola keuangan pribadi dan mencapai target finansial. Fitur utama mencakup pencatatan pemasukan/pengeluaran, kategorisasi transaksi otomatis, pembuatan goals keuangan dengan tracking progress real-time, dashboard dengan statistik dan grafik, serta sistem autentikasi yang aman dengan penyimpanan data cloud.",
-    image: "/",
+    image: "/galeri/goalfin.png",
     tech: ["Expo", "TypeScript", "Supabase", "PostgreSQL"],
     link: "https://expo.dev/accounts/kamapra/projects/goalfin/builds/e4068660-50c2-4105-b4c2-5ff9bb509810",
     github: "https://github.com/Kamapra18/goalfin",

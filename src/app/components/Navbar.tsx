@@ -32,13 +32,13 @@ const NavItems: FC<NavItemsProps> = ({ isNavOpen, setIsNavOpen }) => {
           {["home", "about", "projects", "contact"].map((section) => (
             <Link
               key={section}
-              href={`/${
+              href={
                 section === "home"
                   ? "/"
                   : section === "contact"
-                  ? "/#contact"
-                  : section
-              }`}
+                  ? "/contact"
+                  : `/${section}`
+              }
               onClick={handleItemClick}
               className="group relative text-2xl font-bold text-white cursor-pointer transition duration-300">
               <h2 className="relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 group-hover:after:w-full">

@@ -10,7 +10,7 @@ import CertificateSection from "../components/certificattion";
 import { RevealBento } from "../components/About";
 import ContactBento from "./components/Contact";
 import GithubSection from "./components/GitHubSection";
-// import WakaTimeSection from "./components/WakaTimeSection";
+import WakaTimeSection from "./components/WakaTimeSection";
 
 export default function About() {
   return (
@@ -22,7 +22,7 @@ export default function About() {
       <CertificateSection />
       <Education />
       <GithubSection />
-      {/* <WakaTimeSection /> */}
+      <WakaTimeSection />
       <ContactBento />
       {/* <GetContact /> */}
       {/* <WhatsAppButton/> */}
