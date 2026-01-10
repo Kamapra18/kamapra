@@ -3,12 +3,9 @@ import Navbar from "../components/Navbar";
 import HeroSection from "../Home/Hero";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
-// import WhatsAppButton from "../components/Wa";
 import FooterSection from "../components/Footer";
-// import GetContact from "../components/GetContact";
 import CertificateSection from "../components/certificattion";
 import { RevealBento } from "../components/About";
-import ContactBento from "./components/Contact";
 import GithubSection from "./components/GitHubSection";
 import WakaTimeSection from "./components/WakaTimeSection";
 
@@ -23,9 +20,6 @@ export default function About() {
       <Education />
       <GithubSection />
       <WakaTimeSection />
-      <ContactBento />
-      {/* <GetContact /> */}
-      {/* <WhatsAppButton/> */}
       <FooterSection />
     </div>
   );

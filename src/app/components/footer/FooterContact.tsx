@@ -5,9 +5,10 @@ import {
   FaInstagram,
   FaWhatsapp,
   FaGithub,
-  FaCamera,
+  
 } from "react-icons/fa";
 import { IconType } from "react-icons";
+import { SiShutterstock } from "react-icons/si";
 
 interface SocialIconProps {
   Icon: IconType;
@@ -41,7 +42,7 @@ export default function FooterContact() {
           href="https://www.linkedin.com/in/i-kadek-mario-prayoga"
         />
         <SocialIcon
-          Icon={FaCamera}
+          Icon={SiShutterstock}
           href="https://www.shutterstock.com/g/Kamapra"
         />
       </div>
