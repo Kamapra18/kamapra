@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #171717;
+  --foreground: #ffffff;
 
   --color-primary: linear-gradient(to right, #2563eb, #38bdf8);
   --color-secondary: linear-gradient(135deg, #1e40af, #2563eb, #38bdf8);
@@ -11,12 +11,12 @@
   --font-body: "Montserrat", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 html {
   scroll-behavior: smooth;
   line-height: 1.5;

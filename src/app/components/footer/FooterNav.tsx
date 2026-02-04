@@ -4,6 +4,7 @@ export default function FooterNav() {
     about: "/about",
     projects: "/projects",
     contact: "/contact",
+    photobooth: "/photobooth",
   };
 
   return (
@@ -12,7 +13,7 @@ export default function FooterNav() {
         Navigation
       </h2>
       <ul className="mt-2 space-y-2 text-gray-400">
-        {["home", "about", "projects", "contact"].map((item) => (
+        {["home", "about", "projects", "contact", "photobooth"].map((item) => (
           <li key={item} className="hover:text-white capitalize">
             <a href={routes[item]}>{item}</a>
           </li>

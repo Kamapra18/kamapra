@@ -2,6 +2,7 @@
 
 import { projects } from "./data/DataProject";
 import Heading from "../components/Heading";
+import KamapraButton from "../components/ui/ButtonKamapra";
 import React, { useState, useEffect, useRef } from "react";
 import {
   FaChevronLeft,
@@ -12,13 +13,13 @@ import {
   FaPause,
 } from "react-icons/fa";
 import Image from "next/image";
-import Link from "next/link";
 
 const ProjectCarousel = () => {
   const [isClient, setIsClient] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [itemsPerView, setItemsPerView] = useState(3);
+  const [isTransitioning, setIsTransitioning] = useState(true);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
@@ -29,133 +30,183 @@ const ProjectCarousel = () => {
       if (window.innerWidth < 1024) return 2;
       return 3;
     };
-    setItemsPerView(getItemsPerView());
 
-    const handleResize = () => setItemsPerView(getItemsPerView());
+    const handleResize = () => {
+      setItemsPerView(getItemsPerView());
+      setCurrentIndex(0);
+    };
+
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const isMobile = itemsPerView === 1;
+
+  // Tambah clone di awal dan akhir untuk infinite loop
+  const extendedProjects = [
+    ...projects.slice(-itemsPerView),
+    ...projects,
+    ...projects.slice(0, itemsPerView),
+  ];
+
   const totalSlides = Math.ceil(projects.length / itemsPerView);
 
+  // Auto-play effect
   useEffect(() => {
-    if (isPlaying) {
-      intervalRef.current = setInterval(() => {
-        setCurrentIndex((prev) => (prev + 1) % totalSlides);
-      }, 3000);
-    }
+    if (!isPlaying) return;
+
+    intervalRef.current = setInterval(() => {
+      nextSlide();
+    }, 4000);
+
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
-  }, [isPlaying, totalSlides]);
+  }, [isPlaying, currentIndex]);
 
-  const nextSlide = () => setCurrentIndex((prev) => (prev + 1) % totalSlides);
-  const prevSlide = () =>
-    setCurrentIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
-  const toggleAutoplay = () => setIsPlaying(!isPlaying);
+  const nextSlide = () => {
+    setCurrentIndex((prev) => prev + 1);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => prev - 1);
+  };
+
+  // Handle infinite loop transition
+  useEffect(() => {
+    if (currentIndex === totalSlides + 1) {
+      setTimeout(() => {
+        setIsTransitioning(false);
+        setCurrentIndex(1);
+        setTimeout(() => {
+          setIsTransitioning(true);
+        }, 50);
+      }, 700);
+    }
+
+    if (currentIndex === 0) {
+      setTimeout(() => {
+        setIsTransitioning(false);
+        setCurrentIndex(totalSlides);
+        setTimeout(() => {
+          setIsTransitioning(true);
+        }, 50);
+      }, 700);
+    }
+  }, [currentIndex, totalSlides]);
+
+  // Reset ke posisi awal (dengan clone)
+  useEffect(() => {
+    setCurrentIndex(1);
+  }, [itemsPerView]);
+
+  const goToSlide = (index: number) => {
+    setCurrentIndex(index + 1);
+  };
 
   if (!isClient) return null;
 
   return (
-    <div
+    <section
       id="projects"
-      className="py-16 px-4 bg-gradient-to-b from-transparent via-white/5 to-transparent">
+      className="py-24 px-4 bg-transparent relative overflow-hidden">
+      {/* Glow BG */}
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+        <div className="absolute -bottom-48 left-1/2 -translate-x-1/2 w-full h-96 bg-blue-600/10 blur-[120px] rounded-full" />
+      </div>
+
       <div className="max-w-7xl mx-auto">
-        {/* Heading */}
         <div className="text-center mb-16">
-          <Heading text="My Lates" highlight="Project" />
+          <Heading text="My Latest" highlight="Projects" />
         </div>
 
         <div className="relative">
-          {/* button next and previus */}
-          {/* <button
-            onClick={prevSlide}
-            className="hidden md:flex absolute -left-10 top-1/2 -translate-y-1/2 z-10 
-             bg-white/20 backdrop-blur-sm border border-white/30 
-             rounded-full p-3 text-white hover:bg-white/30 
-             transition-all duration-300 hover:scale-110 shadow-lg">
-            <FaChevronLeft size={20} />
-          </button>
+          {/* DESKTOP / TABLET NAV */}
+          {!isMobile && (
+            <>
+              <button
+                onClick={prevSlide}
+                className="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center text-white hover:bg-blue-600 transition-all">
+                <FaChevronLeft size={14} />
+              </button>
 
-          <button
-            onClick={nextSlide}
-            className="hidden md:flex absolute -right-10 top-1/2 -translate-y-1/2 z-10 
-             bg-white/20 backdrop-blur-sm border border-white/30 
-             rounded-full p-3 text-white hover:bg-white/30 
-             transition-all duration-300 hover:scale-110 shadow-lg">
-            <FaChevronRight size={20} />
-          </button> */}
+              <button
+                onClick={nextSlide}
+                className="absolute right-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/10 backdrop-blur border border-white/20 flex items-center justify-center text-white hover:bg-blue-600 transition-all">
+                <FaChevronRight size={14} />
+              </button>
+            </>
+          )}
 
-          {/* Carousel */}
-          <div className="overflow-hidden rounded-2xl">
+          {/* VIEWPORT */}
+          <div className="overflow-hidden rounded-[2rem] md:rounded-[2.5rem] p-2 md:p-4">
             <div
-              className="flex transition-transform duration-500 ease-in-out"
+              className={`flex ${isTransitioning ? "transition-transform duration-700 ease-[cubic-bezier(0.23,1,0.32,1)]" : ""}`}
               style={{
-                transform: `translateX(-${
-                  currentIndex * (100 / totalSlides)
-                }%)`,
-                width: `${(projects.length * 100) / itemsPerView}%`,
+                transform: `translateX(-${(currentIndex * 100) / itemsPerView}%)`,
               }}>
-              {projects.map((project, index) => (
+              {extendedProjects.map((project, index) => (
                 <div
-                  key={project.id}
-                  className={`${
-                    itemsPerView === 1
-                      ? "w-full"
-                      : itemsPerView === 2
-                      ? "w-1/2"
-                      : "w-1/3"
-                  } px-4 py-2`}>
-                  <div className="bg-white/20 backdrop-blur-lg border border-white/30 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/30 shadow-lg">
-                    {/* Image */}
-                    <div className="relative overflow-hidden h-48">
+                  key={`${project.id}-${index}`}
+                  className="px-2 md:px-4 flex-shrink-0"
+                  style={{ width: `${100 / itemsPerView}%` }}>
+                  <div className="bg-white/[0.03] backdrop-blur-xl border border-white/10 rounded-[2rem] overflow-hidden hover:border-blue-500/40 transition-all duration-500 flex flex-col h-full shadow-xl">
+                    <div className="relative h-48 md:h-52 overflow-hidden">
                       <Image
                         src={project.image}
                         alt={project.title}
                         fill
-                        className="object-cover transition-transform duration-300 hover:scale-110"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        priority={index < 3}
+                        className="object-cover transition-transform duration-700 hover:scale-110"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                     </div>
 
-                    {/* Content */}
-                    <div className="p-6">
-                      <h3 className="text-xl font-bold text-white mb-3 drop-shadow-sm">
+                    <div className="p-6 md:p-8 flex flex-col flex-grow">
+                      <h3 className="text-xl font-bold text-white mb-2">
                         {project.title}
                       </h3>
-                      <p className="text-white/90 mb-4 text-sm leading-relaxed">
+
+                      <p className="text-gray-400 text-sm mb-6">
                         {project.description}
                       </p>
 
-                      {/* Tech stack */}
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        {project.tech.map((tech, techIndex) => (
+                      <div className="flex flex-wrap gap-2 mt-auto mb-6">
+                        {project.tech.map((tech, idx) => (
                           <span
-                            key={techIndex}
-                            className="px-2 py-1 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-400/40 rounded-md text-xs text-cyan-100">
+                            key={idx}
+                            className="px-3 py-1 text-[10px] uppercase tracking-widest bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-300">
                             {tech}
                           </span>
                         ))}
                       </div>
-
-                      {/* Buttons */}
-                      <div className="flex gap-3">
+                      <div className="grid grid-cols-2 gap-4 mt-auto">
+                        {/* Tombol GitHub Tetap Biasa */}
                         <a
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 px-4 py-2 bg-white/20 hover:bg-white/30 border border-white/30 rounded-lg text-white text-sm transition-all duration-300 hover:scale-105 shadow-md">
-                          <FaGithub size={16} /> Code
+                          className="flex items-center justify-center gap-2 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl text-white text-xs transition-all active:scale-95">
+                          <FaGithub size={14} /> Code
                         </a>
-                        <a
-                          href={project.demo}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#2563EB] to-[#38BDF8] hover:from-cyan-600 hover:to-blue-600 rounded-lg text-white text-sm transition-all duration-300 hover:scale-105 shadow-md">
-                          <FaExternalLinkAlt size={14} /> Demo
-                        </a>
+
+                        {/* Tombol Live Pakai KamapraButton - Diadjust ukurannya */}
+                        <div className="scale-90 origin-right">
+                          {" "}
+                          {/* Pakai scale biar tetep dapet look 3D-nya tapi muat */}
+                          <KamapraButton
+                            href={project.demo}
+                            variant="blue"
+                            text={
+                              <div className="flex items-center justify-center gap-2">
+                                <FaExternalLinkAlt size={14} />
+                                <span className="whitespace-nowrap">Live</span>
+                              </div>
+                            }
+                            // Kita override padding raksasanya biar pas di card
+                            className="!px-6 !py-3 !text-sm !rounded-xl !w-full"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -163,39 +214,41 @@ const ProjectCarousel = () => {
               ))}
             </div>
           </div>
+        </div>
 
-          {/* Controls */}
-          <div className="flex justify-center mt-8">
+        {/* BOTTOM CONTROLS */}
+        <div className="flex flex-col md:flex-row items-center justify-center mt-12 gap-6">
+          <div className="flex items-center gap-4 bg-white/5 backdrop-blur-lg p-2 px-5 rounded-full border border-white/10">
             <button
-              onClick={toggleAutoplay}
-              className="flex items-center justify-center px-6 py-3 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full text-white hover:bg-white/30 transition-all duration-300 shadow-lg hover:scale-105">
-              {isPlaying ? <FaPause size={18} /> : <FaPlay size={18} />}
+              onClick={() => setIsPlaying(!isPlaying)}
+              className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition-colors">
+              {isPlaying ? <FaPause size={12} /> : <FaPlay size={12} />}
             </button>
 
-            <Link
-              href="/projects"
-              className="inline-block px-6 py-3 ml-4 bg-[linear-gradient(135deg,#2563EB,#38BDF8)] text-white rounded-full shadow-lg transition-all duration-300 hover:scale-105">
-              View All Projects
-            </Link>
+            <div className="flex gap-2">
+              {Array.from({ length: totalSlides }).map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => goToSlide(i)}
+                  className={`rounded-full transition-all ${
+                    (currentIndex - 1) % totalSlides === i
+                      ? "w-8 h-2.5 bg-blue-500"
+                      : "w-2.5 h-2.5 bg-white/20"
+                  }`}
+                />
+              ))}
+            </div>
           </div>
 
-          {/* Dots */}
-          <div className="flex justify-center mt-6 gap-2">
-            {Array.from({ length: totalSlides }).map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  currentIndex === index
-                    ? "bg-gradient-to-r from-cyan-400 to-blue-400 scale-125 shadow-lg"
-                    : "bg-white/40 hover:bg-white/60"
-                }`}
-              />
-            ))}
-          </div>
+          <KamapraButton
+            text="Lihat Semua Project"
+            href="/projects"
+            variant="blue"
+            className="!text-lg !py-3 !px-8 w-full md:w-auto"
+          />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

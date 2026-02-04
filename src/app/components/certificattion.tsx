@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import Heading from "./Heading";
-import Button from "./Button";
+import KamapraButton from "./ui/ButtonKamapra"; // Sesuaikan path importnya
 import useInView from "./hooks/InView";
-import { FaCertificate } from "react-icons/fa";
+import { FaCertificate, FaExternalLinkAlt } from "react-icons/fa";
 import { certificatesData } from "./data/sertif";
 
 export default function CertificateSection() {
@@ -23,13 +23,14 @@ export default function CertificateSection() {
             className={`flex flex-col items-center gap-10 lg:gap-16 w-full ${
               index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
             }`}>
+            {/* Bagian Gambar */}
             <div
               className={`transition-all duration-1000 flex-1 flex justify-center ${
                 isInView
                   ? "opacity-100 translate-x-0"
                   : index % 2 === 0
-                  ? "opacity-0 -translate-x-20"
-                  : "opacity-0 translate-x-20"
+                    ? "opacity-0 -translate-x-20"
+                    : "opacity-0 translate-x-20"
               }`}>
               <div className="group relative rounded-3xl overflow-hidden shadow-2xl w-full max-w-[480px] border border-white/5">
                 <Image
@@ -44,13 +45,14 @@ export default function CertificateSection() {
               </div>
             </div>
 
+            {/* Bagian Teks */}
             <div
               className={`transition-all duration-1000 flex-1 ${
                 isInView
                   ? "opacity-100 translate-x-0"
                   : index % 2 === 0
-                  ? "opacity-0 translate-x-20"
-                  : "opacity-0 -translate-x-20"
+                    ? "opacity-0 translate-x-20"
+                    : "opacity-0 -translate-x-20"
               }`}>
               <div className="p-2 sm:p-5 rounded-3xl w-full">
                 <span className="flex items-center gap-2 text-sm mb-4 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent font-bold tracking-widest uppercase">
@@ -75,9 +77,21 @@ export default function CertificateSection() {
                   </p>
                 </div>
 
-                <Button href={cert.pdf} target="_blank">
-                  Lihat Sertifikat
-                </Button>
+                {/* Pakai KamapraButton di sini */}
+                <div className="scale-90 origin-left md:scale-100">
+                  <KamapraButton
+                    href={cert.pdf}
+                    variant="blue"
+                    text={
+                      <div className="flex items-center gap-2">
+                        <span>Lihat Sertifikat</span>
+                        <FaExternalLinkAlt size={14} />
+                      </div>
+                    }
+                    // Atur ukuran biar nggak kegedean buat section list
+                    className="!px-8 !py-3 !text-sm md:!text-base"
+                  />
+                </div>
               </div>
             </div>
           </div>

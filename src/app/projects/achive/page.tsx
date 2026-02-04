@@ -1,10 +1,9 @@
 "use client";
 
 import Link from "next/link";
-// Ganti ke react-icons
 import { FaGithub, FaChevronLeft, FaExternalLinkAlt } from "react-icons/fa";
 import projects from "../data/data";
-import Button from "../../components/Button";
+import KamapraButton from "../../components/ui/ButtonKamapra"; // Button andalan
 import useInView from "../../components/hooks/InView";
 import type { Data } from "../data/data";
 
@@ -12,39 +11,44 @@ export default function Page() {
   const { ref, isInView } = useInView<HTMLDivElement>();
 
   return (
-    <main className="overflow-hidden">
-      {/* Back Button */}
-      <div className="fixed top-6 left-6 z-50">
-        <Button href="/projects">
-          <FaChevronLeft className="mr-2 inline-block" />
-          Back
-        </Button>
+    <main className="overflow-hidden bg-[#050505] min-h-screen text-white">
+      {/* Back Button - Pakai KamapraButton dengan scaling */}
+      <div className="fixed top-6 left-6 z-50 scale-75 md:scale-90 origin-top-left">
+        <KamapraButton
+          href="/projects"
+          variant="blue"
+          text={
+            <div className="flex items-center gap-2">
+              <FaChevronLeft size={16} />
+              <span>Back</span>
+            </div>
+          }
+          className="!py-3 !px-8 !rounded-2xl"
+        />
       </div>
 
       <section
         ref={ref}
-        className="min-h-screen w-full mt-20 p-6 md:p-10 flex flex-col items-center mb-10">
-        {/* Heading */}
+        className="min-h-screen w-full mt-24 p-6 md:p-10 flex flex-col items-center mb-10 max-w-7xl mx-auto">
+        {/* Heading Baru */}
         <div
-          className={`self-start mb-10 transition-all duration-1000 ${
+          className={`self-start mb-12 transition-all duration-1000 ${
             isInView ? "animate-slideInLeft" : "opacity-0 -translate-x-12"
           }`}>
-          <div className="w-28 h-1 rounded-full mb-3 bg-secondary-gradient" />
-          <div className="w-28 h-1 rounded-full mb-3 bg-secondary-gradient" />
+          <div className="w-28 h-1 rounded-full mb-3 bg-blue-600" />
+          <div className="w-28 h-1 rounded-full mb-3 bg-blue-400" />
 
-          <h1 className="text-3xl text-blue-500 font-bold mt-3 bg-secondary-gradient bg-clip-text ">
+          <h1 className="text-4xl md:text-5xl font-bold mt-3 text-blue-500 uppercase tracking-tight">
             Archive
           </h1>
         </div>
 
-        {/* Table */}
+        {/* Table - Desain Tetap Sesuai Request Kamu */}
         <div
           className={`container mx-auto md:px-10 transition-all duration-1000 ${
             isInView ? "animate-fadeIn" : "opacity-0 translate-y-10"
           }`}>
           <div className="overflow-x-auto">
-            {" "}
-            {/* Wrapper supaya table tidak pecah di mobile */}
             <table className="w-full border-separate border-spacing-y-4">
               <thead>
                 <tr className="text-left text-[#d1d5db]">
@@ -67,13 +71,13 @@ export default function Page() {
                 {projects.map((project: Data, index: number) => (
                   <tr
                     key={index}
-                    className="group bg-[#121212]/50 hover:bg-[#959595]/40 rounded-xl transition-all duration-300 ">
+                    className="group bg-[#121212]/50 hover:bg-[#959595]/40 rounded-xl transition-all duration-300">
                     {/* Title */}
                     <td className="py-4 px-4 font-medium rounded-l-xl">
                       <Link
                         href={project.link}
                         target="_blank"
-                        className="hover:underline bg-primary-gradient bg-clip-text text-[#d1d5db]">
+                        className="hover:underline text-[#d1d5db]">
                         {project.title}
                       </Link>
                     </td>
@@ -86,7 +90,7 @@ export default function Page() {
                     </td>
 
                     {/* Description */}
-                    <td className="py-4 text-sm text-[##1d5db] max-w-md hidden md:table-cell">
+                    <td className="py-4 text-sm text-[#d1d5db] max-w-md hidden md:table-cell">
                       {project.description}
                     </td>
 

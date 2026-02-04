@@ -6,6 +6,7 @@ import HeroSection from "./Home/Hero";
 import Skills from "./about/components/Skills";
 import Education from "./about/components/Education";
 import ProjectCarousel from "./Home/Project";
+import PhotoboxInvitation from "./Home/Photobox";
 import ContactSection from "./Home/ContactForm";
 import FooterSection from "./components/Footer";
 import CertificateSection from "./components/certificattion";
@@ -26,6 +27,7 @@ export default function Home() {
       <CertificateSection />
       <Education />
       <ProjectCarousel />
+      <PhotoboxInvitation />
       {/* <WakaTimeSummary /> */}
       <ContactSection />
       <FooterSection />

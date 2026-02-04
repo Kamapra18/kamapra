@@ -13,13 +13,16 @@
     "@vercel/analytics": "^1.5.0",
     "framer-motion": "^12.24.12",
     "gsap": "^3.14.2",
+    "html-to-image": "^1.11.13",
     "next": "^16.1.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "react-icons": "^5.5.0",
     "react-intersection-observer": "^9.16.0",
     "react-snowfall": "^2.4.0",
-    "sweetalert2": "^11.26.17"
+    "react-webcam": "^7.2.0",
+    "sweetalert2": "^11.26.17",
+    "zustand": "^5.0.11"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

@@ -29,23 +29,25 @@ const NavItems: FC<NavItemsProps> = ({ isNavOpen, setIsNavOpen }) => {
       <div className="relative flex flex-col items-center min-h-screen bg-[#1E40AF] min-w-full opacity-95">
         <div className="flex flex-col items-center space-y-8 my-auto z-50">
           <h1 className="text-6xl text-white font-bold ">Menu</h1>
-          {["home", "about", "projects", "contact"].map((section) => (
-            <Link
-              key={section}
-              href={
-                section === "home"
-                  ? "/"
-                  : section === "contact"
-                  ? "/contact"
-                  : `/${section}`
-              }
-              onClick={handleItemClick}
-              className="group relative text-2xl font-bold text-white cursor-pointer transition duration-300">
-              <h2 className="relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 group-hover:after:w-full">
-                {section.charAt(0).toUpperCase() + section.slice(1)}
-              </h2>
-            </Link>
-          ))}
+          {["home", "about", "projects", "contact", "photobooth"].map(
+            (section) => (
+              <Link
+                key={section}
+                href={
+                  section === "home"
+                    ? "/"
+                    : section === "contact"
+                      ? "/contact"
+                      : `/${section}`
+                }
+                onClick={handleItemClick}
+                className="group relative text-2xl font-bold text-white cursor-pointer transition duration-300">
+                <h2 className="relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 group-hover:after:w-full">
+                  {section.charAt(0).toUpperCase() + section.slice(1)}
+                </h2>
+              </Link>
+            ),
+          )}
         </div>
       </div>
     </div>
