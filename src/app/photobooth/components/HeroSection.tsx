@@ -7,7 +7,7 @@ import { FaCamera, FaCheckCircle, FaBolt } from "react-icons/fa"; // Import Reac
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden min-h-screen flex items-center bg-[#050505]">
+    <section className="relative overflow-hidden min-h-screen flex items-center bg-[#050505] p-20">
       {/* Background Decor */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full -z-10" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-900/10 blur-[100px] rounded-full -z-10" />
@@ -86,7 +86,7 @@ export default function Hero() {
             <div className="relative w-28 md:w-44 aspect-[9/16] rounded-xl shadow-2xl -rotate-12 translate-y-10 border border-white/10 overflow-hidden bg-white p-1.5 md:p-2">
               <div className="relative w-full h-full bg-gray-200 rounded-lg overflow-hidden">
                 <Image
-                  src="/frame/frame.png"
+                  src="/frame/frame-hero2.png"
                   alt="Photo 1"
                   fill
                   className="object-cover grayscale"
@@ -98,7 +98,7 @@ export default function Hero() {
             <div className="relative w-32 md:w-56 aspect-[9/16] rounded-xl shadow-[0_20px_50px_rgba(37,99,235,0.3)] z-20 border-2 border-blue-500/30 overflow-hidden bg-white p-2 md:p-3 scale-110 md:scale-100">
               <div className="relative w-full h-full bg-gray-300 rounded-lg overflow-hidden">
                 <Image
-                  src="/frame/frame.png"
+                  src="/frame/frame-hero1.png"
                   alt="Photo 2"
                   fill
                   className="object-cover"
@@ -115,7 +115,7 @@ export default function Hero() {
             <div className="relative w-28 md:w-44 aspect-[9/16] rounded-xl shadow-2xl rotate-12 translate-y-14 border border-white/10 overflow-hidden bg-white p-1.5 md:p-2">
               <div className="relative w-full h-full bg-gray-200 rounded-lg overflow-hidden">
                 <Image
-                  src="/frame/frame.png"
+                  src="/frame/frame-hero3.png"
                   alt="Photo 3"
                   fill
                   className="object-cover grayscale"

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Heading from "./Heading";
+import Heading from "./ui/Heading";
 import KamapraButton from "./ui/ButtonKamapra"; // Sesuaikan path importnya
 import useInView from "./hooks/InView";
 import { FaCertificate, FaExternalLinkAlt } from "react-icons/fa";
@@ -82,6 +82,8 @@ export default function CertificateSection() {
                   <KamapraButton
                     href={cert.pdf}
                     variant="blue"
+                    target="blank"
+                    rel="noopener noreferer"
                     text={
                       <div className="flex items-center gap-2">
                         <span>Lihat Sertifikat</span>

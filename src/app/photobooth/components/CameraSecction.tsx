@@ -46,6 +46,7 @@ function CameraContent() {
 
   const frameId = searchParams.get("frame") || "1";
   const customColor = searchParams.get("color") || "#2563eb";
+  const photoShape = searchParams.get("shape") || "square";
 
   const currentFrame = useMemo(() => {
     if (frameId === "custom") {
@@ -88,7 +89,7 @@ function CameraContent() {
     if (photos.length === currentFrame.maxPhotos) {
       setCapturedPhotos(photos);
       router.push(
-        `/photobooth/edit?frame=${frameId}&color=${encodeURIComponent(customColor)}`,
+        `/photobooth/edit?frame=${frameId}&color=${encodeURIComponent(customColor)}&shape=${photoShape}`,
       );
     }
   };

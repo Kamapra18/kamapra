@@ -16,6 +16,7 @@ import CustomColorPicker from "./CustomFrame";
 export default function FrameSelection() {
   const [activeTab, setActiveTab] = useState("template");
   const [customColor, setCustomColor] = useState("#2563eb");
+  const [photoShape, setPhotoShape] = useState("square");
 
   // Fungsi navigasi otomatis untuk Template
   const handleTemplateSelect = (frameId: string | number) => {
@@ -25,13 +26,13 @@ export default function FrameSelection() {
   // Fungsi navigasi untuk Custom Color
   const handleCustomConfirm = () => {
     const colorParam = encodeURIComponent(customColor);
-    window.location.href = `/photobooth/camera?frame=custom&color=${colorParam}`;
+    window.location.href = `/photobooth/camera?frame=custom&color=${colorParam}&shape=${photoShape}`;
   };
 
   return (
     <main
       id="frame"
-      className="min-h-screen py-20 px-6 relative bg-[#050505] text-white">
+      className="min-h-screen py-20 px-10 relative bg-[#050505] text-white">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-blue-600/10 blur-[120px] rounded-full -z-10" />
 
       <div className="max-w-7xl mx-auto relative z-10">
@@ -131,6 +132,8 @@ export default function FrameSelection() {
               <CustomColorPicker
                 customColor={customColor}
                 setCustomColor={setCustomColor}
+                photoShape={photoShape}
+                setPhotoShape={setPhotoShape}
               />
 
               {/* Tombol khusus untuk Custom Color */}

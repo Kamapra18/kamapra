@@ -1,4 +1,5 @@
 export interface Data {
+  id: number;
   title: string;
   description: string;
   image: string;
@@ -9,6 +10,7 @@ export interface Data {
 
 const projects: Data[] = [
   {
+    id: 1,
     title: "GoalFin - Aplikasi Pengelola Keuangan Pribadi",
     description:
       "Aplikasi mobile untuk mengelola keuangan pribadi dan mencapai target finansial. Fitur utama mencakup pencatatan pemasukan/pengeluaran, kategorisasi transaksi otomatis, pembuatan goals keuangan dengan tracking progress real-time, dashboard dengan statistik dan grafik, serta sistem autentikasi yang aman dengan penyimpanan data cloud.",
@@ -18,6 +20,7 @@ const projects: Data[] = [
     github: "https://github.com/Kamapra18/goalfin",
   },
   {
+    id: 2,
     title: "Website Brasika Asta Dharma 1",
     description:
       "Website organisasi pemuda. Dibuat menggunakan Next.js, TailwindCSS, dan Typescript",
@@ -27,15 +30,19 @@ const projects: Data[] = [
     github: "https://github.com/Kamapra18/brasika1",
   },
   {
-    title: "Warung Mennara – Landing Page",
+    id: 3,
+
+    title: "Inferno Creative – Website",
     description:
-      "Landing Page untuk Warung Mennara, sebuah usaha kuliner lokal.",
-    image: "/galeri/warungmennara.png",
-    tech: ["NextJs", "TailwindCSS"],
-    link: "https://warungmennara.vercel.app",
-    github: "https://github.com/Kamapra18/warungmennara",
+      "Website Inferno Creative adalah company profile bisnis jasa docum dan web undangan.",
+    image: "/galeri/inferno-creative.png",
+    tech: ["NextJS", "TailwindCSS", "Typescript"],
+    link: "https://inferno-production.com",
+    github: "https://github.com/Kamapra18/inferno-creative",
   },
   {
+    id: 4,
+
     title: "Landing Page UTS Pemrograman Web",
     description:
       "Landing page for the UTS Pemrograman Web course. Built using native tech (HTML, CSS, JS) and ReactJS, TailwindCSS, Typescript.",
@@ -45,6 +52,8 @@ const projects: Data[] = [
     github: "https://github.com/Kamapra18/mario",
   },
   {
+    id: 5,
+
     title: "Todo-List Website",
     description:
       "Sebuah proyek sederhana To-Do List yang memungkinkan pengguna menambahkan daftar, mencentang tugas yang telah selesai, menyimpan data di localStorage, menghapus daftar, dan beralih ke mode gelap.",
@@ -53,7 +62,20 @@ const projects: Data[] = [
     link: "https://todo-list-mario-njz.vercel.app",
     github: "https://github.com/Kamapra18/todo-list",
   },
+    {
+    id: 6,
+
+    title: "Warung Mennara – Landing Page",
+    description:
+      "Landing Page untuk Warung Mennara, sebuah usaha kuliner lokal.",
+    image: "/galeri/warungmennara.png",
+    tech: ["NextJs", "TailwindCSS", "Typescript"],
+    link: "https://warungmennara.vercel.app/",
+    github: "https://github.com/Kamapra18/warungmennara",
+  },
   {
+    id: 7,
+
     title: "Chordbox Website",
     description:
       "Aplikasi web sederhana untuk menambahkan, menampilkan, menghapus chord dan lirik lagu, dengan fitur scroll otomatis dan mode gelap",
@@ -63,6 +85,8 @@ const projects: Data[] = [
     github: "https://github.com/Kamapra18/chordbox",
   },
   {
+    id: 8,
+
     title: "Voice Reader Website",
     description:
       "Website sederhana untuk mengubah teks yang Anda ketik menjadi suara dengan berbagai pilihan suara.",
@@ -71,15 +95,7 @@ const projects: Data[] = [
     link: "https://voice-reader-mario-njz.vercel.app",
     github: "https://github.com/Kamapra18/voice",
   },
-  {
-    title: "UAS – Website Koleksi Buku Pribadi",
-    description:
-      "Aplikasi CRUD untuk mengelola koleksi buku pribadi berbasis Supabase dan Next.js.",
-    image: "/galeri/bookcollection.png",
-    tech: ["NextJs", "TailwindCSS", "Supabase", "Typescript"],
-    link: "https://uas-azure.vercel.app",
-    github: "https://github.com/namakamu/uas-koleksi-buku",
-  },
+
 ];
 
 export default projects;

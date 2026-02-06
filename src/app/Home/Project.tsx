@@ -1,9 +1,9 @@
 "use client";
 
 import { projects } from "./data/DataProject";
-import Heading from "../components/Heading";
+import Heading from "../components/ui/Heading";
 import KamapraButton from "../components/ui/ButtonKamapra";
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   FaChevronLeft,
   FaChevronRight,
@@ -16,11 +16,12 @@ import Image from "next/image";
 
 const ProjectCarousel = () => {
   const [isClient, setIsClient] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(1);
   const [isPlaying, setIsPlaying] = useState(true);
   const [itemsPerView, setItemsPerView] = useState(3);
   const [isTransitioning, setIsTransitioning] = useState(true);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const transitionTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     setIsClient(true);
@@ -32,38 +33,44 @@ const ProjectCarousel = () => {
     };
 
     const handleResize = () => {
-      setItemsPerView(getItemsPerView());
-      setCurrentIndex(0);
+      const newItemsPerView = getItemsPerView();
+      setItemsPerView(newItemsPerView);
+      setCurrentIndex(1);
     };
 
+    setItemsPerView(getItemsPerView());
     handleResize();
+
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const isMobile = itemsPerView === 1;
 
-  // Tambah clone di awal dan akhir untuk infinite loop
   const extendedProjects = [
     ...projects.slice(-itemsPerView),
     ...projects,
     ...projects.slice(0, itemsPerView),
   ];
+  const totalSlides = projects.length;
+  // console.log("Current Index:", currentIndex);
+  // console.log("Projects length:", projects.length);
+  // console.log("Total Slides:", totalSlides);
 
-  const totalSlides = Math.ceil(projects.length / itemsPerView);
-
-  // Auto-play effect
+  // Auto-play dengan useCallback atau langsung di dalam useEffect
   useEffect(() => {
     if (!isPlaying) return;
 
     intervalRef.current = setInterval(() => {
-      nextSlide();
+      setCurrentIndex((prev) => prev + 1);
     }, 4000);
 
     return () => {
-      if (intervalRef.current) clearInterval(intervalRef.current);
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
     };
-  }, [isPlaying, currentIndex]);
+  }, [isPlaying]); // HAPUS currentIndex dari sini!
 
   const nextSlide = () => {
     setCurrentIndex((prev) => prev + 1);
@@ -73,28 +80,42 @@ const ProjectCarousel = () => {
     setCurrentIndex((prev) => prev - 1);
   };
 
-  // Handle infinite loop transition
+  // FIX 2: Handle infinite loop SETELAH transisi selesai
   useEffect(() => {
-    if (currentIndex === totalSlides + 1) {
-      setTimeout(() => {
+    if (transitionTimeoutRef.current) {
+      clearTimeout(transitionTimeoutRef.current);
+    }
+
+    // Clone terakhir -> jump ke slide pertama
+    if (currentIndex > projects.length) {
+      transitionTimeoutRef.current = setTimeout(() => {
         setIsTransitioning(false);
         setCurrentIndex(1);
+
         setTimeout(() => {
           setIsTransitioning(true);
         }, 50);
       }, 700);
     }
 
+    // Clone pertama -> jump ke slide terakhir
     if (currentIndex === 0) {
-      setTimeout(() => {
+      transitionTimeoutRef.current = setTimeout(() => {
         setIsTransitioning(false);
-        setCurrentIndex(totalSlides);
+        setCurrentIndex(projects.length);
+
         setTimeout(() => {
           setIsTransitioning(true);
         }, 50);
       }, 700);
     }
-  }, [currentIndex, totalSlides]);
+
+    return () => {
+      if (transitionTimeoutRef.current) {
+        clearTimeout(transitionTimeoutRef.current);
+      }
+    };
+  }, [currentIndex]);
 
   // Reset ke posisi awal (dengan clone)
   useEffect(() => {
@@ -144,7 +165,7 @@ const ProjectCarousel = () => {
             <div
               className={`flex ${isTransitioning ? "transition-transform duration-700 ease-[cubic-bezier(0.23,1,0.32,1)]" : ""}`}
               style={{
-                transform: `translateX(-${(currentIndex * 100) / itemsPerView}%)`,
+                transform: `translateX(-${(currentIndex / itemsPerView) * 100}%)`,
               }}>
               {extendedProjects.map((project, index) => (
                 <div
@@ -157,6 +178,7 @@ const ProjectCarousel = () => {
                         src={project.image}
                         alt={project.title}
                         fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         className="object-cover transition-transform duration-700 hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
@@ -196,6 +218,8 @@ const ProjectCarousel = () => {
                           {/* Pakai scale biar tetep dapet look 3D-nya tapi muat */}
                           <KamapraButton
                             href={project.demo}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             variant="blue"
                             text={
                               <div className="flex items-center justify-center gap-2">
@@ -226,7 +250,7 @@ const ProjectCarousel = () => {
             </button>
 
             <div className="flex gap-2">
-              {Array.from({ length: totalSlides }).map((_, i) => (
+              {Array.from({ length: projects.length }).map((_, i) => (
                 <button
                   key={i}
                   onClick={() => goToSlide(i)}

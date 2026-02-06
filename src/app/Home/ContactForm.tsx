@@ -1,12 +1,8 @@
 "use client";
 
-import {
-  FaUser,
-  FaEnvelope,
-  FaCommentDots,
-} from "react-icons/fa";
-import Heading from "../components/Heading";
-import KamapraButton from "../components/ui/ButtonKamapra"; 
+import { FaUser, FaEnvelope, FaCommentDots } from "react-icons/fa";
+import Heading from "../components/ui/Heading";
+import KamapraButton from "../components/ui/ButtonKamapra";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
@@ -108,6 +104,7 @@ export default function ContactSection() {
                   placeholder="Nama anda"
                   className="w-full bg-white/5 border border-white/10 rounded-xl py-3 pl-11 pr-4 text-white text-sm md:text-base focus:outline-none focus:border-blue-500 transition-all placeholder:text-gray-600"
                   required
+                  suppressHydrationWarning
                 />
               </div>
             </div>
@@ -148,7 +145,7 @@ export default function ContactSection() {
           <div className="mt-2 w-full flex justify-center md:justify-start">
             <KamapraButton
               text="Kirim Pesan"
-              type="submit" 
+              type="submit"
               variant="blue"
               className="!w-full md:!w-auto !py-4 !text-base"
             />

@@ -7,6 +7,8 @@ import { ReactNode } from "react";
 interface KamapraButtonProps {
   text: ReactNode;
   href?: string;
+  target?: string;
+  rel?: string;
   onClick?: () => void;
   variant?: "gold" | "red" | "blue";
   disabled?: boolean;
@@ -20,7 +22,9 @@ export default function KamapraButton({
   onClick,
   variant = "blue",
   className = "",
-  type = "button", // Default ke button
+  type = "button",
+  target,
+  rel,
 }: KamapraButtonProps) {
   const colors = {
     gold: { bg: "var(--accent-gold)", shadow: "#8c6d1a", text: "#2b0202" },
@@ -30,10 +34,10 @@ export default function KamapraButton({
 
   const activeColor = colors[variant];
 
-  // Base style untuk animasi dan UI
   const buttonContent = (
     <motion.button
-      type={type} // Penting agar bisa submit form
+      suppressHydrationWarning
+      type={type}
       whileHover={{
         scale: 1.05,
         filter: "brightness(1.1)",
@@ -64,7 +68,7 @@ export default function KamapraButton({
   // Jika ada href, bungkus pakai Link. Jika tidak (buat submit), langsung button saja.
   if (href) {
     return (
-      <Link href={href} className="inline-block">
+      <Link href={href} target={target} rel={rel} className="inline-block">
         {buttonContent}
       </Link>
     );

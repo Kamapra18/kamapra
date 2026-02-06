@@ -1,6 +1,6 @@
 "use client";
 
-import Heading from "../../components/Heading";
+import Heading from "../../components/ui/Heading";
 import Image from "next/image";
 import projects from "../data/data";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
@@ -51,6 +51,8 @@ export default function MyProjects() {
                     <KamapraButton
                       href={project.link}
                       variant="blue"
+                      target="blank"
+                      rel="noopener noreferer"
                       text={
                         <div className="flex items-center gap-2">
                           <FaExternalLinkAlt size={14} />
@@ -65,7 +67,9 @@ export default function MyProjects() {
                   <div className="scale-75 sm:scale-90 origin-left md:origin-center">
                     <KamapraButton
                       href={project.github}
-                      variant="red" // Kita kasih warna merah biar beda sama demo
+                      variant="red"
+                      target="blank"
+                      rel="noopener noreferer"
                       text={
                         <div className="flex items-center gap-2">
                           <FaGithub size={16} />

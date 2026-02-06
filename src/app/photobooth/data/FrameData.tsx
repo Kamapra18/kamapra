@@ -19,7 +19,7 @@ export interface Frame {
 export const FRAMES: Frame[] = [
   {
     id: 1,
-    name: "Vintage Rose",
+    name: "Geometric Friendship",
     category: "Vertical",
     src: "/frame/frame6.png",
     maxPhotos: 6,
@@ -80,50 +80,51 @@ export const FRAMES: Frame[] = [
       {
         top: "300px",
         left: "200px",
-        width: "400px",
-        height: "590px",
+        width: "410px",
+        height: "600px",
         rotate: "-0.5deg",
       },
       {
         top: "300px",
-        left: "600px",
-        width: "385px",
-        height: "295px",
+        left: "590px",
+        width: "420px",
+        height: "300px",
         rotate: "0.8deg",
       },
       {
         top: "600px",
-        left: "610px",
-        width: "385px",
-        height: "295px",
+        left: "590px",
+        width: "420px",
+        height: "300px",
         rotate: "-1.5deg",
       },
       {
         top: "900px",
         left: "200px",
-        width: "385px",
-        height: "295px",
+        width: "420px",
+        height: "300px",
         rotate: "0.8deg",
       },
       {
         top: "1200px",
         left: "200px",
-        width: "385px",
-        height: "295px",
+        width: "420px",
+        height: "300px",
         rotate: "0.8deg",
       },
       {
         top: "908px",
         left: "600px",
         width: "400px",
-        height: "590px",
+        height: "600px",
+
         rotate: "0.8deg",
       },
     ],
   },
   {
     id: 3,
-    name: "Gold D Roger",
+    name: "Love Story",
     category: "Lovely",
     src: "/frame/frame8.png",
     maxPhotos: 6,
@@ -181,31 +182,98 @@ export const FRAMES: Frame[] = [
   },
   {
     id: 4,
-    name: "Cinema Story",
+    name: "Vintage Cinema Story",
     category: "Story",
-    src: "/frame/frame1.png",
-    maxPhotos: 3,
+    src: "/frame/frame11.png",
+    maxPhotos: 6,
+
+    positions: [
+      {
+        top: "420px",
+
+        left: "135px",
+        width: "410px",
+        height: "310px",
+        rotate: "-0.5deg",
+      },
+      {
+        top: "420px",
+        left: "680px",
+        width: "410px",
+        height: "310px",
+        rotate: "-1.5deg",
+      },
+      {
+        top: "740px",
+
+        left: "135px",
+
+        width: "410px",
+        height: "310px",
+        rotate: "0.8deg",
+      },
+      {
+        top: "740px",
+        left: "680px",
+
+        width: "410px",
+        height: "310px",
+        rotate: "0.8deg",
+      },
+      {
+        top: "1060px",
+
+        left: "135px",
+
+        width: "410px",
+        height: "310px",
+        rotate: "0.8deg",
+      },
+      {
+        top: "1060px",
+        left: "680px",
+
+        width: "410px",
+        height: "310px",
+        rotate: "0.8deg",
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: "Peony & Petals Birthday",
+    category: "Birthday",
+    src: "/frame/frame12.png",
+    maxPhotos: 4,
 
     positions: [
       {
         top: "250px",
-        left: "250px",
-        width: "400px",
-        height: "500px",
+        left: "110px",
+        width: "430px",
+        height: "630px",
         rotate: "-0.5deg",
       },
       {
-        top: "990px",
-        left: "300px",
-        width: "400px",
-        height: "500px",
+        top: "250px",
+        left: "660px",
+        width: "430px",
+        height: "630px",
         rotate: "-1.5deg",
       },
       {
-        top: "565px",
-        left: "600px",
-        width: "400px",
-        height: "500px",
+        top: "1000px",
+        left: "110px",
+        width: "430px",
+        height: "630px",
+        rotate: "0.8deg",
+      },
+      {
+        top: "1000px",
+        left: "660px",
+
+        width: "430px",
+        height: "630px",
         rotate: "0.8deg",
       },
     ],

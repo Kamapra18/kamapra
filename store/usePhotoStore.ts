@@ -1,5 +1,13 @@
 import { create } from "zustand";
-import { persist, createJSONStorage } from "zustand/middleware";
+import { persist, createJSONStorage, StateStorage } from "zustand/middleware";
+import { get, set, del } from "idb-keyval"; // Import helper untuk IndexedDB
+
+// Helper untuk menghubungkan Zustand dengan IndexedDB
+const idbStorage: StateStorage = {
+  getItem: async (name) => (await get(name)) || null,
+  setItem: async (name, value) => await set(name, value),
+  removeItem: async (name) => await del(name),
+};
 
 interface PhotoStore {
   capturedPhotos: string[];
@@ -12,11 +20,13 @@ export const usePhotoStore = create<PhotoStore>()(
     (set) => ({
       capturedPhotos: [],
       setCapturedPhotos: (photos) => set({ capturedPhotos: photos }),
-      clearPhotos: () => set({ capturedPhotos: [] }),
+      clearPhotos: () => {
+        set({ capturedPhotos: [] });
+      },
     }),
     {
-      name: "kamapra-photo-storage", // Nama key di storage
-      storage: createJSONStorage(() => sessionStorage), // Pake session storage biar kalo tab ditutup, data bersih
-    },
-  ),
+      name: "kamapra-photo-storage",
+      storage: createJSONStorage(() => idbStorage), // Ganti sessionStorage ke idbStorage
+    }
+  )
 );

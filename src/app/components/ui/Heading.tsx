@@ -1,5 +1,5 @@
 "use client";
-import useInView from "./hooks/InView";
+import useInView from "../hooks/InView";
 
 type HeadingProps = {
   text: string;

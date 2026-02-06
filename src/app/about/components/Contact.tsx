@@ -1,6 +1,6 @@
 "use client";
 
-import Heading from "@/app/components/Heading";
+import Heading from "@/app/components/ui/Heading";
 import {
   FaInstagram,
   FaLinkedin,
