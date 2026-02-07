@@ -12,11 +12,12 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 import CustomColorPicker from "./CustomFrame";
+type PhotoShape = "square" | "circle" | "heart" | "portrait";
 
 export default function FrameSelection() {
   const [activeTab, setActiveTab] = useState("template");
   const [customColor, setCustomColor] = useState("#2563eb");
-  const [photoShape, setPhotoShape] = useState("square");
+  const [photoShape, setPhotoShape] = useState<PhotoShape>("square");
 
   // Fungsi navigasi otomatis untuk Template
   const handleTemplateSelect = (frameId: string | number) => {
