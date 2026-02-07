@@ -184,7 +184,7 @@ export const FRAMES: Frame[] = [
     id: 4,
     name: "Vintage Cinema Story",
     category: "Story",
-    src: "/frame/frame11.png",
+    src: "/frame/Frame11.png",
     maxPhotos: 6,
 
     positions: [
@@ -243,7 +243,7 @@ export const FRAMES: Frame[] = [
     id: 5,
     name: "Peony & Petals Birthday",
     category: "Birthday",
-    src: "/frame/frame12.png",
+    src: "/frame/Frame12.png",
     maxPhotos: 4,
 
     positions: [
