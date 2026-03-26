@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
 import Snowfall from "./components/Snowfall";
 import { Exo_2, Montserrat } from "next/font/google";
+import ConsoleLog from "./components/feature/ConsolLog";
 
 const exo2 = Exo_2({
   subsets: ["latin"],
@@ -72,6 +73,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${exo2.variable} ${montserrat.variable} antialiased`}>
         <Snowfall />
+        <ConsoleLog />
         {children}
         <Analytics />
         <Script id="chatbase-config" strategy="afterInteractive">

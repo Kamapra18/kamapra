@@ -27,6 +27,12 @@ body {
   color: var(--foreground);
   font-family: var(--font-body);
 }
+div[class*="unicorn-watermark"],
+a[href*="unicorn.studio"] {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
 
 h1,
 h2,
