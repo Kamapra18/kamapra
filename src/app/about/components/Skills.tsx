@@ -12,7 +12,12 @@ interface WrapperProps {
 
 function Wrapper({ children }: WrapperProps) {
   return (
-    <div className="container mx-auto px-6 py-10">
+    <div
+      style={{
+        backgroundColor: "var(--background)",
+        backgroundImage: `radial-gradient(rgba(56, 189, 248, 0.15) 0.8px, transparent 0.8px)`,
+        backgroundSize: "24px 24px",
+      }}>
       <div className="flex flex-col justify-center items-center text-center">
         {children}
       </div>
@@ -36,7 +41,13 @@ export default function Skills() {
         </section>
       </Wrapper>
 
-      <div className="container mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-2 gap-10 mb-24">
+      <div
+        style={{
+          backgroundColor: "var(--background)",
+          backgroundImage: `radial-gradient(rgba(56, 189, 248, 0.15) 0.8px, transparent 0.8px)`,
+          backgroundSize: "24px 24px",
+        }}
+        className=" mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
         <Stack />
         <Tools />
       </div>

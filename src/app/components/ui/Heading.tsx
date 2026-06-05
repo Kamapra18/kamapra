@@ -22,11 +22,7 @@ export default function Heading({
           : "opacity-0 translate-y-5"
       } ${className}`}>
       {text}{" "}
-      {highlight && (
-        <span className=" bg-gradient-to-r from-[#2563EB] to-[#38BDF8] bg-clip-text text-transparent">
-          {highlight}
-        </span>
-      )}
+      {highlight && <span className=" text-[var(--accent)]">{highlight}</span>}
     </h1>
   );
 }

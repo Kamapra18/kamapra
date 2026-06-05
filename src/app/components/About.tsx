@@ -1,8 +1,8 @@
-import React, { FormEvent } from "react";
+import React, {  useEffect, useRef } from "react";
 import Image from "next/image";
 import { MotionProps, motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
-import { FiArrowRight, FiMail, FiFileText, FiDownload } from "react-icons/fi";
+import { FiArrowRight, FiFileText, FiDownload } from "react-icons/fi";
 import {
   SiGithub,
   SiSpotify,
@@ -11,9 +11,17 @@ import {
 } from "react-icons/si";
 import useInView from "./hooks/InView";
 
+const TYPING_WORDS = ["Frontend Developer", "Web Developer", "Student"];
+
 export const RevealBento = () => {
   return (
-    <div>
+    <div
+      className="min-h-screen py-24 px-4 sm:px-6 md:px-12"
+      style={{
+        backgroundColor: "var(--background)",
+        backgroundImage: `radial-gradient(rgba(56, 189, 248, 0.15) 0.8px, transparent 0.8px)`,
+        backgroundSize: "24px 24px",
+      }}>
       <Logo />
       <motion.div
         initial="initial"
@@ -63,37 +71,90 @@ const Block = ({ className, ...rest }: BlockProps) => {
         damping: 50,
       }}
       className={twMerge(
-        "col-span-4 rounded-lg border border-zinc-700 bg-zinc-800 p-6",
-        className
+        "col-span-4 rounded-lg border border-zinc-700 bg-[var(--btn-glass-bg)] p-6",
+        className,
       )}
       {...rest}
     />
   );
 };
 
-const HeaderBlock = () => (
-  <Block className="col-span-12 row-span-2 md:col-span-6">
-    <Image
-      src={"/Mario15.jpg"}
-      alt=""
-      width={50}
-      height={50}
-      className="mb-4 size-14 rounded-full"
-    />
-    <h1 className="mb-12 text-2xl font-medium leading-tight">
-      Halo, saya I Kadek Mario Prayoga, biasa dipanggil Mario.{" "}
-      <span className="text-zinc-400">
-        Seorang Mahasiswa yang sedang fokus belajar dan membangun website
-        modern.
-      </span>
-    </h1>
-    <a
-      href="#contact"
-      className="flex items-center gap-1 text-blue-700 hover:underline">
-      Contact me <FiArrowRight />
-    </a>
-  </Block>
-);
+const HeaderBlock = () => {
+  const typingRef = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    const el = typingRef.current;
+    if (!el) return;
+
+    let wordIdx = 0;
+    let charIdx = 0;
+    let deleting = false;
+
+    let timeout: ReturnType<typeof setTimeout>;
+
+    const type = () => {
+      const word = TYPING_WORDS[wordIdx];
+
+      if (!deleting) {
+        el.textContent = word.slice(0, ++charIdx);
+
+        if (charIdx === word.length) {
+          deleting = true;
+          timeout = setTimeout(type, 3500);
+          return;
+        }
+      } else {
+        el.textContent = word.slice(0, --charIdx);
+
+        if (charIdx === 0) {
+          deleting = false;
+          wordIdx = (wordIdx + 1) % TYPING_WORDS.length;
+        }
+      }
+
+      timeout = setTimeout(type, deleting ? 50 : 80);
+    };
+
+    timeout = setTimeout(type, 1000);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
+  return (
+    <Block className="col-span-12 md:col-span-6 row-span-2 flex flex-col justify-between">
+      <div>
+        <Image
+          src="/Mario15.jpg"
+          alt="Mario"
+          width={60}
+          height={60}
+          className="mb-4 size-14 rounded-full border border-[var(--btn-glass-border)]"
+        />
+
+        <h1 className="mb-6 text-lg font-bold leading-tight font-heading text-white">
+          Hi, I&apos;m I Kadek Mario Prayoga,
+          <br /> and I&apos;m a{" "}
+          <span
+            ref={typingRef}
+            className="text-[var(--accent)] border-r-2 border-[var(--accent)] animate-pulse"
+          />
+          . <br />
+          <span className="text-zinc-400 font-body">
+            {" "}
+            Passionate about building fast, responsive, and modern digital
+            experiences.
+          </span>
+        </h1>
+      </div>
+
+      <a
+        href="#contact"
+        className="inline-flex items-center text-sm gap-2 text-[var(--accent)] hover:text-white transition-colors font-body font-semibold">
+        Contact me <FiArrowRight />
+      </a>
+    </Block>
+  );
+};
 
 const SocialsBlock = () => (
   <>
@@ -105,7 +166,7 @@ const SocialsBlock = () => (
       }}
       className="col-span-6 bg-red-500 md:col-span-3">
       <a
-        href="https://www.shutterstock.com/g/Kamapra"
+        href="https://www.shutterstock.com/id/g/Kamapra"
         target="blank"
         className="grid h-full place-content-center text-3xl text-white">
         <SiShutterstock />
@@ -161,20 +222,13 @@ const SocialsBlock = () => (
 );
 
 const AboutBlock = () => (
-  <Block className="col-span-12 text-2xl text-justify leading-snug">
+  <Block className="col-span-12 text-lg text-justify leading-snug">
     <p className="text-white">
-      Saat ini saya mahasiswa yang sedang mendalami dunia Web Development.{" "}
+      Passionate about creating modern web experiences.
       <span className="text-zinc-400">
-        Perjalanan ini dimulai dari dasar HTML dan CSS, hingga sekarang saya
-        sudah jauh mengeksplorasi Next.js serta Tailwind CSS untuk membangun
-        website yang lebih kompleks. Baru-baru ini saya juga mulai mencoba
-        membangun aplikasi Android via Expo. Buat yang penasaran, bisa langsung
-        cek di halaman proyek portofolio saya ya! Selain itu, saya memiliki
-        dasar pemrograman Python yang saya gunakan untuk melatih logika
-        berpikir. target saya berikutnya adalah mulai mempelajari Vue untuk
-        memperluas skill front-end saya. Saya sangat tertarik untuk terus
-        belajar dan mempraktikkan teknologi web terbaru dalam proyek-proyek
-        saya.
+        {" "}
+        I specialize in Next.js, React, Tailwind CSS, Supabase, and WordPress,
+        constantly exploring new technologies to build better digital products.
       </span>
     </p>
   </Block>
@@ -182,51 +236,42 @@ const AboutBlock = () => (
 
 const CVBlock = () => (
   <Block className="col-span-12 flex flex-col items-center gap-3 md:col-span-3">
-    <FiFileText className="text-3xl text-blue-400" />
+    <FiFileText className="text-3xl text-[var(--accent)]" />
 
     <a
       href="/MyCV.pdf"
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center gap-1 text-sm text-zinc-400 hover:text-blue-400 transition-colors">
+      className="flex items-center gap-1 text-sm text-zinc-400 hover:text-[var(--accent)] transition-colors">
       Lihat / Unduh CV <FiDownload />
     </a>
   </Block>
 );
 
 const EmailListBlock = () => {
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const target = e.target as HTMLFormElement;
-    const email = (target.elements.namedItem("email") as HTMLInputElement)
-      .value;
-
-    window.location.href = `mailto:marioprayoga18@gmail.com?subject=Kolaborasi&body=Halo, email saya: ${email}`;
-  };
-
   return (
     <Block className="col-span-12 md:col-span-9">
-      <p className="mb-3 text-lg">Hubungi saya</p>
+      <p className="mb-3 text-lg text-white font-semibold">Available For</p>
 
-      <form onSubmit={handleSubmit} className="flex items-center gap-2">
-        <input
-          type="email"
-          name="email"
-          placeholder="Masukkan email kamu"
-          required
-          className="w-full rounded border border-zinc-700 bg-zinc-800 px-3 py-1.5 text-zinc-200 focus:border-blue-400 focus:outline-0"
-        />
-
-        <button
-          type="submit"
-          className="flex items-center gap-2 whitespace-nowrap rounded bg-zinc-50 px-3 py-2 text-sm font-medium text-zinc-900 hover:bg-zinc-300">
-          <FiMail /> Kirim
-        </button>
-      </form>
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+        {["Freelance Projects", "Collaboration", "Internship"].map((item) => (
+          <div
+            key={item}
+            className="
+              rounded-lg
+              border border-[var(--btn-glass-border)]
+              bg-[var(--btn-glass-bg)]
+              p-3
+              text-sm text-zinc-300
+              backdrop-blur-md
+            ">
+            {item}
+          </div>
+        ))}
+      </div>
     </Block>
   );
 };
-
 // Logo
 const Logo = () => {
   return (

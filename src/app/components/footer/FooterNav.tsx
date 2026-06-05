@@ -9,7 +9,7 @@ export default function FooterNav() {
 
   return (
     <div>
-      <h2 className="text-lg font-bold bg-[linear-gradient(135deg,#2563EB,#38BDF8)] bg-clip-text text-transparent mb-2">
+      <h2 className="text-lg font-bold text-[var(--accent)] mb-2">
         Navigation
       </h2>
       <ul className="space-y-2">
@@ -18,9 +18,9 @@ export default function FooterNav() {
             <a
               href={routes[item]}
               className="text-gray-400 capitalize transition-all duration-300 ease-in-out 
-                         group-hover:text-blue-400 group-hover:pl-2 flex items-center gap-2">
+                         group-hover:text-[var(--accent)] group-hover:pl-2 flex items-center gap-2">
               {/* Dot indikator yang muncul saat hover */}
-              <span className="w-1.5 h-1.5 rounded-full bg-blue-500 scale-0 transition-transform duration-300 group-hover:scale-100" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)] scale-0 transition-transform duration-300 group-hover:scale-100" />
               {item}
             </a>
           </li>

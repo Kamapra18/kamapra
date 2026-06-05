@@ -119,7 +119,12 @@ function EditorContent() {
   if (photos.length === 0) return null;
 
   return (
-    <main className="min-h-screen py-10 px-6 flex flex-col items-center bg-[#050505]">
+    <main className="min-h-screen py-10 px-6 flex flex-col items-center "
+    style={{
+        backgroundColor: "var(--background)",
+        backgroundImage: `radial-gradient(rgba(56, 189, 248, 0.15) 0.8px, transparent 0.8px)`,
+        backgroundSize: "24px 24px",
+      }}>
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

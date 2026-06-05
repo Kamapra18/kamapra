@@ -7,7 +7,7 @@ import { FaCamera, FaCheckCircle, FaBolt } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden min-h-screen flex items-center bg-[#050505] px-5 py-10 md:py-20">
+    <section className="relative overflow-hidden min-h-screen flex items-center px-5 py-10 md:py-20">
       {/* Background Decor - Diperhalus untuk mobile */}
       <div className="absolute top-0 right-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-blue-600/10 blur-[80px] md:blur-[120px] rounded-full -z-10" />
       <div className="absolute bottom-0 left-0 w-[250px] md:w-[400px] h-[250px] md:h-[400px] bg-blue-900/10 blur-[70px] md:blur-[100px] rounded-full -z-10" />

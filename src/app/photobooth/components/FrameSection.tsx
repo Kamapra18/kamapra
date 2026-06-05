@@ -33,7 +33,7 @@ export default function FrameSelection() {
   return (
     <main
       id="frame"
-      className="min-h-screen py-20 px-10 relative bg-[#050505] text-white">
+      className="min-h-screen py-20 px-10 relative  text-white">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-blue-600/10 blur-[120px] rounded-full -z-10" />
 
       <div className="max-w-7xl mx-auto relative z-10">

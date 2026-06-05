@@ -139,7 +139,12 @@ function CameraContent() {
   };
 
   return (
-    <main className="min-h-screen relative flex flex-col items-center py-10 px-6 bg-[#050505]">
+    <main className="min-h-screen relative flex flex-col items-center py-10 px-6 "
+    style={{
+        backgroundColor: "var(--background)",
+        backgroundImage: `radial-gradient(rgba(56, 189, 248, 0.15) 0.8px, transparent 0.8px)`,
+        backgroundSize: "24px 24px",
+      }}>
       <AnimatePresence>
         {showFlash && (
           <motion.div

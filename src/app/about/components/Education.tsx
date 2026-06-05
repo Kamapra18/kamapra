@@ -6,17 +6,20 @@ import { ReactNode } from "react";
 function Title() {
   const { ref, isInView } = useInView<HTMLDivElement>(0.3);
   return (
-    <div className="mt-16 flex flex-col justify-start items-center w-full pl-10 md:pl-32">
+    <div
+      className="mt-16 flex flex-col justify-start items-center w-full pl-10 md:pl-32"
+      style={{
+        backgroundColor: "var(--background)",
+        backgroundImage: `radial-gradient(rgba(56, 189, 248, 0.15) 0.8px, transparent 0.8px)`,
+        backgroundSize: "24px 24px",
+      }}>
       <div
         ref={ref}
         className={`flex justify-center items-center flex-col my-5 self-start transition-all duration-1000 ${
           isInView ? "animate-slideIn" : "opacity-0 translate-y-10"
         }`}>
         <h1 className="text-4xl font-bold text-white">
-          Latar{" "}
-          <span className="bg-gradient-to-r from-[#2563EB] to-[#38BDF8] bg-clip-text text-transparent">
-            Pendidikan
-          </span>
+          Latar <span className="text-[var(--accent)]">Pendidikan</span>
         </h1>
       </div>
     </div>
@@ -49,12 +52,12 @@ export default function Education() {
       <Wrapper>
         {educationData.map((item, index) => (
           <div key={index} className="grid gap-4 text-white relative">
-            <div className="aspect-square w-5 bg-blue-500 rounded-full absolute left-0 translate-x-[-29.5px] z-10" />
-            <div className="font-medium text-lg bg-gradient-to-r from-[#0450f3] to-[#38BDF8]  bg-clip-text text-transparent">
+            <div className="aspect-square w-5 bg-[var(--accent)] rounded-full absolute left-0 translate-x-[-32px] z-10" />
+            <div className="font-medium text-lg text-[var(--accent)]">
               {item.year}
             </div>
             <div>
-              <h3 className="font-semibold text-xl bg-[linear-gradient(135deg,#2563EB,#38BDF8)] bg-clip-text text-transparent">
+              <h3 className="font-semibold text-xl text-[var(--accent)]">
                 {item.school}
               </h3>
               <h4 className="font-light text-md mb-4">{item.degree}</h4>

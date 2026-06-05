@@ -11,7 +11,12 @@ import GithubSection from "./components/GitHubSection";
 
 export default function About() {
   return (
-    <div className="bg-[#1E1E1E]">
+    <div
+      style={{
+        backgroundColor: "var(--background)",
+        backgroundImage: `radial-gradient(rgba(56, 189, 248, 0.15) 0.8px, transparent 0.8px)`,
+        backgroundSize: "24px 24px",
+      }}>
       <Navbar />
       <HeroSection text="Want to Get to Know Me?" ButtonHref="#about" />
       <RevealBento />

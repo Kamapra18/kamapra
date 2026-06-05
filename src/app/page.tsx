@@ -11,19 +11,26 @@ import ContactSection from "./Home/ContactForm";
 import FooterSection from "./components/Footer";
 import CertificateSection from "./components/certificattion";
 import { RevealBento } from "@/app/components/About";
+import LearningSection from "./components/Layout/LearningSection";
 // import WakaTimeSummary from "./Home/WakatimeSummary";
 
 // import WhatsAppButton from "./components/Wa";
 
 export default function Home() {
   return (
-    <div className="bg-[#1E1E1E]">
+    <div
+      style={{
+        backgroundColor: "var(--background)",
+        backgroundImage: `radial-gradient(rgba(56, 189, 248, 0.15) 0.8px, transparent 0.8px)`,
+        backgroundSize: "24px 24px",
+      }}>
       <HeroSection text="Welcome to My Personal Website" ButtonHref="#about" />
       <Sidebar />
       <Navbar />
       {/* <AboutSection isHomePage={true} /> */}
       <RevealBento />
-      <Skills />
+      {/* <Skills /> */}
+      <LearningSection />
       <CertificateSection />
       <Education />
       <ProjectCarousel />
