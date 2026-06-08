@@ -3,15 +3,16 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./Home/Sidebar";
 import HeroSection from "./Home/Hero";
 // import AboutSection from "./components/About";
-import Skills from "./about/components/Skills";
+// import Skills from "./about/components/Skills";
 import Education from "./about/components/Education";
-import ProjectCarousel from "./Home/Project";
+// import ProjectCarousel from "./Home/Project";
 import PhotoboxInvitation from "./Home/Photobox";
 import ContactSection from "./Home/ContactForm";
 import FooterSection from "./components/Footer";
 import CertificateSection from "./components/certificattion";
 import { RevealBento } from "@/app/components/About";
 import LearningSection from "./components/Layout/LearningSection";
+import PortfolioSection from "@/app/Home/Project";
 // import WakaTimeSummary from "./Home/WakatimeSummary";
 
 // import WhatsAppButton from "./components/Wa";
@@ -33,7 +34,7 @@ export default function Home() {
       <LearningSection />
       <CertificateSection />
       <Education />
-      <ProjectCarousel />
+      <PortfolioSection />
       <PhotoboxInvitation />
       {/* <WakaTimeSummary /> */}
       <ContactSection />

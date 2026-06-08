@@ -65,13 +65,19 @@ const PortfolioSection: React.FC = () => {
         <Heading text="Proyek" highlight="Pilihan." />
 
         <div className="flex items-center justify-center gap-3 mb-10">
-          <div className="w-10 h-[2px]" style={{ background: "var(--accent)" }} />
+          <div
+            className="w-10 h-[2px]"
+            style={{ background: "var(--accent)" }}
+          />
           <span
             className="font-bold uppercase tracking-widest text-xs"
             style={{ color: "var(--accent)" }}>
             Galeri Karya
           </span>
-          <div className="w-10 h-[2px]" style={{ background: "var(--accent)" }} />
+          <div
+            className="w-10 h-[2px]"
+            style={{ background: "var(--accent)" }}
+          />
         </div>
 
         {/* Filter Tabs */}
@@ -128,14 +134,19 @@ const PortfolioSection: React.FC = () => {
                     boxShadow: "var(--btn-glass-shadow-base)",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.background = "var(--btn-glass-bg-hover)";
-                    e.currentTarget.style.borderColor = "var(--btn-glass-border-hover)";
-                    e.currentTarget.style.boxShadow = "var(--btn-glass-shadow-hover)";
+                    e.currentTarget.style.background =
+                      "var(--btn-glass-bg-hover)";
+                    e.currentTarget.style.borderColor =
+                      "var(--btn-glass-border-hover)";
+                    e.currentTarget.style.boxShadow =
+                      "var(--btn-glass-shadow-hover)";
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.background = "var(--btn-glass-bg)";
-                    e.currentTarget.style.borderColor = "var(--btn-glass-border)";
-                    e.currentTarget.style.boxShadow = "var(--btn-glass-shadow-base)";
+                    e.currentTarget.style.borderColor =
+                      "var(--btn-glass-border)";
+                    e.currentTarget.style.boxShadow =
+                      "var(--btn-glass-shadow-base)";
                   }}
                   className="absolute -left-3 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full flex items-center justify-center transition-all duration-300">
                   <FaChevronLeft className="w-3.5 h-3.5" />
@@ -149,14 +160,19 @@ const PortfolioSection: React.FC = () => {
                     boxShadow: "var(--btn-glass-shadow-base)",
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.background = "var(--btn-glass-bg-hover)";
-                    e.currentTarget.style.borderColor = "var(--btn-glass-border-hover)";
-                    e.currentTarget.style.boxShadow = "var(--btn-glass-shadow-hover)";
+                    e.currentTarget.style.background =
+                      "var(--btn-glass-bg-hover)";
+                    e.currentTarget.style.borderColor =
+                      "var(--btn-glass-border-hover)";
+                    e.currentTarget.style.boxShadow =
+                      "var(--btn-glass-shadow-hover)";
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.background = "var(--btn-glass-bg)";
-                    e.currentTarget.style.borderColor = "var(--btn-glass-border)";
-                    e.currentTarget.style.boxShadow = "var(--btn-glass-shadow-base)";
+                    e.currentTarget.style.borderColor =
+                      "var(--btn-glass-border)";
+                    e.currentTarget.style.boxShadow =
+                      "var(--btn-glass-shadow-base)";
                   }}
                   className="absolute -right-3 top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full flex items-center justify-center transition-all duration-300">
                   <FaChevronRight className="w-3.5 h-3.5" />
@@ -183,7 +199,9 @@ const PortfolioSection: React.FC = () => {
               {filtered.map((_, i) => (
                 <button
                   key={i}
-                  onClick={() => { setCurrent(i); }}
+                  onClick={() => {
+                    setCurrent(i);
+                  }}
                   style={
                     i === current
                       ? { background: "var(--accent)", width: "24px" }
@@ -195,21 +213,33 @@ const PortfolioSection: React.FC = () => {
             </div>
           )}
         </div>
-              <div className="flex justify-center mt-12">
-        <KamapraButton
-                  text="View All Archive"
-                  href={"/projects/achive"}
-                  iconType="arrow"
-                  className=" !px-12"
-                />
-      </div>
+        <div className="flex justify-center mt-12">
+          <KamapraButton
+            text="View All Archive"
+            href={"/projects/achive"}
+            iconType="arrow"
+            className=" !px-12"
+          />
+        </div>
       </div>
     </section>
   );
 };
 
 /* ── Komponen kartu dipisah biar tidak duplikat ── */
-function ProjectCard({ project }: { project: { id: number; title: string; description: string; image: string; tech: string[]; github?: string; demo: string } }) {
+function ProjectCard({
+  project,
+}: {
+  project: {
+    id: number;
+    title: string;
+    description: string;
+    image: string;
+    tech: string[];
+    github?: string;
+    demo: string;
+  };
+}) {
   const hostname = project.demo.replace(/https?:\/\//, "").split("/")[0];
 
   return (
@@ -219,7 +249,6 @@ function ProjectCard({ project }: { project: { id: number; title: string; descri
         border: "1px solid rgba(255,255,255,0.06)",
       }}
       className="group relative flex flex-col h-full rounded-[2rem] transition-all duration-500 overflow-hidden">
-
       {/* Browser bar */}
       <div
         className="px-4 pt-4 pb-3 border-b"
@@ -286,7 +315,10 @@ function ProjectCard({ project }: { project: { id: number; title: string; descri
 
         <h3
           className="text-base font-bold mb-2 line-clamp-1 transition-colors duration-300"
-          style={{ color: "var(--foreground)", fontFamily: "var(--font-heading)" }}>
+          style={{
+            color: "var(--foreground)",
+            fontFamily: "var(--font-heading)",
+          }}>
           {project.title}
         </h3>
 
@@ -312,7 +344,8 @@ function ProjectCard({ project }: { project: { id: number; title: string; descri
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.background = "var(--btn-glass-bg-hover)";
-              e.currentTarget.style.borderColor = "var(--btn-glass-border-hover)";
+              e.currentTarget.style.borderColor =
+                "var(--btn-glass-border-hover)";
               e.currentTarget.style.boxShadow = "var(--btn-glass-shadow-hover)";
             }}
             onMouseLeave={(e) => {
@@ -338,13 +371,16 @@ function ProjectCard({ project }: { project: { id: number; title: string; descri
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.background = "var(--btn-glass-bg-hover)";
-                e.currentTarget.style.borderColor = "var(--btn-glass-border-hover)";
-                e.currentTarget.style.boxShadow = "var(--btn-glass-shadow-hover)";
+                e.currentTarget.style.borderColor =
+                  "var(--btn-glass-border-hover)";
+                e.currentTarget.style.boxShadow =
+                  "var(--btn-glass-shadow-hover)";
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.background = "var(--btn-glass-bg)";
                 e.currentTarget.style.borderColor = "var(--btn-glass-border)";
-                e.currentTarget.style.boxShadow = "var(--btn-glass-shadow-base)";
+                e.currentTarget.style.boxShadow =
+                  "var(--btn-glass-shadow-base)";
               }}
               className="flex items-center gap-2 text-xs font-bold px-4 py-2 rounded-xl transition-all duration-300">
               <FaGithub className="w-3 h-3" />
@@ -354,7 +390,6 @@ function ProjectCard({ project }: { project: { id: number; title: string; descri
         </div>
       </div>
       {/* Archive Button */}
-
     </div>
   );
 }
