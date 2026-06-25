@@ -73,17 +73,17 @@ const projects: Data[] = [
     link: "https://warungmennara.vercel.app/",
     github: "https://github.com/Kamapra18/warungmennara",
   },
-  {
-    id: 7,
+  // {
+  //   id: 7,
 
-    title: "Chordbox Website",
-    description:
-      "Aplikasi web sederhana untuk menambahkan, menampilkan, menghapus chord dan lirik lagu, dengan fitur scroll otomatis dan mode gelap",
-    image: "/galeri/chordbox.png",
-    tech: ["HTML", "CSS", "JS"],
-    link: "https://chordbox-mario-njz.vercel.app",
-    github: "https://github.com/Kamapra18/chordbox",
-  },
+  //   title: "Chordbox Website",
+  //   description:
+  //     "Aplikasi web sederhana untuk menambahkan, menampilkan, menghapus chord dan lirik lagu, dengan fitur scroll otomatis dan mode gelap",
+  //   image: "/galeri/chordbox.png",
+  //   tech: ["HTML", "CSS", "JS"],
+  //   link: "https://chordbox-mario-njz.vercel.app",
+  //   github: "https://github.com/Kamapra18/chordbox",
+  // },
   {
     id: 8,
 
@@ -95,6 +95,15 @@ const projects: Data[] = [
     link: "https://voice-reader-mario-njz.vercel.app",
     github: "https://github.com/Kamapra18/voice",
   },
+ {
+  id: 9,
+  title: "Clamonic Property Website",
+  description:
+    "Website properti dan reservasi untuk divisi Clamonic yang dikembangkan selama program magang. Dikerjakan oleh tim beranggotakan 2 orang, dengan saya menangani sebagian besar pengembangan website mulai dari implementasi desain, halaman, konten, hingga responsivitas menggunakan WordPress.",
+  image: "/galeri/mystarspa.png",
+  tech: ["WordPress", "HTML", "CSS", "JavaScript"],
+  link: "https://clamonic.com/",
+}
 
 ];
 

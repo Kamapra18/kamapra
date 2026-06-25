@@ -15,22 +15,22 @@ export interface FilterTab {
 }
 
 export const filterTabs: FilterTab[] = [
-  { value: "all",             label: "All" },
-  { value: "application",     label: "Application" },
-  { value: "landing-page",    label: "Landing Page" },
+  { value: "all", label: "All" },
+  { value: "application", label: "Application" },
+  { value: "landing-page", label: "Landing Page" },
   { value: "company-profile", label: "Company Profile" },
-  { value: "e-commerce",      label: "E-Commerce" },
-  { value: "portfolio",       label: "Portfolio" },
-  { value: "blog",            label: "Blog" },
-  { value: "tools",           label: "Tools" },
-  { value: "college",         label: "College" },
+  { value: "e-commerce", label: "E-Commerce" },
+  { value: "portfolio", label: "Portfolio" },
+  { value: "blog", label: "Blog" },
+  { value: "tools", label: "Tools" },
+  { value: "college", label: "College" },
 ];
 
 export interface Project {
   id: number;
   title: string;
-  description: string;      
-  fullDescription: string;  
+  description: string;
+  fullDescription: string;
   image: string;
   tech: string[];
   github?: string;
@@ -80,7 +80,8 @@ export const projects: Project[] = [
   {
     id: 4,
     title: "Project UTS – Landing Page",
-    description: "College assignment — landing page built with Next.js and Tailwind.",
+    description:
+      "College assignment — landing page built with Next.js and Tailwind.",
     fullDescription:
       "Proyek UTS mata kuliah Pemrograman Web yang menugaskan pembuatan landing page modern menggunakan Next.js dan TailwindCSS. Halaman ini dirancang dengan layout responsif, animasi scroll, hero section, dan beberapa section konten. Menjadi ajang eksplorasi komponen React dan utility-first CSS secara mendalam.",
     image: "/galeri/uts.png",
@@ -104,7 +105,8 @@ export const projects: Project[] = [
   {
     id: 6,
     title: "Voice Reader – Tools",
-    description: "Text-to-speech web tool built with vanilla HTML, CSS, and JavaScript.",
+    description:
+      "Text-to-speech web tool built with vanilla HTML, CSS, and JavaScript.",
     fullDescription:
       "Voice Reader adalah web tool sederhana yang mengubah teks menjadi suara menggunakan Web Speech API bawaan browser. Dibangun hanya dengan HTML, CSS, dan JavaScript murni tanpa framework apapun. Pengguna dapat mengetik atau paste teks, memilih bahasa dan kecepatan bicara, lalu mendengarkan hasilnya langsung di browser. Project ini menjadi eksplorasi mendalam terhadap Web API native dan manipulasi DOM.",
     image: "/galeri/voice.png",
@@ -116,12 +118,37 @@ export const projects: Project[] = [
   {
     id: 7,
     title: "MyStar Spa – Landing Page",
-    description: "Landing page for MyStar Spa, a local beauty and wellness business.",
+    description:
+      "Landing page for MyStar Spa, a local beauty and wellness business.",
     fullDescription:
       "Landing page profesional untuk MyStar Spa, bisnis kecantikan dan perawatan tubuh lokal. Dibangun menggunakan WordPress dengan page builder Elementor, halaman ini menampilkan daftar layanan perawatan, harga, profil tim terapis, galeri, dan formulir booking online. Desain mengutamakan kesan mewah dan menenangkan sesuai branding bisnis spa.",
     image: "/galeri/mystarspa.png",
     tech: ["WordPress", "Elementor"],
     demo: "https://mystarspa.com/",
     category: "landing-page",
+  },
+  {
+    id: 8,
+    title: "Clamonic Property Website",
+    description:
+      "Property and reservation website for Clamonic built with WordPress.",
+    fullDescription:
+      "Website properti dan reservasi untuk divisi Clamonic yang dikembangkan selama program magang. Dikerjakan oleh tim beranggotakan 2 orang, pengembangan website mulai dari implementasi desain, halaman, konten, hingga responsivitas menggunakan WordPress.",
+    image: "/galeri/clamonic.com_.png",
+    tech: ["WordPress", "HTML", "CSS", "JavaScript"],
+    demo: "https://clamonic.com/",
+    category: "company-profile",
+  },
+  {
+    id: 9,
+    title: "Madhava Enterprises Website",
+    description:
+      "website compro for Madhava Enterprises, currently under development.",
+    fullDescription:
+      "Rebranding website company profile untuk Madhava Enterprises yang dikembangkan selama program magang. Proyek ini dibangun menggunakan WordPress dan saat ini masih dalam tahap pengembangan (in development) menggunakan URL staging, yang nantinya akan dimigrasi ke domain utama setelah selesai sepenuhnya.",
+    image: "/galeri/madhavaenterprises.mava.co.id_.png",
+    tech: ["WordPress", "HTML", "CSS", "JavaScript"],
+    demo: "http://madhavaenterprises.mava.co.id",
+    category: "company-profile",
   },
 ];
