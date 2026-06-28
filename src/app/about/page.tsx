@@ -1,7 +1,8 @@
 "use client";
 import Navbar from "../components/Navbar";
 import HeroSection from "../Home/Hero";
-import Skills from "./components/Skills";
+// import Skills from "./components/Skills";
+import LearningSection from "../components/Layout/LearningSection";
 import Education from "./components/Education";
 import FooterSection from "../components/Footer";
 import CertificateSection from "../components/certificattion";
@@ -20,7 +21,8 @@ export default function About() {
       <Navbar />
       <HeroSection text="Want to Get to Know Me?" ButtonHref="#about" />
       <RevealBento />
-      <Skills />
+      {/* <Skills /> */}
+            <LearningSection />
       <CertificateSection />
       <Education />
       <GithubSection />

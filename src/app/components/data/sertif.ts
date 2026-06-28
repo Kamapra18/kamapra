@@ -20,25 +20,22 @@ export const certificatesData: Certificate[] = [
     pdf: "/sertif/vsga.pdf",
   },
   {
-
     id: 2,
+    title: "Kelas Membuat Website dengan Wordpress",
+    provider: "skillpedia",
+    description: "Kelas membuat website dengan wordpress durasi 6 jam (6JP)",
+    year: "2026",
+    image: "/sertif/sertifikat-website-wordpress.png",
+    pdf: "/sertif/sertifikat-website-wordpress.pdf",
+  },
+  {
+    id: 3,
     title: "Website Development Fundamental",
     provider: "MySkill",
     description:
       "Sertifikat spesialisasi dalam Website Development Fundamental yang mencakup 9 kursus intensif selama 9 jam pelatihan, diverifikasi oleh Education Alliance Finland dan AWS EdStart.",
     year: "2025",
-    image: "/sertif/myskillID.jpg", 
+    image: "/sertif/myskillID.jpg",
     pdf: "/sertif/myskillID.pdf",
-
   },
-  // {
-  //   id: 3,
-  //   title: "",
-  //   provider: "",
-  //   description:
-  //     "",
-  //   year: "",
-  //   image: "/sertif/",
-  //   pdf: "/sertif/",
-  // },
 ];

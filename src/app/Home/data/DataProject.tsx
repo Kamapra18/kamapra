@@ -54,6 +54,42 @@ export const projects: Project[] = [
   },
   {
     id: 2,
+    title: "MyStar Spa – Landing Page",
+    description:
+      "Landing page for MyStar Spa, a local beauty and wellness business.",
+    fullDescription:
+      "Landing page profesional untuk MyStar Spa, bisnis kecantikan dan perawatan tubuh lokal. Dibangun menggunakan WordPress dengan page builder Elementor, halaman ini menampilkan daftar layanan perawatan, harga, profil tim terapis, galeri, dan formulir booking online. Desain mengutamakan kesan mewah dan menenangkan sesuai branding bisnis spa.",
+    image: "/galeri/mystarspa.png",
+    tech: ["WordPress", "Elementor"],
+    demo: "https://mystarspa.com/",
+    category: "landing-page",
+  },
+  {
+    id: 3,
+    title: "Clamonic Property Website",
+    description:
+      "Property and reservation website for Clamonic built with WordPress.",
+    fullDescription:
+      "Website properti dan reservasi untuk divisi Clamonic yang dikembangkan selama program magang. Dikerjakan oleh tim beranggotakan 2 orang, pengembangan website mulai dari implementasi desain, halaman, konten, hingga responsivitas menggunakan WordPress.",
+    image: "/galeri/clamonic.com_.png",
+    tech: ["WordPress", "HTML", "CSS", "JavaScript"],
+    demo: "https://clamonic.com/",
+    category: "company-profile",
+  },
+  {
+    id: 4,
+    title: "Madhava Enterprises Website",
+    description:
+      "website compro for Madhava Enterprises, currently under development.",
+    fullDescription:
+      "Rebranding website company profile untuk Madhava Enterprises yang dikembangkan selama program magang. Proyek ini dibangun menggunakan WordPress dan saat ini masih dalam tahap pengembangan (in development) menggunakan URL staging, yang nantinya akan dimigrasi ke domain utama setelah selesai sepenuhnya.",
+    image: "/galeri/madhavaenterprises.mava.co.id_.png",
+    tech: ["WordPress", "HTML", "CSS", "JavaScript"],
+    demo: "http://madhavaenterprises.mava.co.id",
+    category: "company-profile",
+  },
+  {
+    id: 5,
     title: "Brasika 1 – Website",
     description: "College project — official website for STT Brasika 1.",
     fullDescription:
@@ -65,7 +101,7 @@ export const projects: Project[] = [
     category: "college",
   },
   {
-    id: 3,
+    id: 6,
     title: "Inferno Creative – Company Profile",
     description:
       "Company profile for Inferno Creative, a creative agency offering documentation and wedding invitation web services.",
@@ -78,7 +114,19 @@ export const projects: Project[] = [
     category: "company-profile",
   },
   {
-    id: 4,
+    id: 7,
+    title: "Warung Mennara – Landing Page",
+    description: "Landing page for Warung Mennara, a local food business.",
+    fullDescription:
+      "Landing page untuk Warung Mennara, sebuah usaha kuliner lokal yang menyajikan berbagai menu makanan khas daerah. Dibangun dengan Next.js dan TailwindCSS, halaman ini menampilkan menu unggulan, informasi lokasi, jam operasional, dan galeri foto makanan. Dirancang agar mudah diakses dari perangkat mobile karena mayoritas pengunjung berasal dari smartphone.",
+    image: "/galeri/warungmennara.png",
+    tech: ["Next.js", "TailwindCSS"],
+    github: "https://github.com/Kamapra18/warungmennara",
+    demo: "https://warungmennara.vercel.app/",
+    category: "landing-page",
+  },
+  {
+    id: 8,
     title: "Project UTS – Landing Page",
     description:
       "College assignment — landing page built with Next.js and Tailwind.",
@@ -91,19 +139,7 @@ export const projects: Project[] = [
     category: "college",
   },
   {
-    id: 5,
-    title: "Warung Mennara – Landing Page",
-    description: "Landing page for Warung Mennara, a local food business.",
-    fullDescription:
-      "Landing page untuk Warung Mennara, sebuah usaha kuliner lokal yang menyajikan berbagai menu makanan khas daerah. Dibangun dengan Next.js dan TailwindCSS, halaman ini menampilkan menu unggulan, informasi lokasi, jam operasional, dan galeri foto makanan. Dirancang agar mudah diakses dari perangkat mobile karena mayoritas pengunjung berasal dari smartphone.",
-    image: "/galeri/warungmennara.png",
-    tech: ["Next.js", "TailwindCSS"],
-    github: "https://github.com/Kamapra18/warungmennara",
-    demo: "https://warungmennara.vercel.app/",
-    category: "landing-page",
-  },
-  {
-    id: 6,
+    id: 9,
     title: "Voice Reader – Tools",
     description:
       "Text-to-speech web tool built with vanilla HTML, CSS, and JavaScript.",
@@ -114,41 +150,5 @@ export const projects: Project[] = [
     github: "https://github.com/Kamapra18/voice",
     demo: "https://kamapra18.github.io/voice/",
     category: "tools",
-  },
-  {
-    id: 7,
-    title: "MyStar Spa – Landing Page",
-    description:
-      "Landing page for MyStar Spa, a local beauty and wellness business.",
-    fullDescription:
-      "Landing page profesional untuk MyStar Spa, bisnis kecantikan dan perawatan tubuh lokal. Dibangun menggunakan WordPress dengan page builder Elementor, halaman ini menampilkan daftar layanan perawatan, harga, profil tim terapis, galeri, dan formulir booking online. Desain mengutamakan kesan mewah dan menenangkan sesuai branding bisnis spa.",
-    image: "/galeri/mystarspa.png",
-    tech: ["WordPress", "Elementor"],
-    demo: "https://mystarspa.com/",
-    category: "landing-page",
-  },
-  {
-    id: 8,
-    title: "Clamonic Property Website",
-    description:
-      "Property and reservation website for Clamonic built with WordPress.",
-    fullDescription:
-      "Website properti dan reservasi untuk divisi Clamonic yang dikembangkan selama program magang. Dikerjakan oleh tim beranggotakan 2 orang, pengembangan website mulai dari implementasi desain, halaman, konten, hingga responsivitas menggunakan WordPress.",
-    image: "/galeri/clamonic.com_.png",
-    tech: ["WordPress", "HTML", "CSS", "JavaScript"],
-    demo: "https://clamonic.com/",
-    category: "company-profile",
-  },
-  {
-    id: 9,
-    title: "Madhava Enterprises Website",
-    description:
-      "website compro for Madhava Enterprises, currently under development.",
-    fullDescription:
-      "Rebranding website company profile untuk Madhava Enterprises yang dikembangkan selama program magang. Proyek ini dibangun menggunakan WordPress dan saat ini masih dalam tahap pengembangan (in development) menggunakan URL staging, yang nantinya akan dimigrasi ke domain utama setelah selesai sepenuhnya.",
-    image: "/galeri/madhavaenterprises.mava.co.id_.png",
-    tech: ["WordPress", "HTML", "CSS", "JavaScript"],
-    demo: "http://madhavaenterprises.mava.co.id",
-    category: "company-profile",
   },
 ];
