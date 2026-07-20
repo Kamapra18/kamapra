@@ -20,5 +20,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: "https://kamapra.my.id/blog",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: "https://kamapra.my.id/contact/",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    {
+      url: "https://kamapra.my.id/photobooth",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.4,
+    },
   ];
 }

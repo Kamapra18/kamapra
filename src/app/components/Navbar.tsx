@@ -29,7 +29,7 @@ const NavItems: FC<NavItemsProps> = ({ isNavOpen, setIsNavOpen }) => {
       <div className="relative flex flex-col items-center min-h-screen bg-[var(--accent)] min-w-full opacity-95">
         <div className="flex flex-col items-center space-y-8 my-auto z-50">
           <h1 className="text-6xl text-white font-bold ">Menu</h1>
-          {["home", "about", "projects", "contact", "photobooth"].map(
+          {["home","blog", "about", "projects", "contact", "photobooth"].map(
             (section) => (
               <Link
                 key={section}
@@ -73,16 +73,16 @@ const Navbar: FC = () => {
         } inset-0 flex justify-between items-center h-16 z-50`}>
         <Link href="/">
           <div className="flex items-center space-x-2">
-          <Image
-            src="/Kamapra.png"
-            alt="logo"
-            width={40}
-            height={40}
-            className="rounded-full"
-          />
-          <h1 className="text-2xl font-bold text-white">Kamapra</h1>
-        </div>
-          </Link>
+            <Image
+              src="/Kamapra.png"
+              alt="logo"
+              width={40}
+              height={40}
+              className="rounded-full"
+            />
+            <h1 className="text-2xl font-bold text-white">Kamapra</h1>
+          </div>
+        </Link>
         <button
           type="button"
           className="burger button flex flex-col justify-center items-center space-y-1.5 cursor-pointer z-50"

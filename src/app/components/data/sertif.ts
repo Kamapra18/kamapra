@@ -38,4 +38,14 @@ export const certificatesData: Certificate[] = [
     image: "/sertif/myskillID.jpg",
     pdf: "/sertif/myskillID.pdf",
   },
+  {
+    id: 4,
+    title: "Web Development Intern Training Program",
+    provider: "Madhava Enterprises",
+    description:
+      "Sertifikat penyelesaian program job training sebagai Web Development Intern di Madhava Enterprises, berlangsung dari 25 Februari hingga 29 Juni 2026, ditandatangani oleh Founder & Chief Visionary Officer.",
+    year: "2026",
+    image: "/sertif/magang-madhava.jpeg",
+    pdf: "/sertif/magang-madhava.jpeg",
+  },
 ];

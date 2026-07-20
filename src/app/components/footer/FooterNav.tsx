@@ -5,6 +5,7 @@ export default function FooterNav() {
     projects: "/projects",
     contact: "/contact",
     photobooth: "/photobooth",
+    blog: "/blog",
   };
 
   return (
@@ -13,7 +14,7 @@ export default function FooterNav() {
         Navigation
       </h2>
       <ul className="space-y-2">
-        {["home", "about", "projects", "contact", "photobooth"].map((item) => (
+        {["blog", "about", "projects", "contact", "photobooth"].map((item) => (
           <li key={item} className="group">
             <a
               href={routes[item]}
