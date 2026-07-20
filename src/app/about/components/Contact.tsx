@@ -28,7 +28,7 @@ export default function ContactBento() {
       desc: "Follow Instagram saya",
       icon: <FaInstagram className="text-4xl" />,
       btnText: "Go to Instagram",
-      link: "https://www.instagram.com/marioprayoga46",
+      link: "https://www.instagram.com/kamapra18/",
       color: "from-pink-600/20 to-purple-600/20 border-pink-500/20",
       grid: "md:col-span-4",
       iconColor: "text-pink-500",

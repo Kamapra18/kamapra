@@ -5,7 +5,6 @@ import {
   FaInstagram,
   FaWhatsapp,
   FaGithub,
-  
 } from "react-icons/fa";
 import { IconType } from "react-icons";
 import { SiShutterstock } from "react-icons/si";
@@ -33,7 +32,7 @@ export default function FooterContact() {
       <div className="flex space-x-4 mt-4">
         <SocialIcon
           Icon={FaInstagram}
-          href="https://www.instagram.com/mario_prayoga46/"
+          href="https://www.instagram.com/kamapra18/"
         />
         <SocialIcon Icon={FaWhatsapp} href="https://wa.me/081949444963" />
         <SocialIcon Icon={FaGithub} href="https://github.com/Kamapra18/" />

@@ -15,7 +15,7 @@ export default function GetContact() {
       icon: (
         <FaInstagram className="hover:text-pink-500 transition-colors duration-300" />
       ),
-      link: "https://www.instagram.com/04_kmario/",
+      link: "https://www.instagram.com/kamapra18/",
     },
     {
       icon: (
