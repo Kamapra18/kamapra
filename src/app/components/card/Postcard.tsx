@@ -12,6 +12,7 @@ const typeLabel: Record<Post["type"], string> = {
   pendidikan: "Pendidikan",
   event: "Event",
   liburan: "Liburan",
+  personal: "Personal",
 };
 
 function getExcerpt(content: string, maxLength = 140) {

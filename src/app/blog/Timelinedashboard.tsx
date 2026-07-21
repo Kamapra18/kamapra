@@ -15,6 +15,7 @@ const filters: Array<{ label: string; value: Post["type"] | "semua" }> = [
   { label: "Pendidikan", value: "pendidikan" },
   { label: "Event", value: "event" },
   { label: "Liburan", value: "liburan" },
+  { label: "Personal", value: "personal" },
 ];
 
 export default function TimelineDashboard({ posts }: TimelineDashboardProps) {

@@ -4,7 +4,7 @@ import matter from "gray-matter";
 
 export interface Post {
   title: string;
-  type: "belajar" | "kerja" | "pendidikan" | "event" | "liburan";
+  type: "belajar" | "kerja" | "pendidikan" | "event" | "liburan" | "personal";
   category?: string;
   level?: string;
   coverImage?: string;
@@ -66,7 +66,9 @@ export function getAllPosts(): Post[] {
     return [];
   }
 
-  const filenames = fs.readdirSync(postsDirectory).filter((file) => file.endsWith(".md"));
+  const filenames = fs
+    .readdirSync(postsDirectory)
+    .filter((file) => file.endsWith(".md"));
 
   const posts = filenames.map((filename) => {
     const slug = filename.replace(/\.md$/, "");
@@ -110,7 +112,9 @@ export function getPostChapters(content: string): Chapter[] {
   return matches.map((match, index) => {
     const start = match.index ?? 0;
     const end =
-      index + 1 < matches.length ? (matches[index + 1].index ?? content.length) : content.length;
+      index + 1 < matches.length
+        ? (matches[index + 1].index ?? content.length)
+        : content.length;
     const title = match[1].trim();
     const chapterContent = content.slice(start, end).trim();
     const baseId = slugify(title) || `chapter-${index}`;
