@@ -9,19 +9,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: "https://kamapra.my.id/about",
+      url: "https://kamapra.my.id/about/",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
-      url: "https://kamapra.my.id/projects",
+      url: "https://kamapra.my.id/projects/",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://kamapra.my.id/blog",
+      url: "https://kamapra.my.id/blog/",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
@@ -33,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
-      url: "https://kamapra.my.id/photobooth",
+      url: "https://kamapra.my.id/photobooth/",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.4,
