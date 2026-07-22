@@ -1,4 +1,4 @@
-import React, {  useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { MotionProps, motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
@@ -10,13 +10,14 @@ import {
   SiShutterstock,
 } from "react-icons/si";
 import useInView from "./hooks/InView";
+import KamapraButton from "../coba/components/Button";
 
 const TYPING_WORDS = ["Frontend Developer", "Web Developer", "Student"];
 
 export const RevealBento = () => {
   return (
     <div
-      className="min-h-screen py-24 px-4 sm:px-6 md:px-12"
+      className="min-h-screen py-24 px-4 sm:px-6 md:px-20"
       style={{
         backgroundColor: "var(--background)",
         backgroundImage: `radial-gradient(rgba(56, 189, 248, 0.15) 0.8px, transparent 0.8px)`,
@@ -29,7 +30,7 @@ export const RevealBento = () => {
         transition={{
           staggerChildren: 0.05,
         }}
-        className="mx-auto grid max-w-4xl grid-flow-dense grid-cols-12 gap-4"
+        className="mx-auto grid max-w-8xl grid-flow-dense grid-cols-12 gap-4"
         id="about">
         <HeaderBlock />
         <SocialsBlock />
@@ -37,6 +38,15 @@ export const RevealBento = () => {
         <CVBlock />
         <EmailListBlock />
       </motion.div>
+      <div className="flex flex-col py-10 justify-center items-center">
+        <KamapraButton
+          href="/blog"
+          iconType="arrow"
+          target="_blank"
+          rel="noopener noreferrer"
+          text="View My Blog"
+        />
+      </div>
     </div>
   );
 };

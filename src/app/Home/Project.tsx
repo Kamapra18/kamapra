@@ -61,7 +61,7 @@ const PortfolioSection: React.FC = () => {
 
   return (
     <section id="projects" className="py-24 px-6 md:px-20 overflow-hidden">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-8xl mx-auto">
         <Heading text="Proyek" highlight="Pilihan." />
 
         <div className="flex items-center justify-center gap-3 mb-10">

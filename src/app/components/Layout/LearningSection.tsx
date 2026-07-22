@@ -342,7 +342,7 @@ export default function LearningSection() {
         }}
       />
 
-      <div className="max-w-5xl mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto relative z-10">
         {/* Header */}
         <Heading text="Skill" highlight="Stack." />
 

@@ -105,7 +105,7 @@ export default function PostReader({ post, chapters }: PostReaderProps) {
           </div>
         </div>
 
-        <article className="mx-auto w-full max-w-3xl flex-grow px-6 py-10 sm:px-10">
+        <article className="mx-auto w-full max-w-7xl flex-grow px-6 py-10 sm:px-10">
           <div
             className="
     prose

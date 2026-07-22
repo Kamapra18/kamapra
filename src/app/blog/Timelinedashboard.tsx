@@ -35,7 +35,7 @@ export default function TimelineDashboard({ posts }: TimelineDashboardProps) {
   }, [posts, activeFilter, search]);
 
   return (
-    <main className="relative mx-auto max-w-6xl px-6 py-16 md:px-12">
+    <main className="relative mx-auto px-10 py-20 md:px-18">
       <div className="mb-12 space-y-3">
         <p className="text-sm font-semibold uppercase tracking-[0.35em] text-[var(--accent)]">
           Personal Timeline

@@ -1,4 +1,9 @@
-import { getAllPosts, getPostBySlug, getPostChapters, type Chapter } from "@/app/lib/posts";
+import {
+  getAllPosts,
+  getPostBySlug,
+  getPostChapters,
+  type Chapter,
+} from "@/app/lib/posts";
 import PostReader from "@/app/components/card/Postreader";
 
 interface BlogPostPageProps {
@@ -18,7 +23,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   if (!post) {
     return (
-      <div className="mx-auto max-w-4xl px-6 py-20 text-center text-slate-300">
+      <div className="mx-auto max-w-6xl px-6 py-20 text-center text-slate-300">
         <p className="text-xl font-semibold text-white">
           Post tidak ditemukan.
         </p>
