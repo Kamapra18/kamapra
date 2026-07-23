@@ -11,9 +11,9 @@ Sebelum suka King MU, saya sebenarnya nggak punya tim jagoan sendiri. Saudara sa
 
 Waktu itu saya dibeliin jersey King MU sama kakak saya, belinya di pasar, tapi udah lupa pasar mana. Jerseynya musim 2012-2013, punggungnya nama Rooney. Saya nggak terlalu ikut nonton langsung tiap pertandingan, soalnya nggak bisa begadang, jadi lebih sering mantau lewat acara TV yang bahas berita bola. Dari situ saya mulai sering lihat klip Rooney, dan langsung suka sama gaya mainnya, mentalitasnya kuat, bisa main di berbagai posisi, bahkan sebagai striker pun dia rela ikut turun bantu bertahan.
 
-![koleksi Manchester United, stiker laptop dan keychain](/images/posts/koleksi-manchester-united.jpg)
+![koleksi Manchester United, stiker laptop dan keychain](/posts/manchester-united.jpg)
 
-Duetnya Rooney sama Van Persie itu yang akhirnya benar benar bikin saya jatuh cinta sama tim ini, tepatnya pas transfernya Van Persie ke MU, 17 Agustus 2012, tanggal itu yang saya anggap sebagai awal resmi saya jadi fans MU. Musim itu juga MU langsung juara. Setelah itu saya jarang ikutin pertandingannya langsung, tapi masih tetap ikutin beritanya. Salah satu alasannya karena dulu saya nggak bisa main PES, padahal waktu itu lagi sering diajak main PES sama kakak kalau lagi nge-rental PS bareng. Baru balik lagi ikutin pertandingannya pas musim pertamanya Erik ten Hag. Pas balik nonton, saya kaget, mentalitas timnya beda banget dari yang saya inget dulu, yang dulu sangar, sekarang malah banyak drama dan kasus. Tapi meski begitu, saya tetap suka sama tim ini.
+Duetnya Rooney sama Van Persie itu yang akhirnya benar benar bikin saya jatuh cinta sama tim ini, tepatnya pas transfernya Van Persie ke King MU, 17 Agustus 2012, tanggal itu yang saya anggap sebagai awal resmi saya jadi fans King MU. Musim itu juga King MU langsung juara. Setelah itu saya jarang ikutin pertandingannya langsung, tapi masih tetap ikutin beritanya. Salah satu alasannya karena dulu saya nggak bisa main PES, padahal waktu itu lagi sering diajak main PES sama kakak kalau lagi nge-rental PS bareng. Baru balik lagi ikutin pertandingannya pas musim pertamanya Erik ten Hag. Pas balik nonton, saya kaget, mentalitas timnya beda banget dari yang saya inget dulu, yang dulu sangar, sekarang malah banyak drama dan kasus. Tapi meski begitu, saya tetap suka sama tim ini.
 
 ### Pemain Favorit dan Legenda
 
@@ -21,15 +21,15 @@ Pemain favorit saya tetap Rooney, meski saya juga tetap suka Messi karena udah k
 
 ### Pemain Favorit di Skuad Sekarang
 
-Kalau dari pemain muda, saya suka sama Mainoo dan Ayden Heaven, dua duanya punya potensi besar buat jadi andalan MU ke depan. Kalau dari pemain senior, sebenarnya nggak ada yang terlalu saya idolakan sekarang, tapi kalau boleh jujur, saya suka Martinez, sayangnya beliau sering cedera, kakinya kaca banget. MU sebaiknya mulai cari pengganti buat isi posisinya, biar nggak terlalu bergantung sama kondisi fisiknya yang naik turun.
+Kalau dari pemain muda, saya suka sama Mainoo dan Ayden Heaven, dua duanya punya potensi besar buat jadi andalan King MU ke depan. Kalau dari pemain senior, sebenarnya nggak ada yang terlalu saya idolakan sekarang, tapi kalau boleh jujur, saya suka Martinez, sayangnya beliau sering cedera, kakinya kaca banget. King MU sebaiknya mulai cari pengganti buat isi posisinya, biar nggak terlalu bergantung sama kondisi fisiknya yang naik turun.
 
 ### Pertandingan Paling Berkesan
 
-Dari semua pertandingan yang pernah saya tonton full, yang paling nempel di ingatan itu MU lawan Lyon, skor akhirnya 5-4, MU comeback di pertandingan itu. Itu beneran nguji jantung, deg degan dari awal sampai akhir.
+Dari semua pertandingan yang pernah saya tonton full, yang paling nempel di ingatan itu King MU lawan Lyon, skor akhirnya 5-4, King MU comeback di pertandingan itu. Itu beneran nguji jantung, deg degan dari awal sampai akhir.
 
 ### Dream Team Versi Saya, All Time
 
-Ini susunan pemain MU sepanjang masa versi saya, dari yang pernah saya tonton dan yang legendanya masih saya inget sampai sekarang.
+Ini susunan pemain King MU sepanjang masa versi saya, dari yang pernah saya tonton dan yang legendanya masih saya inget sampai sekarang.
 
 **Main Plan, 4-2-3-1 (Fast-Paced Counter Attack)**
 
@@ -113,6 +113,6 @@ Saat buntu atau tertinggal, tim bergeser penuh manfaatin lebar lapangan, fokus u
 
 **Pemain Cadangan Skuad Sekarang**
 
-Senne Lammens, Pau Cubarsí, Nico Schlotterbeck, Lewis Hall, Michael Kayode, João Neves, Adam Wharton, Rodrigo Mora, Khvicha Kvaratskhelia, Julián Álvarez, Benjamin Šeško, Lamine Yamal, Kylian Mbappé, Victor Osimhen.
+Senne Lammens, Pau Cubarsí, Nico Schlotterbeck, Lewis Hall, Michael Kayode, João Neves, Adam Wharton, Rodrigo Mora, Lamine Yamal, Kylian Mbappé, Victor Osimhen.
 
 > _"Saya memang nggak jago soal perasaan, tapi soal setia dan loyalitas ke MU, saya jagonya. Kalau mau nyari yang setia dan loyal, carilah fans MU, Glory Glory Man United."_

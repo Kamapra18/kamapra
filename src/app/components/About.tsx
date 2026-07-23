@@ -42,8 +42,6 @@ export const RevealBento = () => {
         <KamapraButton
           href="/blog"
           iconType="arrow"
-          target="_blank"
-          rel="noopener noreferrer"
           text="View My Blog"
         />
       </div>
