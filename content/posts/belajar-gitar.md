@@ -3,6 +3,7 @@ title: "Belajar Gitar Otodidak, Modal Gitar Sayur"
 type: "personal"
 category: "Musik"
 level: "Pemula"
+coverImage: "/posts/gitar.jpeg"
 date: "2026-07-20"
 ---
 

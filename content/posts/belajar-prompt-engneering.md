@@ -3,7 +3,7 @@ title: "Belajar Prompt Engineering"
 type: "belajar"
 category: "Artificial Intelligence"
 level: "Pemula"
-# coverImage: "/images/posts/prompt-engineering-cover.jpg"
+coverImage: "/posts/prompt-engineer.jpeg"
 date: "2026-07-12"
 ---
 

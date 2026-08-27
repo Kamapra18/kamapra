@@ -3,7 +3,7 @@ title: "Belajar Dasar Dasar Website"
 type: "belajar"
 category: "Web Development"
 level: "Pemula"
-# coverImage: "/images/posts/belajar-dasar-website.jpg"
+coverImage: "/posts/web-basic.jpeg"
 date: "2025-07-20"
 ---
 
@@ -28,6 +28,7 @@ Sebelum masuk ke bagian teknis yang lebih dalam, penting untuk paham dulu gambar
 Kalau dianalogikan, website itu seperti sebuah gedung, dan tiap halaman di dalamnya seperti ruangan ruangan yang ada di gedung itu. URL adalah alamat yang menunjukkan ruangan mana yang sedang dituju, sementara browser adalah kendaraan yang dipakai untuk sampai ke sana. Gedungnya sendiri (server) berdiri di atas tanah (hosting) yang disewa, dan punya alamat resmi (domain) supaya orang lain bisa menemukannya.
 
 **Referensi:**
+
 - [Learn web development – MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn_web_development)
 
 ### 2. Jenis Jenis Website
@@ -55,6 +56,7 @@ Single Page Application (SPA) memuat satu halaman utama saja, lalu kontennya ber
 Multi Page Application (MPA) memuat halaman baru sepenuhnya setiap kali pengguna berpindah bagian, jadi tiap halaman punya URL sendiri dan dimuat ulang dari server. Pendekatan ini masih banyak dipakai, terutama untuk website yang mengutamakan SEO dan kesederhanaan struktur.
 
 **Referensi:**
+
 - [Learn web development – MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn_web_development)
 
 ### 3. Cara Kerja Website
@@ -80,6 +82,7 @@ Setiap kali mengetik alamat website di browser, sebenarnya terjadi rangkaian pro
 Analoginya mirip seperti memesan makanan di restoran. Pengunjung (client) memesan menu ke pelayan, pesanan diteruskan ke dapur (server), dapur memasak sesuai pesanan, lalu makanan yang sudah jadi dikirim kembali ke meja pengunjung. Proses ini terjadi berulang kali setiap kali pengunjung berpindah halaman atau melakukan aksi tertentu di website.
 
 **Referensi:**
+
 - [How does the Internet work? – MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/How_does_the_Internet_work)
 
 ### 4. Browser dan Rendering
@@ -101,6 +104,7 @@ Selain proses rendering standar di browser, ada juga pendekatan lain, yaitu serv
 Ketiga proses ini terjadi sangat cepat sehingga pengguna hanya melihat hasil akhirnya, halaman yang sudah tersusun rapi dan bisa langsung digunakan.
 
 **Referensi:**
+
 - [Rendering on the Web – web.dev](https://web.dev/articles/rendering-on-the-web)
 
 ### 5. Domain dan Hosting
@@ -122,6 +126,7 @@ Ada berbagai jenis hosting, mulai dari shared hosting yang lebih murah karena be
 Kalau domain diibaratkan alamat rumah, hosting adalah rumah itu sendiri, tempat semua isi website benar benar disimpan. Alamat saja tidak cukup kalau rumahnya tidak ada, begitu juga domain tidak akan berfungsi tanpa hosting yang menyimpan filenya.
 
 **Referensi:**
+
 - [What is a domain name? – Cloudflare Learning Center](https://www.cloudflare.com/learning/dns/glossary/what-is-a-domain-name/)
 
 ### 6. HTTPS dan Keamanan Dasar
@@ -141,6 +146,7 @@ Saat browser terhubung ke website yang menggunakan HTTPS, terjadi proses yang di
 Tanpa HTTPS, data yang dikirim antara pengguna dan server, misalnya saat login atau mengisi form pembayaran, berisiko lebih besar untuk diintip atau diubah oleh pihak yang tidak berkepentingan saat data itu masih dalam perjalanan. Karena itu, sebagian besar browser modern sekarang menandai website tanpa HTTPS sebagai "Tidak Aman", dan mesin pencari juga cenderung memprioritaskan website yang sudah menggunakan HTTPS.
 
 **Referensi:**
+
 - [What is SSL? – Cloudflare Learning Center](https://www.cloudflare.com/learning/ssl/what-is-ssl/)
 - [What is HTTPS? – Cloudflare Learning Center](https://cloudflare.com/learning/security/glossary/what-is-https)
 
@@ -163,6 +169,7 @@ Ketiga elemen ini biasanya tidak berdiri sendiri, tapi saling melengkapi dalam s
 Kalau dianalogikan ke sebuah rumah, HTML adalah kerangka bangunannya, CSS adalah cat dan dekorasinya, sementara JavaScript adalah bagian yang membuat pintu bisa dibuka otomatis atau lampu bisa dinyalakan lewat sensor.
 
 **Referensi:**
+
 - [Learn web development – MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn_web_development)
 
 ### 8. Back-End Development
@@ -180,6 +187,7 @@ Server adalah komputer yang menjalankan program back-end, memproses permintaan y
 Pemisahan tanggung jawab ini penting, karena kalau front-end bisa langsung mengakses database tanpa perantara, risiko keamanan dan potensi kesalahan data akan jauh lebih besar.
 
 **Referensi:**
+
 - [Learn web development – MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn_web_development)
 
 ### 9. Bahasa Pemrograman dan Framework
@@ -197,6 +205,7 @@ Framework adalah kerangka kerja yang dibangun di atas bahasa pemrograman, berisi
 Framework bisa dianalogikan seperti cetakan kue, bahasa pemrograman adalah adonannya, sementara framework memberi bentuk dan struktur supaya prosesnya lebih cepat dan konsisten dibanding membuat cetakan sendiri dari nol setiap kali mau bikin kue baru.
 
 **Referensi:**
+
 - [Learn web development – MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn_web_development)
 
 ### 10. API, Penghubung Front-End dan Back-End
@@ -216,6 +225,7 @@ API bisa dianalogikan seperti pelayan restoran. Pengunjung (front-end) tidak per
 Tanpa API, front-end dan back-end tidak punya cara standar untuk saling mengerti satu sama lain. API menyediakan format komunikasi yang konsisten, biasanya berupa data terstruktur seperti JSON, sehingga front-end tidak perlu tahu detail teknis bagaimana data diproses di server, cukup tahu cara memintanya lewat API dan format data apa yang akan diterima sebagai balasannya.
 
 **Referensi:**
+
 - [API – Glossary, MDN Web Docs](https://developer.mozilla.org/en-US/docs/Glossary/API)
 
 ### 11. CMS (Content Management System)
@@ -233,6 +243,7 @@ CMS mempercepat proses pembuatan website karena banyak fitur dasar sudah tersedi
 Tapi untuk kebutuhan yang sangat spesifik, unik, atau kompleks, developer tetap perlu masuk ke bagian kode untuk melakukan penyesuaian lebih lanjut, karena fitur bawaan CMS tidak selalu bisa mengakomodasi semua kebutuhan khusus sebuah bisnis atau project.
 
 **Referensi:**
+
 - [WordPress.org](https://wordpress.org)
 
 ### 12. Tools yang Dibutuhkan buat Mulai
@@ -252,6 +263,7 @@ Hampir semua browser modern punya fitur developer tools bawaan, berguna untuk me
 Git adalah sistem yang digunakan untuk melacak perubahan kode dari waktu ke waktu, sangat berguna terutama saat bekerja dalam tim, supaya perubahan dari banyak orang bisa digabungkan dengan rapi tanpa saling menimpa pekerjaan orang lain. Git juga memungkinkan developer untuk kembali ke versi kode sebelumnya kalau ada kesalahan yang perlu diperbaiki.
 
 **Referensi:**
+
 - [Visual Studio Code Docs](https://code.visualstudio.com/docs)
 - [Git Documentation](https://git-scm.com/doc)
 
@@ -269,4 +281,4 @@ Git adalah sistem yang digunakan untuk melacak perubahan kode dari waktu ke wakt
 - CMS memungkinkan pembuatan website tanpa menulis kode dari nol, dengan WordPress sebagai contoh paling populer.
 - Tools dasar yang perlu disiapkan meliputi text editor, browser developer tools, dan Git untuk version control.
 
-> *"Website itu rumit kalau dilihat sekaligus, tapi jadi masuk akal begitu dipecah bagian per bagian."*
+> _"Website itu rumit kalau dilihat sekaligus, tapi jadi masuk akal begitu dipecah bagian per bagian."_
