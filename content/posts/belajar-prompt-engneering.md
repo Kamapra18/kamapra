@@ -4,7 +4,7 @@ type: "belajar"
 category: "Artificial Intelligence"
 level: "Pemula"
 coverImage: "/posts/prompt-engineer.jpeg"
-date: "2026-07-12"
+date: "2023-07-12"
 ---
 
 ### 1. Kenalan Sama Prompt Engineering

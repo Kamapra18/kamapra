@@ -4,7 +4,7 @@ type: "personal"
 category: "Musik"
 level: "Pemula"
 coverImage: "/posts/gitar.jpeg"
-date: "2026-07-20"
+date: "2020-07-20"
 ---
 
 Sebenarnya udah kepikiran belajar gitar dari SMP, tapi baru benar benar mulai pas awal SMA, waktu dibeliin gitar sayur.
