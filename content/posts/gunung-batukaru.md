@@ -1,6 +1,7 @@
 ---
 title: 'Pendakian Ketiga, Batukaru yang Katanya "Landai"'
 type: "liburan"
+category: "Pendakian"
 coverImage: "/posts/batukaru-1.jpg"
 location: "Gunung Batukaru, Bali"
 date: "2026-06-13"

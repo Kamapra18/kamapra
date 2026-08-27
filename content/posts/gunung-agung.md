@@ -1,6 +1,7 @@
 ---
 title: "Pendakian Keempat, Gunung Agung via Pengubengan"
 type: "liburan"
+category: "Pendakian"
 coverImage: "/posts/agung-1.JPG"
 location: "Gunung Agung, Bali (via Pengubengan)"
 date: "2026-07-04"

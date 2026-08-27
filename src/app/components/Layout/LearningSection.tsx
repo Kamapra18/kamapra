@@ -22,6 +22,8 @@ import {
 import {
   SiTypescript,
   SiNextdotjs,
+  SiX,
+  SiVuedotjs,
   SiTailwindcss,
   SiMysql,
   SiSupabase,
@@ -73,13 +75,13 @@ const allSkills: SkillItem[] = [
   },
   {
     name: "SQL",
-    detail: "Manajemen Data",
+    detail: "Dasar Manajemen Data",
     icon: <TbSql className="w-4 h-4" style={{ color: "#6366f1" }} />,
     category: "language",
   },
   {
     name: "Python",
-    detail: "Logika & OOP",
+    detail: "Logika Pemrograman",
     icon: <FaPython className="w-4 h-4" style={{ color: "#3b82f6" }} />,
     category: "language",
   },
@@ -98,8 +100,14 @@ const allSkills: SkillItem[] = [
     category: "framework",
   },
   {
+    name: "Vue Js",
+    detail: "baru belajar",
+    icon: <SiVuedotjs className="w-4 h-4" style={{ color: "#ffffff" }} />,
+    category: "framework",
+  },
+  {
     name: "TailwindCSS",
-    detail: "CSS Cepat",
+    detail: "Fast CSS",
     icon: <SiTailwindcss className="w-4 h-4" style={{ color: "#06b6d4" }} />,
     category: "framework",
   },
@@ -211,6 +219,12 @@ const allSkills: SkillItem[] = [
         ✦
       </span>
     ),
+    category: "ai",
+  },
+  {
+    name: "grok",
+    detail: "analisis trend",
+    icon: <SiX className="w-4 h-4" style={{ color: "#10a37f" }} />,
     category: "ai",
   },
   {
