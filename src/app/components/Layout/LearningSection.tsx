@@ -215,7 +215,7 @@ const allSkills: SkillItem[] = [
     name: "Gemini",
     detail: "Konteks Luas",
     icon: (
-      <span className="text-xs font-bold text-[#1e1b4b] bg-gradient-to-r from-blue-400 to-red-400 text-transparent bg-clip-text">
+      <span className="text-xs font-bold text-[#1e1b4b] bg-gradient-to-r from-blue-400 to-red-400 bg-clip-text">
         ✦
       </span>
     ),

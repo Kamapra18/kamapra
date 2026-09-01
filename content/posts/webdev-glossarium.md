@@ -2,6 +2,7 @@
 title: "Glossarium Web Development"
 type: "belajar"
 category: "Glossarium Web Development"
+coverImage: "/posts/glossarium-webdev.jpeg"
 lastUpdated: "2025-07-20"
 ---
 
