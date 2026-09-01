@@ -9,7 +9,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## A
+### A
 
 - **A/B Testing**: Metode pengujian eksperimental dengan membandingkan dua versi halaman web atau elemen (versi A dan B) untuk melihat mana yang memiliki performa atau angka konversi lebih baik.
 - **Access Control**: Mekanisme keamanan yang mengatur dan membatasi hak pengguna untuk mengakses atau memanipulasi sumber daya tertentu dalam sistem.
@@ -51,7 +51,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## B
+### B
 
 - **Backend**: Bagian sistem aplikasi web di sisi server yang menangani logika bisnis, pengolahan data, keamanan, dan komunikasi dengan database yang tidak terlihat langsung oleh pengguna.
 - **Backend-as-a-Service (BaaS)**: Model layanan cloud di mana penyedia pihak ketiga menyediakan seluruh infrastruktur backend (autentikasi, database, storage) melalui API/SDK (contoh: Firebase, Supabase).
@@ -81,7 +81,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## C
+### C
 
 - **Cache**: Tempat penyimpanan data sementara berkecepatan tinggi yang menyimpan salinan data atau hasil komputasi agar permintaan berikutnya dapat dilayani lebih cepat tanpa memproses ulang.
 - **Cache Busting**: Teknik memaksa browser mengunduh versi file terbaru (misal dengan menambahkan hash unik pada nama file seperti `app.a1b2c.js`) saat terjadi pembaruan kode.
@@ -118,7 +118,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## D
+### D
 
 - **Data**: Kumpulan fakta mentah, angka, teks, atau simbol yang diproses atau disimpan oleh komputer untuk menghasilkan informasi.
 - **Data Binding**: Mekanisme sinkronisasi data otomatis antara model data aplikasi dan elemen antarmuka pengguna (UI).
@@ -152,7 +152,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## E
+### E
 
 - **Edge Computing**: Paradigma komputasi terdistribusi yang memproses data dan mengeksekusi kode di lokasi yang sedekat mungkin dengan pengguna akhir (pada server tepi jaringan/CDN) guna memangkas latensi.
 - **Edge Function**: Potongan kode nirserver (_serverless function_) yang dieksekusi secara instan di server CDN terdekat dengan lokasi pengguna global untuk merespons permintaan dengan kecepatan maksimal.
@@ -182,7 +182,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## F
+### F
 
 - **Favicon**: Ikon kecil yang mewakili website yang ditampilkan di tab browser, daftar bookmark, dan hasil riwayat pencarian (biasanya berukuran 16x16 atau 32x32 piksel).
 - **Fetch API**: Antarmuka bawaan modern pada JavaScript browser untuk melakukan permintaan jaringan (_HTTP request_) asinkron menggunakan _Promise_.
@@ -206,7 +206,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## G
+### G
 
 - **Garbage Collection**: Mekanisme manajemen memori otomatis dalam bahasa pemrograman (seperti JavaScript) yang mendeteksi dan membebaskan alokasi memori yang sudah tidak lagi digunakan oleh aplikasi.
 - **Gateway**: Titik akses jaringan atau layanan perantara yang menerjemahkan protokol atau menjadi jembatan lalu lintas data antara dua sistem yang berbeda.
@@ -224,7 +224,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## H
+### H
 
 - **Hash Function**: Fungsi matematis satu arah yang mengubah input data dengan panjang berapa pun menjadi string alfanumerik acak dengan panjang tetap yang unik.
 - **Health Check**: Endpoint API atau pemeriksaan berkala yang digunakan oleh _load balancer_ atau orkestrator kontainer untuk memverifikasi apakah suatu layanan server berjalan normal atau mengalami gangguan.
@@ -261,7 +261,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## I
+### I
 
 - **IAM (Identity and Access Management)**: Kerangka kerja keamanan dan kumpulan kebijakan untuk mengelola identitas digital serta mengatur izin akses pengguna dan layanan ke sumber daya cloud.
 - **Identity Provider (IdP)**: Layanan sistem yang membuat, memelihara, dan mengelola informasi identitas pengguna serta menyediakan layanan otentikasi kepada aplikasi pihak ketiga.
@@ -278,7 +278,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## J
+### J
 
 - **JavaScript**: Bahasa pemrograman tingkat tinggi, dinamis, dan multi-paradigma yang menjadi bahasa standar untuk menambahkan interaktivitas dan logika di web browser serta di sisi server.
 - **Java**: Bahasa pemrograman berbasis kelas, berorientasi objek murni, dan portabel (_Write Once, Run Anywhere_) yang banyak digunakan untuk membangun aplikasi enterprise berskala besar.
@@ -294,7 +294,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## K
+### K
 
 - **Keyboard Accessibility**: Aspek aksesibilitas web yang memastikan seluruh fungsi interaktif website dapat dinavigasi dan dioperasikan sepenuhnya hanya menggunakan keyboard tanpa memerlukan mouse.
 - **Keyframe Animation**: Teknik animasi CSS (`@keyframes`) yang memungkinkan penentuan tahapan perubahan gaya visual elemen pada titik-titik persentase waktu tertentu dari awal hingga akhir durasi animasi.
@@ -303,7 +303,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## L
+### L
 
 - **Lazy Loading**: Pola optimasi performa yang menunda pemuatan sumber daya non-kritis (seperti gambar di luar layar atau modul JS) hingga sumber daya tersebut benar-benar dibutuhkan oleh pengguna.
 - **Layout**: Struktur susunan visual elemen-elemen desain pada halaman web, mencakup penataan header, navigasi, konten utama, sidebar, dan footer.
@@ -321,7 +321,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## M
+### M
 
 - **Markdown**: Bahasa markah berbasis teks sederhana yang mudah dibaca dan ditulis, dirancang untuk dikonversi menjadi HTML yang terstruktur rapi.
 - **Material Design**: Sistem desain komprehensif yang dikembangkan oleh Google yang menggunakan metafora visual terinspirasi dari sifat fisik kertas dan tinta.
@@ -346,7 +346,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## N
+### N
 
 - **Namespace**: Ruang lingkup deklaratif yang membungkus kumpulan pengenal (fungsi, kelas, variabel) untuk mencegah terjadinya tabrakan nama (_name collision_) dalam program.
 - **Navigation Guard**: Fungsi perantara dalam router sisi klien yang mencegat dan mengontrol alur transisi rute (misalnya menolak akses ke halaman dasbor jika pengguna belum login).
@@ -364,7 +364,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## O
+### O
 
 - **OAuth**: Protokol otorisasi standar terbuka (RFC 6749) yang memungkinkan aplikasi pihak ketiga mendapatkan akses terbatas ke akun pengguna tanpa membagikan kata sandi pengguna.
 - **Object-Oriented Programming (OOP)**: Paradigma pemrograman yang berpusat pada konsep "objek" yang berisi data (dalam bentuk properti/atribut) dan kode (dalam bentuk metode/fungsi).
@@ -384,7 +384,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## P
+### P
 
 - **Package Manager**: Alat bantu perangkat lunak yang mengotomatisasi proses instalasi, pembaruan, konfigurasi, dan penghapusan dependensi pustaka kode dalam proyek (contoh: npm, Yarn, pnpm).
 - **Pagination**: Teknik membagi kumpulan data besar menjadi beberapa halaman atau segmen yang lebih kecil agar pemuatan data lebih cepat dan UI tidak kewalahan merender seluruh data sekaligus.
@@ -418,7 +418,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## R
+### R
 
 - **Race Condition**: Situasi _bug_ konkurensi di mana hasil akhir dari suatu program bergantung pada urutan atau waktu eksekusi yang tidak dapat diprediksi dari beberapa thread atau operasi asinkron yang berjalan bersamaan.
 - **Rate Limiting**: Kebijakan pembatasan frekuensi permintaan jaringan yang diizinkan dalam rentang waktu tertentu untuk melindungi server dari serangan dan beban berlebih.
@@ -444,7 +444,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## S
+### S
 
 - **SAML (Security Assertion Markup Language)**: Standar terbuka berbasis XML untuk pertukaran data autentikasi dan otorisasi antara pihak penyedia identitas (_IdP_) dan penyedia layanan (_SP_).
 - **SASS / SCSS**: Bahasa praprosesor CSS yang memperluas kemampuan CSS standar dengan fitur variabel, _nesting_, _mixins_, fungsi matematika, dan modularitas file.
@@ -482,7 +482,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## T
+### T
 
 - **Tailwind CSS**: Framework CSS berbasis _utility-first_ yang menyediakan kumpulan kelas utilitas siap pakai (seperti `flex`, `pt-4`, `text-center`) untuk membangun desain antarmuka kustom langsung pada markup HTML.
 - **Task Queue**: Sistem antrean untuk mengelola dan mendistribusikan tugas-tugas pemrosesan berat di latar belakang agar tidak memblokir alur utama aplikasi server.
@@ -503,7 +503,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## U
+### U
 
 - **UI (User Interface)**: Ruang visual dan interaktif (tombol, formulir, menu, tipografi) tempat manusia berinteraksi secara langsung dengan aplikasi perangkat lunak atau website.
 - **URL (Uniform Resource Locator)**: Format alamat standar yang digunakan untuk mengidentifikasi dan menemukan lokasi sumber daya unik tertentu di jaringan internet.
@@ -517,7 +517,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## V
+### V
 
 - **Validation**: _(Lihat Data Validation)_ Proses pengujian keabsahan data terhadap aturan atau batasan yang telah ditetapkan.
 - **Version Control**: Sistem perangkat lunak yang mencatat riwayat perubahan file dari waktu ke waktu sehingga versi tertentu dapat ditinjau atau dipulihkan kembali (contoh: Git).
@@ -532,7 +532,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## W
+### W
 
 - **WebAssembly (Wasm)**: Format instruksi biner tingkat rendah portabel yang memungkinkan kode yang ditulis dalam bahasa berkinerja tinggi (seperti C++, Rust, Go) dieksekusi di browser dengan kecepatan mendekati kecepatan _native_.
 - **WebAuthn (Web Authentication API)**: Standar web resmi dari W3C yang memungkinkan autentikasi berbasis kunci publik yang aman dan tanpa kata sandi (_passwordless_) menggunakan sensor biometrik atau kunci keamanan fisik (seperti passkeys).
@@ -550,7 +550,7 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## X
+### X
 
 - **XML (Extensible Markup Language)**: Bahasa markah berbasis teks fleksibel yang dirancang untuk menyimpan dan mentransmisikan data terstruktur dengan tag yang dapat ditentukan sendiri oleh pengguna.
 - **XHR (XMLHttpRequest)**: Objek API JavaScript klasik yang digunakan untuk melakukan pertukaran data antara browser dan server di latar belakang tanpa me-refresh halaman (pendahulu dari Fetch API).
@@ -562,14 +562,14 @@ Kumpulan istilah dalam dunia web development dari A sampai Z, mencakup bahasa pe
 
 ---
 
-## Y
+### Y
 
 - **YAML (YAML Ain't Markup Language)**: Format serialisasi data berbasis teks yang berorientasi pada kemudahan keterbacaan manusia, sering digunakan untuk file konfigurasi perangkat lunak (seperti Docker Compose atau pipeline CI/CD).
 - **Yarn**: Pengelola paket JavaScript modern yang dikembangkan oleh Meta sebagai alternatif npm yang cepat, andal, dan aman dengan manajemen dependensi terisolasi.
 
 ---
 
-## Z
+### Z
 
 - **Zero Downtime Deployment**: Strategi penyebaran versi baru aplikasi di mana proses pembaruan berjalan mulus tanpa adanya waktu henti (_downtime_) atau gangguan layanan sama sekali bagi pengguna.
 - **Zero Trust**: Model arsitektur keamanan siber yang menerapkan prinsip "jangan pernah percaya, selalu verifikasi", di mana setiap pengguna dan perangkat harus selalu diautentikasi dan diotorisasi secara ketat baik di dalam maupun di luar jaringan.
