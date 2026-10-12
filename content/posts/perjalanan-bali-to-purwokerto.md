@@ -1,5 +1,5 @@
 ---
-title: "Bali ke Purwokerto Naik Mobil, Hampir 33 Jam di Jalan"
+title: "Perjalanan Pertama ke Tanah Jawa"
 type: ["liburan", "kerja", "event", "personal"]
 coverImage: "/posts/jogja.JPG"
 location: "Bali ke Purwokerto, lewat Jawa Timur dan Jawa Tengah"
