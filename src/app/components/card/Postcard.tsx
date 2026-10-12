@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { Post } from "@/app/lib/posts";
+import type { Post, PostType } from "@/app/lib/posts";
 
 interface PostCardProps {
   post: Post;
 }
 
-const typeLabel: Record<Post["type"], string> = {
+const typeLabel: Record<PostType, string> = {
   belajar: "Belajar",
   kerja: "Kerja",
   pendidikan: "Pendidikan",
@@ -49,7 +49,7 @@ export default function PostCard({ post }: PostCardProps) {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className="group flex flex-col overflow-hidden rounded-3xl border border-[var(--btn-glass-border-hover)] bg-[var(--bakground))] transition duration-300 hover:border-[var(--accent)] hover:shadow-[var(--btn-glass-shadow-hover)]">
+      className="group flex flex-col overflow-hidden rounded-3xl border border-[var(--btn-glass-border-hover)] bg-[var(--background)] transition duration-300 hover:border-[var(--accent)] hover:shadow-[var(--btn-glass-shadow-hover)]">
       <div className="relative h-56 w-full overflow-hidden">
         {post.coverImage ? (
           <Image
@@ -65,10 +65,14 @@ export default function PostCard({ post }: PostCardProps) {
         )}
 
         <div className="absolute left-4 top-4 flex flex-wrap gap-2">
-          <span className="rounded-full border border-[var(--btn-glass-border)] bg-[image:var(--btn-glass-bg)] px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-[var(--foreground)] backdrop-blur">
-            {typeLabel[post.type]}
-          </span>
-          {post.type === "belajar" && post.level ? (
+          {post.types.map((t) => (
+            <span
+              key={t}
+              className="rounded-full border border-[var(--btn-glass-border)] bg-[image:var(--btn-glass-bg)] px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-[var(--foreground)] backdrop-blur">
+              {typeLabel[t] ?? t}
+            </span>
+          ))}
+          {post.types.includes("belajar") && post.level ? (
             <span className="rounded-full border border-[var(--btn-glass-border)] bg-[image:var(--btn-glass-bg)] px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-[var(--foreground)] backdrop-blur">
               {post.level}
             </span>

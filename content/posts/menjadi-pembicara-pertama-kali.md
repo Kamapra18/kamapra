@@ -1,6 +1,6 @@
 ---
 title: "Jadi Pembicara di Gaining Insight from Gen Z"
-type: "event"
+type: ["event", "personal", "kerja"]
 coverImage: "/posts/gaining-insight-gen-z.png"
 location: "Madhava Enterprises Office"
 startDate: "2026-06-25"

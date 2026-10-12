@@ -1,6 +1,6 @@
 ---
 title: "Magang sebagai Web Developer Intern di Madhava Enterprises"
-type: "kerja"
+type: ["kerja", "personal"]
 coverImage: "/posts/madhava.png"
 organization: "Madhava Enterprises"
 startDate: "2026-02-25"

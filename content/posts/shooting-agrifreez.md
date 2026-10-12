@@ -1,6 +1,6 @@
 ---
 title: "Jadi Talent Shooting Iklan Agrifreez"
-type: "kerja"
+type: ["kerja", "personal"]
 coverImage: "/posts/talent-agrifreez-1.jpeg"
 organization: "Agrifreez"
 startDate: "2026-06-05"

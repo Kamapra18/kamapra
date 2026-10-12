@@ -26,7 +26,8 @@ export default function TimelineDashboard({ posts }: TimelineDashboardProps) {
 
   const filteredPosts = useMemo(() => {
     return posts.filter((post) => {
-      const matchType = activeFilter === "semua" || post.type === activeFilter;
+      const matchType =
+        activeFilter === "semua" || post.types.includes(activeFilter);
       const matchSearch = post.title
         .toLowerCase()
         .includes(search.trim().toLowerCase());

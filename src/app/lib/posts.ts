@@ -2,9 +2,18 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
+export type PostType =
+  | "belajar"
+  | "kerja"
+  | "pendidikan"
+  | "event"
+  | "liburan"
+  | "personal";
+
 export interface Post {
   title: string;
-  type: "belajar" | "kerja" | "pendidikan" | "event" | "liburan" | "personal";
+  type: PostType; 
+  types: PostType[]; 
   category?: string;
   level?: string;
   coverImage?: string;
@@ -40,14 +49,26 @@ function sortPosts(posts: Post[]) {
   });
 }
 
+// Terima type berupa satu kata ("liburan") atau daftar (["liburan", "event"])
+function normalizeTypes(raw: unknown): PostType[] {
+  const list = Array.isArray(raw) ? raw : raw ? [raw] : [];
+  const types = list.map((t) => String(t).trim()).filter(Boolean) as PostType[];
+
+  // kalau type kosong di frontmatter, jatuh ke "personal" biar tidak error
+  return types.length > 0 ? types : ["personal"];
+}
+
 function mapPost(filename: string, slug: string): Post {
   const fullPath = path.join(postsDirectory, filename);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
+  const types = normalizeTypes(data.type);
+
   return {
     title: String(data.title || "Untitled"),
-    type: String(data.type) as Post["type"],
+    type: types[0],
+    types,
     category: data.category ? String(data.category) : undefined,
     level: data.level ? String(data.level) : undefined,
     coverImage: data.coverImage ? String(data.coverImage) : undefined,
@@ -88,7 +109,7 @@ export function getPostBySlug(slug: string): Post | null {
 }
 
 export function getPostsByType(type: string): Post[] {
-  return getAllPosts().filter((post) => post.type === type);
+  return getAllPosts().filter((post) => post.types.includes(type as PostType));
 }
 
 export function getAllPostSlugs() {
