@@ -3,6 +3,14 @@ import FrameSelection from "./components/FrameSection";
 import Navbar from "../components/Navbar";
 import FooterSection from "../components/Footer";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Photobooth Kamapra | Foto Digital & Frame",
+  description:
+    "Jelajahi layanan dan pengalaman photobooth Kamapra untuk mengabadikan momen acara melalui foto digital dengan pilihan frame yang menarik dan mudah dibagikan.",
+};
+
 export default function PhotoboxInvitation() {
   return (
     <div

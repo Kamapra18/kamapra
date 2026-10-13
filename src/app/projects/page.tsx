@@ -7,6 +7,16 @@ import FooterSection from "../components/Footer";
 import PortofolioSection from "./components/MyProject";
 // import GetContact from "../components/GetContact";
 
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects Kamapra | Website & Aplikasi Web",
+  description:
+    "Jelajahi kumpulan proyek Kamapra, mulai dari pengembangan website dan aplikasi hingga eksplorasi UI/UX, lengkap dengan teknologi dan proses di balik pembuatannya.",
+};
+
+
 export default function Project() {
   return (
     <div

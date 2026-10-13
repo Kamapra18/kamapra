@@ -17,6 +17,14 @@ import PortfolioSection from "@/app/Home/Project";
 
 // import WhatsAppButton from "./components/Wa";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Kamapra | Web Developer",
+  description:
+    "Kamapra adalah portfolio I Kadek Mario Prayoga, web developer yang membangun website, aplikasi web, serta pengalaman digital yang fungsional dan menarik.",
+};
+
 export default function Home() {
   return (
     <div

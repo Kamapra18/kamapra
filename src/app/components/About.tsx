@@ -39,11 +39,7 @@ export const RevealBento = () => {
         <EmailListBlock />
       </motion.div>
       <div className="flex flex-col py-10 justify-center items-center">
-        <KamapraButton
-          href="/blog"
-          iconType="arrow"
-          text="View My Blog"
-        />
+        <KamapraButton href="/blog" iconType="arrow" text="View My Blog" />
       </div>
     </div>
   );
@@ -219,7 +215,7 @@ const SocialsBlock = () => (
       }}
       className="col-span-6 bg-blue-500 md:col-span-3">
       <a
-        href="https://www.linkedin.com/in/i-kadek-mario-prayoga"
+        href="https://www.linkedin.com/in/kamapra/"
         target="blank"
         className="grid h-full place-content-center text-3xl text-white">
         <SiLinkedin />

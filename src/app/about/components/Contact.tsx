@@ -38,7 +38,7 @@ export default function ContactBento() {
       desc: "Mari terhubung secara profesional..",
       icon: <FaLinkedin className="text-4xl" />,
       btnText: "Go to Linkedin",
-      link: "#",
+      link: "https://www.linkedin.com/in/kamapra/",
       color: "from-blue-600/20 to-blue-900/20 border-blue-500/20",
       grid: "md:col-span-4",
       iconColor: "text-blue-500",

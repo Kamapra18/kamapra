@@ -10,6 +10,15 @@ import { RevealBento } from "../components/About";
 import GithubSection from "./components/GitHubSection";
 // import WakaTimeSection from "./components/WakaTimeSection";
 
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Tentang Kamapra | Profil & Perjalanan",
+  description:
+    "Kenali Kamapra, I Kadek Mario Prayoga, mahasiswa dan web developer yang terus mengembangkan kemampuan di bidang teknologi, pengembangan web, dan desain UI/UX.",
+};
+
 export default function About() {
   return (
     <div

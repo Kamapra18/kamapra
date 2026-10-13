@@ -4,6 +4,16 @@ import ContactBento from "../about/components/Contact";
 import Navbar from "@/app/components/Navbar";
 import FooterSection from "../components/Footer";
 
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Kamapra | Kolaborasi & Proyek",
+  description:
+    "Hubungi Kamapra untuk berdiskusi tentang pembuatan website, pengembangan aplikasi web, maupun peluang kolaborasi dalam proyek digital.",
+};
+
+
 export default function ContactPage() {
   return (
     <div
