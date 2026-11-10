@@ -1,0 +1,410 @@
+/* ProfileCard: gaya kartu profil dengan efek tilt dan foil holografik.
+   Warna dasar mengikuti token aplikasi (--bg, --surface, --border, --text,
+   --text-muted), jadi otomatis mengikuti mode terang dan gelap. */
+
+.profile-card {
+  /* Nilai awal sebelum mesin animasi di komponen menuliskan posisi pointer */
+  --pc-light-x: 50%;
+  --pc-light-y: 50%;
+  --pc-pointer-x: 50%;
+  --pc-pointer-y: 50%;
+  --pc-band-x: 50%;
+  --pc-band-y: 50%;
+  --pc-rotate-x: 0deg;
+  --pc-rotate-y: 0deg;
+  --pc-shift-x: 0px;
+  --pc-shift-y: 0px;
+  --pc-reach: 0;
+  --pc-tilt: 0;
+  --pc-active: 0;
+
+  --pc-radius: 20px;
+  --pc-holo: 0.8;
+  --pc-glare: 0.5;
+  --pc-holo-gain: 0.75;
+  --pc-status: var(--success, #22c55e);
+  --pc-backdrop: var(--pc-tile);
+  --pc-pattern: linear-gradient(#000, #000);
+  --pc-pattern-size: 100% 100%;
+
+  /* Palet mode terang, memakai token aplikasi */
+  --pc-frame: color-mix(in srgb, var(--surface) 82%, transparent);
+  --pc-frame-edge: var(--border);
+  --pc-frame-highlight: rgba(255, 255, 255, 0.95);
+  --pc-frame-shadow:
+    0 22px 44px -22px rgba(15, 23, 42, 0.3),
+    0 6px 16px -10px rgba(15, 23, 42, 0.16);
+  --pc-tile: linear-gradient(180deg, var(--bg) 0%, var(--surface) 100%);
+  --pc-tile-edge: var(--border);
+  --pc-tile-highlight: rgba(255, 255, 255, 1);
+  --pc-tile-shadow: 0 4px 10px -5px rgba(15, 23, 42, 0.25);
+  --pc-ink: var(--text);
+  --pc-muted: var(--text-muted);
+  --pc-hover: brightness(0.97);
+  --pc-press: brightness(0.92);
+  --pc-shade: rgba(15, 23, 42, 0.14);
+
+  /* Foil mode terang */
+  --pc-blend: multiply;
+  --pc-holo-filter: invert(1) hue-rotate(180deg);
+  --pc-sheen: rgba(255, 255, 255, 0);
+
+  position: relative;
+  isolation: isolate;
+  width: min(100%, 22rem);
+  perspective: 900px;
+  touch-action: pan-y;
+  color: var(--pc-ink);
+}
+
+/* Palet mode gelap, aktif saat class .dark dipasang di elemen induk */
+.dark .profile-card {
+  --pc-frame-highlight: rgba(255, 255, 255, 0.07);
+  --pc-frame-shadow:
+    0 22px 44px -20px rgba(0, 0, 0, 0.8), 0 6px 16px -8px rgba(0, 0, 0, 0.5);
+  --pc-tile: linear-gradient(
+    180deg,
+    var(--surface-secondary) 0%,
+    var(--surface) 100%
+  );
+  --pc-tile-highlight: rgba(255, 255, 255, 0.12);
+  --pc-tile-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.7);
+  --pc-hover: brightness(1.12);
+  --pc-press: brightness(0.8);
+  --pc-shade: rgba(0, 0, 0, 0.4);
+
+  --pc-blend: color-dodge;
+  --pc-holo-filter: hue-rotate(0deg);
+  --pc-sheen: rgba(255, 255, 255, 0.16);
+}
+
+/* Badan kartu: bingkai yang miring mengikuti pointer */
+.profile-card__body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+  overflow: hidden;
+  border: 1px solid var(--pc-frame-edge);
+  border-radius: var(--pc-radius);
+  background: var(--pc-frame);
+  box-shadow:
+    inset 0 1px 0 var(--pc-frame-highlight),
+    var(--pc-frame-shadow);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  transform: rotateX(var(--pc-rotate-x)) rotateY(var(--pc-rotate-y));
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* Petak foto */
+.profile-card__tile {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border: 1px solid var(--pc-tile-edge);
+  border-radius: calc(var(--pc-radius) - 6px);
+  background: var(--pc-backdrop);
+  box-shadow:
+    inset 0 1px 0 var(--pc-tile-highlight),
+    var(--pc-tile-shadow);
+}
+
+/* Butiran halus di atas foto */
+.profile-card__tile::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--pc-grain);
+  background-size: 250px 250px;
+  mix-blend-mode: overlay;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.profile-card__photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  user-select: none;
+  /* Foto bergeser berlawanan arah pointer agar terasa punya kedalaman */
+  transform: translate(
+      calc(var(--pc-shift-x) * -1),
+      calc(var(--pc-shift-y) * -1)
+    )
+    scale(1.08);
+}
+
+/* Kilau pita yang bergerak mengikuti pointer */
+.profile-card__sheen {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 30%,
+    var(--pc-sheen) 50%,
+    transparent 70%
+  );
+  background-size: 250% 250%;
+  background-position: var(--pc-band-x) var(--pc-band-y);
+  opacity: calc(var(--pc-active) * 0.9);
+  pointer-events: none;
+}
+
+/* Foil holografik: pelangi yang hanya terlihat lewat bentuk pola (mask) */
+.profile-card__holo {
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: var(--pc-blend);
+  filter: var(--pc-holo-filter) saturate(1.5) contrast(1.1);
+  opacity: clamp(
+    0,
+    calc(var(--pc-holo) * var(--pc-tilt) * var(--pc-holo-gain)),
+    1
+  );
+  pointer-events: none;
+  -webkit-mask-image: var(--pc-pattern);
+  mask-image: var(--pc-pattern);
+  -webkit-mask-size: var(--pc-pattern-size);
+  mask-size: var(--pc-pattern-size);
+  -webkit-mask-repeat: repeat;
+  mask-repeat: repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+.profile-card__holo-shift,
+.profile-card__holo-glow {
+  position: absolute;
+  inset: 0;
+}
+
+.profile-card__holo-shift {
+  background: linear-gradient(
+    115deg,
+    #ff6ec7 0%,
+    #ffd36e 20%,
+    #7affb2 40%,
+    #6ec1ff 60%,
+    #c58bff 80%,
+    #ff6ec7 100%
+  );
+  background-size: 300% 300%;
+  background-position: var(--pc-band-x) var(--pc-band-y);
+}
+
+.profile-card__holo-glow {
+  background: radial-gradient(
+    circle at var(--pc-pointer-x) var(--pc-pointer-y),
+    rgba(255, 255, 255, 0.85),
+    transparent 55%
+  );
+  mix-blend-mode: overlay;
+}
+
+/* Gradasi bawah agar teks nama terbaca di atas foto apa pun */
+.profile-card__scrim {
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 58%;
+  background: linear-gradient(
+    to top,
+    rgba(2, 6, 23, 0.78) 0%,
+    rgba(2, 6, 23, 0) 100%
+  );
+  pointer-events: none;
+}
+
+.profile-card__info {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+  color: #fff;
+  transform: translate(
+    calc(var(--pc-shift-x) * 0.4),
+    calc(var(--pc-shift-y) * 0.4)
+  );
+}
+
+.profile-card__name {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.profile-card__title {
+  margin: 6px 0 0;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.profile-card__tile-rim {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px var(--pc-tile-edge);
+  pointer-events: none;
+}
+
+/* Bagian bawah: avatar kecil, handle, status, dan tombol kontak */
+.profile-card__footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 4px 2px;
+}
+
+.profile-card__avatar {
+  display: block;
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  overflow: hidden;
+  border: 1px solid var(--pc-tile-edge);
+  border-radius: 999px;
+  background: var(--pc-tile);
+}
+
+.profile-card__avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.profile-card__handle {
+  overflow: hidden;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--pc-ink);
+}
+
+.profile-card__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  color: var(--pc-muted);
+}
+
+.profile-card__status::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--pc-status);
+  box-shadow: 0 0 8px var(--pc-status);
+}
+
+.profile-card__contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+  padding: 8px 14px;
+  border: 1px solid var(--pc-tile-edge);
+  border-radius: 999px;
+  background: var(--pc-tile);
+  box-shadow:
+    inset 0 1px 0 var(--pc-tile-highlight),
+    var(--pc-tile-shadow);
+  font: inherit;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--pc-ink);
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    filter 0.2s ease,
+    transform 0.2s ease;
+}
+
+.profile-card__contact:hover {
+  filter: var(--pc-hover);
+}
+
+.profile-card__contact:active {
+  filter: var(--pc-press);
+  transform: scale(0.97);
+}
+
+.profile-card__contact:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Lapisan efek yang menutupi seluruh kartu, tidak menangkap klik */
+.profile-card__glare,
+.profile-card__shade,
+.profile-card__rim {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.profile-card__glare {
+  background: radial-gradient(
+    circle 300px at var(--pc-light-x) var(--pc-light-y),
+    rgba(255, 255, 255, 0.4),
+    transparent 70%
+  );
+  mix-blend-mode: soft-light;
+  opacity: calc(var(--pc-glare) * var(--pc-active));
+}
+
+.profile-card__shade {
+  background: radial-gradient(
+    circle at var(--pc-light-x) var(--pc-light-y),
+    transparent 30%,
+    var(--pc-shade) 100%
+  );
+  opacity: calc(var(--pc-active) * 0.8);
+}
+
+/* Garis tepi yang menyala di dekat pointer */
+.profile-card__rim {
+  padding: 1px;
+  background: radial-gradient(
+    circle 240px at var(--pc-light-x) var(--pc-light-y),
+    color-mix(in srgb, var(--accent) 70%, #fff),
+    transparent 70%
+  );
+  opacity: var(--pc-active);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box exclude,
+    linear-gradient(#000 0 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .profile-card__body {
+    transform: none;
+  }
+
+  .profile-card__contact {
+    transition: none;
+  }
+}
