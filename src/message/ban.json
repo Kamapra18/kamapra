@@ -1,0 +1,432 @@
+{
+  "metadata": {
+    "title": "Kamapra",
+    "description": "Wesbite Portofolio Gelah Pedidi"
+  },
+  "navbar": {
+    "home": "Jumah",
+    "about": "Indik",
+    "portfolio": "Portfolio",
+    "gallery": "Galeri",
+    "blog": "Blog",
+    "contact": "Kontak"
+  },
+
+  "homepage": {
+    "title": "Kamapra - Portfolio & Blog"
+  },
+
+  "hero": {
+    "label": "Portofolio Pribadi · Bali, Indonesia",
+    "title": {
+      "design": "Desain.",
+      "develop": "Ngwangun.",
+      "create": "Ngarya."
+    },
+    "description": "Om Swastyastu, titiang Mario — web developer sane maduwe minat ring pangwangunan pengalaman digital antuk desain miwah teknologi.",
+    "portfolio": "Cingak Portofolio",
+    "contact": "Hubungi Titiang"
+  },
+  "blogSection": {
+    "eyebrow": "CATUR & PIKAYUN",
+    "title": "Tulisan Anyar",
+    "description": "Ngawedar carita, pengalaman, miwah napi sane sampun kaplajahin ring perjalanan makarya miwah berkembang.",
+    "viewAll": "Cingak sami",
+    "readMore": "Waca tulisan",
+    "empty": "Durung wenten tulisan sane prasida kacingak."
+  },
+
+  "about": {
+    "label": "SAJERONING TENTANG TIANG",
+    "headline": "Tiang percaya, indik sane becik kawit saking rasa ingin tahu.",
+    "introduction": "PANGENALAN SINGKAT",
+    "paragraph1": "Tiang Mario, mahasiswa Teknik Informatika miwah web developer sane magenah ring Bali, Indonesia.",
+    "paragraph2": "Antuk rasa ingin tahu, tiang demen ngeksplorasi ide, ngagabungang desain sareng teknologi, miwah ngawinang konsep dados pengalaman digital sane mabuat. Sabilang proyek dados kesempatan anggen malajah, nyoba hal anyar, miwah berkembang.",
+    "closing": "Rasa ingin tahu sane ngawinang tiang terus melangkah.",
+    "first": "TIANG PERCAYA",
+    "second": "INDIK BECIK",
+    "third": "KAWIT SAKING",
+    "mantra": "Terus nakonang. Terus makarya.",
+    "highlight": "RASA INGIN TAHU.",
+    "more": "Kenali tiang langkung jero",
+    "less": "Tutup carita",
+    "story": "RING LIKAS RASA INGIN TAHU",
+    "footer": "MALAJAH. BERKREASI. MEKEMBANG."
+  },
+  "profileCard": {
+    "name": "I Kadek Mario Prayoga",
+    "handle": "kamapra",
+    "email": "emailkamu@example.com",
+    "avatar": "/profile/Mario-ban.jpg"
+  },
+  "profileTitle": "Mahasiswa miwah Web Developer",
+  "profileStatus": "Kasedia antuk kolaborasi",
+  "profileContact": "Telpun",
+
+  "portfolio": {
+    "title": "Proyek",
+    "view_detail": "Perincian",
+    "view_demo": "Demo"
+  },
+
+  "blog": {
+    "title": "Blog",
+    "read_time": "minit kawace",
+    "all_labels": "Konyang",
+    "filter_by_label": "Nyaring manut label",
+    "detail": {
+      "back": "Mantuk ka Blog",
+      "livePreview": "Waca Artikel",
+      "minRead": "menit maca",
+      "readingGuide": "Pituduh Maca",
+      "tableOfContents": "Daging Buku",
+      "chapter": "Bab",
+      "topics": "Topik",
+      "previous": "Sadurungné",
+      "next": "Salanturné",
+      "firstChapter": "Bab kapertama",
+      "lastChapter": "Bab kapungkur",
+      "backToAllArticles": "Mantuk ring makasami artikel"
+    },
+    "related": {
+      "eyebrow": "Jelajahin Malih",
+      "title": "Artikel Lianan",
+      "subtitle": "Jelajahin tulisan lianan saking Kamapra.",
+      "allArticles": "Makejang Artikel",
+      "minRead": "menit maca"
+    }
+  },
+
+  "contact": {
+    "title": "Kontakt",
+    "copy_email": "Email copied",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "shutterstock": "Shutterstock"
+  },
+
+  "ai": {
+    "panel_title": "AI Assistant",
+    "placeholder": "Ask me anything...",
+    "loading": "Typing..."
+  },
+  "rolesHero": {
+    "label": "Tukang Freelance Mandiri",
+    "greeting": "Halo, titiang Kamapra.",
+    "introduction": "Titiang punika",
+    "profileTitle": "Mahasiswa lan Web Developer",
+    "profileStatus": "Kasedia antuk kolaborasi",
+    "profileContact": "Telpun"
+  },
+
+  "educationTimeline": {
+    "label": "Lelintihan Titiang",
+    "heading": "Mangda ngelingang malih perjalanan.",
+    "milestones": [
+      {
+        "id": "sertifikasi",
+        "year": "2023",
+        "period": "2023",
+        "title": "Cloud Practitioner",
+        "place": "Penyedia Sertifikasi Contoh",
+        "points": [
+          "Ngalanturang kaweruhan indik layanan cloud, keamanan, miwah arsitektur aplikasi.",
+          "Nerapang kaweruhan punika ring proyek klien sane langkung ageng."
+        ]
+      },
+      {
+        "id": "bootcamp",
+        "year": "2022",
+        "period": "2022",
+        "title": "Full-Stack Web Development",
+        "place": "Akademi Contoh, Online",
+        "points": [
+          "Program intensif enem sasih indik React, Next.js, miwah database.",
+          "Ngwangun makudang-kudang proyek klien saking rancangan ngantos rilis."
+        ]
+      },
+      {
+        "id": "s1",
+        "year": "2018",
+        "period": "2018 - 2022",
+        "title": "Sarjana Teknik Informatika",
+        "place": "Universitas Contoh, Bali",
+        "points": [
+          "Ngelajahin rekayasa perangkat lunak, database, miwah pangembangan web.",
+          "Nuntasin skripsi indik sistem manajemen tugas berbasis web."
+        ]
+      },
+      {
+        "id": "sma",
+        "year": "2015",
+        "period": "2015 - 2018",
+        "title": "SMA Negeri 1 Contoh",
+        "place": "Denpasar, Bali",
+        "points": [
+          "Ngalaksanayang pendidikan jurusan IPA miwah aktif ring ekstrakurikuler robotik.",
+          "Wiwit malajah pemrograman dasar sacara mandiri."
+        ]
+      },
+      {
+        "id": "smp",
+        "year": "2012",
+        "period": "2012 - 2015",
+        "title": "SMP Negeri 2 Contoh",
+        "place": "Denpasar, Bali",
+        "points": [
+          "Aktif ring OSIS miwah ngiring olimpiade IPA tingkat kota.",
+          "Wiwit ngaryanin blog sederhana antuk dokumentasi tugas."
+        ]
+      },
+      {
+        "id": "sd",
+        "year": "2006",
+        "period": "2006 - 2012",
+        "title": "SD Negeri 1 Contoh",
+        "place": "Denpasar, Bali",
+        "points": [
+          "Malajah dasar maca, nyurat, miwah matunggal.",
+          "Wiwit demen ring komputer saking pelajaran ring sekolah."
+        ]
+      }
+    ]
+  },
+  "blogCard": {
+    "noImage": "Tanpa Gambar",
+    "readMore": "Waca salanturné",
+    "categories": {
+      "belajar": "Malajah",
+      "kerja": "Makarya",
+      "pendidikan": "Pendidikan",
+      "event": "Acara",
+      "liburan": "Melali",
+      "personal": "Pribadi"
+    }
+  },
+  "blogTimeline": {
+    "eyebrow": "CATURAN PRIBADI",
+    "title": "Catetan Perjalanan",
+    "description": "Genah anggen nyimpen carita, proses malajah, pengalaman makarya, miwah perjalanan sane ngametuang panglimbak ring sajeroning urip.",
+    "totalPosts": "{count} catetan sampun kasurat",
+    "searchPlaceholder": "Pados catetan...",
+    "showing": "Nampilayang {count} catetan",
+    "reset": "Atur malih",
+    "emptyTitle": "Catetan nénten kapanggihin",
+    "emptyDescription": "Coba nganggen kruna sané lianan utawi gentosin kategori sané kapilih.",
+    "filters": {
+      "all": "Sami",
+      "learning": "Malajah",
+      "work": "Makarya",
+      "education": "Pendidikan",
+      "event": "Acara",
+      "travel": "Melali",
+      "personal": "Pribadi"
+    }
+  },
+  "projects": {
+    "eyebrow": "Karya Pilihan",
+    "title": "Proyek Pilihan",
+    "description": "Kumpulan proyek sane sampun titiang kerjain, saking pengembangan aplikasi miwah website ngantos eksplorasi desain antarmuka.",
+    "projectCount": "PROYEK",
+    "filters": {
+      "all": "Sami",
+      "application": "Aplikasi",
+      "landingPage": "Landing Page",
+      "companyProfile": "Company Profile",
+      "collegeDesign": "Desain Figma",
+      "empty": "Durung wenten proyek ring kategori puniki.",
+      "showing": "Nampilayang",
+      "of": "saking",
+      "viewProject": "Tingalin Proyek"
+    },
+    "contact": {
+      "eyebrow": "Ngamedalang Ide Utawi Proyek?",
+      "title": "Ngaryanin sesuatu sareng-sareng",
+      "description": "Ngemolih ide sane menarik, perlu website, utawi jagi kolaborasi? Titiang terbuka antuk diskusi miwah ngaryanin sesuatu sane becik sareng-sareng.",
+      "button": "Kirim Pesan"
+    },
+    "detail": {
+      "back": "Mantuk ke Projects",
+      "livePreview": "Tingalin Website",
+      "repository": "Repository",
+      "overview": "Ringkesan Project",
+      "projectInfo": "Informasi Project",
+      "year": "Tahun",
+      "category": "Kategori",
+      "status": "Status",
+      "myRole": "Kontribusi Tiang",
+      "technologies": "Teknologi",
+      "caseStudy": "Studi Kasus",
+      "projectJourney": "Proses Pengerjaan",
+      "endOfProject": "Pamuput studi kasus",
+      "allProjects": "Makejang Project"
+    }
+  },
+  "footer": {
+    "eyebrow": "SAMPAI KETEMU RING KARYA SALANTURNE",
+    "heading": "Maduwe ide utawi",
+    "headingAccent": "ngajak kolaborasi?",
+    "description": "Yuk, mabebaosan, ngawedar ide, utawi sekadar nyapa. Tiang selalu terbuka antuk koneksi anyar.",
+    "cta": "Ngawitin komunikasi",
+    "navigation": "Jelajahin",
+    "social": "Temuin tiang",
+    "locationLabel": "Genah",
+    "availability": "Terbuka antuk proyek miwah kolaborasi sane menarik.",
+    "about": "Indik",
+    "portfolio": "Portofolio",
+    "gallery": "Galeri",
+    "blog": "Blog",
+    "contact": "Kontak",
+    "rights": "Hak cipta kasengguh.",
+    "tagline": "Malajah, Makarya, miwah Berkembang."
+  },
+  "certificates": {
+    "eyebrow": "KASUKSMAAN & PAMELAJAHAN",
+    "title": "Sertifikat",
+    "description": "Dokumentasi perjalanan malajah, pelatihan, miwah pengalaman profesional ring bidang web development.",
+    "total": "Sertifikat sane kapolihang",
+    "issued": "Kamedalang",
+    "viewCertificate": "Cingak sertifikat",
+    "note": "Unggal proses dados bagian saking perjalanan anggen terus mekar.",
+    "next": "Selanturné",
+    "previous": "Sadurungné"
+  },
+
+  "skills": {
+    "eyebrow": "KAWAGEDAN & TEKNOLOGI",
+    "title": "Piranti sane kaanggen ngawujudang ide.",
+    "description": "Teknologi, piranti, miwah platform sane kaanggen ring proses pengembangan miwah eksplorasi kreatif.",
+    "all": "Sami",
+    "total": "Total",
+    "items": "piranti",
+    "category": "Kategori",
+    "groups": {
+      "development": {
+        "title": "Languages & Frameworks",
+        "description": "Teknologi utama anggen ngawangun aplikasi miwah website."
+      },
+      "tools": {
+        "title": "Tools & Productivity",
+        "description": "Piranti anggen pengembangan, kolaborasi, miwah produktivitas."
+      },
+      "design": {
+        "title": "Digital Design",
+        "description": "Piranti anggen desain visual miwah eksplorasi kreatif."
+      },
+      "ai": {
+        "title": "AI & Automation",
+        "description": "Asisten AI miwah piranti anggen otomatisasi alur kerja."
+      }
+    },
+    "details": {
+      "html": "Struktur Web",
+      "css": "Styling",
+      "javascript": "Logika Web",
+      "typescript": "Tipe Data",
+      "python": "Logika Pemrograman",
+      "sql": "Manajemen Data",
+      "react": "Library UI",
+      "nextjs": "Keahlian Utama",
+      "vue": "Sedang Malajah",
+      "tailwind": "Utility-first CSS",
+      "bootstrap": "Framework UI",
+      "wordpress": "CMS & Web Development",
+      "nodejs": "Runtime Server",
+      "vscode": "Editor Utama",
+      "git": "Version Control",
+      "github": "Kode Hosting",
+      "mysql": "Database Relasional",
+      "supabase": "Backend as a Service",
+      "vercel": "Deployment Web",
+      "notion": "Dokumentasi",
+      "colab": "Python Notebook",
+      "excel": "Olah Data",
+      "word": "Dokumen",
+      "powerpoint": "Presentasi",
+      "figma": "Desain UI/UX",
+      "photoshop": "Edit Gambar",
+      "illustrator": "Vektor Grafis",
+      "canva": "Desain Cepat",
+      "capcut": "Editor Video",
+      "chatgpt": "Asisten Riset",
+      "claude": "Analisis Kode",
+      "gemini": "Asisten AI",
+      "grok": "Analisis Tren",
+      "n8n": "Otomatisasi Alur"
+    }
+  },
+  "gallery": {
+    "eyebrow": "DOKUMENTASI VISUAL",
+    "title": "Carita sane kasimpen ring sajeroning frame.",
+    "description": "Kumpulan momen, proses, miwah pengalaman sane kaabadikayang antuk fotografi.",
+    "images": "foto",
+    "empty": "Durung wenten foto ring galeri.",
+    "error": "Nenten prasida muat galeri."
+  },
+
+  "projectsSection": {
+    "eyebrow": "KARYA PILIHAN",
+    "title": "Karya sane sampun kauningin.",
+    "description": "Pilih-pilihan project sane ngagambarkeun proses malajah, eksplorasi, miwah pengalaman titiang ring ngwangun produk digital.",
+    "viewAll": "Tingalin makasami project",
+    "viewProject": "Tingalin project",
+    "projects": [
+      {
+        "slug": "zasgo-mart",
+        "name": "Zasgo Mart",
+        "category": "E-Commerce",
+        "year": "2026",
+        "description": "Website toko online sane kaanggen nyokong kabutuhan bisnis miwah pengalaman mabelanja digital.",
+        "stack": ["Next.js", "Tailwind CSS", "Supabase"]
+      },
+      {
+        "slug": "mystarspa",
+        "name": "Mystarspa",
+        "category": "Hotel Website",
+        "year": "2026",
+        "description": "Website hotel sane kasambung sareng API antuk ngicenin pengalaman digital sane informatif miwah responsif.",
+        "stack": ["Next.js", "Laravel", "REST API"]
+      },
+      {
+        "slug": "brasika-asta-dharma",
+        "name": "Brasika Asta Dharma I",
+        "category": "Admin Dashboard",
+        "year": "2025",
+        "description": "Dashboard admin antuk ngatur konten miwah data ring aplikasi web sane kasambung sareng database.",
+        "stack": ["Next.js", "Supabase", "Tailwind CSS"]
+      },
+      {
+        "slug": "clamonic",
+        "name": "Clamonic",
+        "category": "Company Profile",
+        "year": "2026",
+        "description": "Website perusahaan antuk ngatur konten miwah data ring aplikasi web sane kasambung sareng database.",
+        "stack": ["Next.js", "Supabase", "AI"]
+      }
+    ]
+  },
+  "contactSection": {
+    "eyebrow": "HUBUNGI TIANG",
+    "title": "AYO",
+    "titleHighlight": "MAKORÉ",
+    "emailLabel": "EMAIL TIANG",
+    "sendEmail": "Kirim email",
+    "copyEmail": "Salin email",
+    "copied": "Kasalin",
+    "socialTitle": "TEMUKAN TIANG",
+    "backHome": "Mulih ke beranda"
+  },
+  "homeContact": {
+    "label": "Ngawit Ngawit Ngawit",
+    "headline": "Ragané madué pikayunan utawi",
+    "highlight": "proyek sane menarik?",
+    "description": "Tiang terbuka antuk mabligbagan, makarya sareng, miwah ngembangang pikayunan dados karya sane mawiguna. Sampunang ragu ngubungin tiang.",
+    "button": "Hubungi Tiang",
+    "copy": "Salin Email",
+    "copied": "Email Sampun Kasalin",
+    "availability": "Hubungi tiang ring",
+    "footer": "Mangda sareng-sareng ngamolihang karya sane mawiguna."
+  }
+}

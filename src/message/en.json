@@ -1,0 +1,432 @@
+{
+  "metadata": {
+    "title": "Kamapra",
+    "description": "Personal portfolio website"
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "gallery": "Gallery",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+
+  "homepage": {
+    "title": "Kamapra - Portfolio & Blog"
+  },
+
+  "hero": {
+    "label": "Personal Portfolio · Bali, Indonesia",
+    "title": {
+      "design": "Design.",
+      "develop": "Develop.",
+      "create": "Create."
+    },
+    "description": "Hi, I'm Mario — a web developer passionate about building digital experiences through design and technology.",
+    "portfolio": "View Portfolio",
+    "contact": "Get in Touch"
+  },
+  "blogSection": {
+    "eyebrow": "CATATAN & PEMIKIRAN",
+    "title": "Tulisan Terbaru",
+    "description": "Berbagi cerita, pengalaman, dan hal-hal yang saya pelajari selama proses berkarya dan berkembang.",
+    "viewAll": "Lihat selengkapnya",
+    "readMore": "Baca artikel",
+    "empty": "Belum ada artikel yang tersedia."
+  },
+
+  "about": {
+    "label": "A LITTLE ABOUT ME",
+    "headline": "I believe good things begin with curiosity.",
+    "introduction": "A SHORT INTRODUCTION",
+    "paragraph1": "I'm Mario, an Informatics Engineering student and web developer based in Bali, Indonesia.",
+    "paragraph2": "Driven by curiosity, I enjoy exploring ideas, combining design with technology, and turning concepts into meaningful digital experiences. For me, every project is an opportunity to learn something new, experiment, and grow.",
+    "closing": "Curiosity keeps me moving forward.",
+    "first": "I BELIEVE",
+    "second": "GOOD THINGS",
+    "third": "BEGIN WITH",
+    "mantra": "Keep asking. Keep creating.",
+    "highlight": "CURIOSITY.",
+    "more": "A little more about me",
+    "less": "Close story",
+    "story": "BEHIND THE CURIOSITY",
+    "footer": "LEARN. CREATE. EVOLVE."
+  },
+  "profileCard": {
+    "name": "I Kadek Mario Prayoga",
+    "handle": "kamapra",
+    "email": "emailkamu@example.com",
+    "avatar": "/profile/Mario-eng.jpg"
+  },
+  "profileTitle": "Student & Web Developer",
+  "profileStatus": "Open to collaboration",
+  "profileContact": "Contact",
+
+  "portfolio": {
+    "title": "Projects",
+    "view_detail": "Details",
+    "view_demo": "Demo"
+  },
+
+  "blog": {
+    "title": "Blog",
+    "read_time": "min read",
+    "all_labels": "All",
+    "filter_by_label": "Filter by label",
+    "detail": {
+      "back": "Back to Journal",
+      "livePreview": "Read Article",
+      "minRead": "min read",
+      "readingGuide": "Reading Guide",
+      "tableOfContents": "Table of Contents",
+      "chapter": "Chapter",
+      "topics": "Topics",
+      "previous": "Previous",
+      "next": "Next",
+      "firstChapter": "First chapter",
+      "lastChapter": "Last chapter",
+      "backToAllArticles": "Back to all articles"
+    },
+    "related": {
+      "eyebrow": "Keep Exploring",
+      "title": "Related Articles",
+      "subtitle": "Explore more stories and insights from Kamapra.",
+      "allArticles": "All articles",
+      "minRead": "min read"
+    }
+  },
+
+  "contact": {
+    "title": "Contact",
+    "copy_email": "Email copied",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "shutterstock": "Shutterstock"
+  },
+
+  "ai": {
+    "panel_title": "AI Assistant",
+    "placeholder": "Ask me anything...",
+    "loading": "Typing..."
+  },
+  "rolesHero": {
+    "label": "Independent Freelance",
+    "greeting": "Hi, I'm Kamapra.",
+    "introduction": "I am a",
+    "profileTitle": "Student & Web Developer",
+    "profileStatus": "Open to collaboration",
+    "profileContact": "Contact"
+  },
+
+  "educationTimeline": {
+    "label": "My Story",
+    "heading": "Let's go back in time.",
+    "milestones": [
+      {
+        "id": "sertifikasi",
+        "year": "2023",
+        "period": "2023",
+        "title": "Cloud Practitioner",
+        "place": "Example Certification Provider",
+        "points": [
+          "Deepened knowledge of cloud services, security, and application architecture.",
+          "Applied the knowledge to larger client projects."
+        ]
+      },
+      {
+        "id": "bootcamp",
+        "year": "2022",
+        "period": "2022",
+        "title": "Full-Stack Web Development",
+        "place": "Example Academy, Online",
+        "points": [
+          "Six-month intensive program covering React, Next.js, and databases.",
+          "Built several client projects from initial sketches to deployment."
+        ]
+      },
+      {
+        "id": "s1",
+        "year": "2018",
+        "period": "2018 - 2022",
+        "title": "Bachelor's Degree in Informatics Engineering",
+        "place": "Example University, Bali",
+        "points": [
+          "Studied software engineering, databases, and web development.",
+          "Graduated with a thesis on a web-based task management system."
+        ]
+      },
+      {
+        "id": "sma",
+        "year": "2015",
+        "period": "2015 - 2018",
+        "title": "Example Senior High School",
+        "place": "Denpasar, Bali",
+        "points": [
+          "Studied science and participated in robotics extracurricular activities.",
+          "Started learning basic programming independently."
+        ]
+      },
+      {
+        "id": "smp",
+        "year": "2012",
+        "period": "2012 - 2015",
+        "title": "Example Junior High School",
+        "place": "Denpasar, Bali",
+        "points": [
+          "Participated in student council and city-level science olympiads.",
+          "Created a simple blog for the first time to document school assignments."
+        ]
+      },
+      {
+        "id": "sd",
+        "year": "2006",
+        "period": "2006 - 2012",
+        "title": "Example Elementary School",
+        "place": "Denpasar, Bali",
+        "points": [
+          "Learned the fundamentals of reading, writing, and arithmetic.",
+          "Developed an early interest in computers through school lessons."
+        ]
+      }
+    ]
+  },
+  "blogCard": {
+    "noImage": "No Image",
+    "readMore": "Read more",
+    "categories": {
+      "belajar": "Learning",
+      "kerja": "Work",
+      "pendidikan": "Education",
+      "event": "Events",
+      "liburan": "Travel",
+      "personal": "Personal"
+    }
+  },
+  "blogTimeline": {
+    "eyebrow": "PERSONAL JOURNAL",
+    "title": "A Journey in Notes",
+    "description": "A space to document stories, learning processes, work experiences, and the journeys that shape every step forward.",
+    "totalPosts": "{count} notes published",
+    "searchPlaceholder": "Search notes...",
+    "showing": "Showing {count} notes",
+    "reset": "Reset filters",
+    "emptyTitle": "No notes found",
+    "emptyDescription": "Try another keyword or change the selected category.",
+    "filters": {
+      "all": "All",
+      "learning": "Learning",
+      "work": "Work",
+      "education": "Education",
+      "event": "Events",
+      "travel": "Travel",
+      "personal": "Personal"
+    }
+  },
+  "projects": {
+    "eyebrow": "Selected Works",
+    "title": "Selected Projects",
+    "description": "A collection of projects I've worked on, from application and website development to user interface design explorations.",
+    "projectCount": "PROJECTS",
+    "filters": {
+      "all": "All",
+      "application": "Application",
+      "landingPage": "Landing Page",
+      "companyProfile": "Company Profile",
+      "collegeDesign": "Figma Design",
+      "empty": "No projects found in this category.",
+      "showing": "Showing",
+      "of": "of",
+      "viewProject": "View Project"
+    },
+    "contact": {
+      "eyebrow": "Have an Idea or Project?",
+      "title": "Let's create something together",
+      "description": "Have an interesting idea, need a website, or want to collaborate? I'm open to discussing and building something meaningful together.",
+      "button": "Send a Message"
+    },
+    "detail": {
+      "back": "Back to Projects",
+      "livePreview": "Live Preview",
+      "repository": "Repository",
+      "overview": "Project Overview",
+      "projectInfo": "Project Information",
+      "year": "Year",
+      "category": "Category",
+      "status": "Status",
+      "myRole": "My Contribution",
+      "technologies": "Technologies",
+      "caseStudy": "Case Study",
+      "projectJourney": "Project Journey",
+      "endOfProject": "End of case study",
+      "allProjects": "All Projects"
+    }
+  },
+  "footer": {
+    "eyebrow": "UNTIL THE NEXT CREATION",
+    "heading": "Have an idea or",
+    "headingAccent": "want to collaborate?",
+    "description": "Let's discuss, share ideas, or simply say hello. I'm always open to new connections.",
+    "cta": "Let's connect",
+    "navigation": "Explore",
+    "social": "Find me",
+    "locationLabel": "Based in",
+    "availability": "Open to exciting projects and collaborations.",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "gallery": "Gallery",
+    "blog": "Blog",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "tagline": "Learn, Create, and Grow."
+  },
+  "certificates": {
+    "eyebrow": "ACHIEVEMENTS & LEARNING",
+    "title": "Certificates",
+    "description": "A collection documenting my learning journey, training, and professional experience in web development.",
+    "total": "Certificates earned",
+    "issued": "Issued",
+    "viewCertificate": "View certificate",
+    "note": "Every experience is part of a continuous journey of growth.",
+    "next": "Next",
+    "previous": "Previous"
+  },
+
+  "skills": {
+    "eyebrow": "SKILLS & TECHNOLOGIES",
+    "title": "Tools I use to bring ideas to life.",
+    "description": "Technologies, tools, and platforms I use throughout development and creative exploration.",
+    "all": "All",
+    "total": "Total",
+    "items": "tools",
+    "category": "Categories",
+    "groups": {
+      "development": {
+        "title": "Languages & Frameworks",
+        "description": "Core technologies for building applications and websites."
+      },
+      "tools": {
+        "title": "Tools & Productivity",
+        "description": "Tools for development, collaboration, and productivity."
+      },
+      "design": {
+        "title": "Digital Design",
+        "description": "Tools for visual design and creative exploration."
+      },
+      "ai": {
+        "title": "AI & Automation",
+        "description": "AI assistants and tools for workflow automation."
+      }
+    },
+    "details": {
+      "html": "Web Structure",
+      "css": "Styling",
+      "javascript": "Web Logic",
+      "typescript": "Type Safety",
+      "python": "Programming Logic",
+      "sql": "Data Management",
+      "react": "UI Library",
+      "nextjs": "Main Expertise",
+      "vue": "Currently Learning",
+      "tailwind": "Utility-first CSS",
+      "bootstrap": "UI Framework",
+      "wordpress": "CMS & Web Development",
+      "nodejs": "Server Runtime",
+      "vscode": "Main Editor",
+      "git": "Version Control",
+      "github": "Code Hosting",
+      "mysql": "Relational Database",
+      "supabase": "Backend as a Service",
+      "vercel": "Web Deployment",
+      "notion": "Documentation",
+      "colab": "Python Notebook",
+      "excel": "Data Processing",
+      "word": "Documents",
+      "powerpoint": "Presentations",
+      "figma": "UI/UX Design",
+      "photoshop": "Image Editing",
+      "illustrator": "Vector Graphics",
+      "canva": "Quick Design",
+      "capcut": "Video Editor",
+      "chatgpt": "Research Assistant",
+      "claude": "Code Analysis",
+      "gemini": "AI Assistant",
+      "grok": "Trend Analysis",
+      "n8n": "Workflow Automation"
+    }
+  },
+  "gallery": {
+    "eyebrow": "VISUAL JOURNAL",
+    "title": "Stories captured in every frame.",
+    "description": "A collection of moments, processes, and experiences documented through photography.",
+    "images": "photos",
+    "empty": "No photos in the gallery yet.",
+    "error": "Failed to load the gallery."
+  },
+
+  "projectsSection": {
+    "eyebrow": "KARYA PILIHAN",
+    "title": "Karya sane sampun kawangun.",
+    "description": "Pilih-pilihan project sane ngagambarkeun proses malajah, eksplorasi, miwah pengalaman titiang ring ngwangun produk digital.",
+    "viewAll": "Tingalin makasami project",
+    "viewProject": "Tingalin project",
+    "projects": [
+      {
+        "slug": "zasgo-mart",
+        "name": "Zasgo Mart",
+        "category": "E-Commerce",
+        "year": "2026",
+        "description": "Website toko online sane kaanggen nyokong kabutuhan bisnis miwah pengalaman mabelanja digital.",
+        "stack": ["Next.js", "Tailwind CSS"]
+      },
+      {
+        "slug": "mystarspa",
+        "name": "MyStar Spa",
+        "category": "Business Website",
+        "year": "2026",
+        "description": "Website bisnis spa antuk ngenalin layanan miwah ngicenin informasi bisnis ring online.",
+        "stack": ["WordPress"]
+      },
+      {
+        "slug": "brasika-asta-dharma",
+        "name": "Brasika Asta Dharma I",
+        "category": "Admin Dashboard",
+        "year": "2025",
+        "description": "Dashboard admin berbasis web antuk ngatur konten miwah data sane kasambung sareng database.",
+        "stack": ["Next.js", "Supabase"]
+      },
+      {
+        "slug": "clamonic",
+        "name": "Clamonic",
+        "category": "Property Website",
+        "year": "2026",
+        "description": "Website properti antuk nampilange informasi properti miwah layanan bisnis ring online.",
+        "stack": ["WordPress"]
+      }
+    ]
+  },
+  "contactSection": {
+    "eyebrow": "GET IN TOUCH",
+    "title": "LET'S",
+    "titleHighlight": "CONNECT",
+    "emailLabel": "MY EMAIL",
+    "sendEmail": "Send an email",
+    "copyEmail": "Copy email",
+    "copied": "Copied",
+    "socialTitle": "FIND ME ON",
+    "backHome": "Back to home"
+  },
+  "homeContact": {
+    "label": "Let's Connect",
+    "headline": "Have an idea or",
+    "highlight": "an interesting project?",
+    "description": "I'm open to conversations, collaborations, and turning ideas into something meaningful. Feel free to reach out.",
+    "button": "Get in Touch",
+    "copy": "Copy Email",
+    "copied": "Email Copied",
+    "availability": "Reach me at",
+    "footer": "Let's create something meaningful together."
+  }
+}

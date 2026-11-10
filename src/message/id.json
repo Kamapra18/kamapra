@@ -1,0 +1,432 @@
+{
+  "metadata": {
+    "title": "Kamapra",
+    "description": "Personal portfolio website"
+  },
+  "navbar": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "portfolio": "Portofolio",
+    "gallery": "Galeri",
+    "blog": "Blog",
+    "contact": "Kontak"
+  },
+
+  "homepage": {
+    "title": "Kamapra - Portfolio & Blog"
+  },
+
+  "hero": {
+    "label": "Portofolio Personal · Bali, Indonesia",
+    "title": {
+      "design": "Design.",
+      "develop": "Develop.",
+      "create": "Create."
+    },
+    "description": "Halo, saya Mario — seorang web developer yang tertarik membangun pengalaman digital melalui desain dan teknologi.",
+    "portfolio": "Lihat Portofolio",
+    "contact": "Hubungi Saya"
+  },
+  "blogSection": {
+    "eyebrow": "CATATAN & PEMIKIRAN",
+    "title": "Tulisan Terbaru",
+    "description": "Berbagi cerita, pengalaman, dan hal-hal yang saya pelajari selama proses berkarya dan berkembang.",
+    "viewAll": "Lihat selengkapnya",
+    "readMore": "Baca artikel",
+    "empty": "Belum ada artikel yang tersedia."
+  },
+
+  "about": {
+    "label": "SEDIKIT TENTANG SAYA",
+    "headline": "Saya percaya hal-hal baik berawal dari rasa ingin tahu.",
+    "introduction": "PERKENALAN SINGKAT",
+    "paragraph1": "Saya Mario, mahasiswa Teknik Informatika sekaligus web developer yang berbasis di Bali, Indonesia.",
+    "paragraph2": "Didorong oleh rasa ingin tahu, saya senang mengeksplorasi ide, memadukan desain dengan teknologi, dan mengubah konsep menjadi pengalaman digital yang bermakna. Bagi saya, setiap proyek adalah kesempatan untuk mempelajari hal baru, bereksperimen, dan berkembang.",
+    "closing": "Rasa ingin tahu membuat saya terus melangkah.",
+    "first": "SAYA PERCAYA",
+    "second": "HAL BAIK",
+    "third": "BERAWAL DARI",
+    "mantra": "Lorem",
+    "highlight": "RASA INGIN TAHU.",
+    "more": "Lebih jauh tentang saya",
+    "less": "Tutup cerita",
+    "story": "DI BALIK RASA INGIN TAHU",
+    "footer": "BELAJAR. BERKREASI. BERKEMBANG."
+  },
+  "profileCard": {
+    "name": "I Kadek Mario Prayoga",
+    "handle": "kamapra",
+    "email": "emailkamu@example.com",
+    "avatar": "/profile/Mario-id.jpg"
+  },
+  "profileTitle": "Mahasiswa & Web Developer",
+  "profileStatus": "Terbuka untuk kolaborasi",
+  "profileContact": "Hubungi",
+
+  "portfolio": {
+    "title": "Project",
+    "view_detail": "Detail",
+    "view_demo": "Demo"
+  },
+
+  "blog": {
+    "title": "Blog",
+    "read_time": "menit baca",
+    "all_labels": "Semua",
+    "filter_by_label": "Filter berdasarkan label",
+    "detail": {
+      "back": "Kembali ke Blog",
+      "livePreview": "Baca Artikel",
+      "minRead": "menit baca",
+      "readingGuide": "Panduan Membaca",
+      "tableOfContents": "Daftar Isi",
+      "chapter": "Bab",
+      "topics": "Topik",
+      "previous": "Sebelumnya",
+      "next": "Selanjutnya",
+      "firstChapter": "Bab pertama",
+      "lastChapter": "Bab terakhir",
+      "backToAllArticles": "Kembali ke semua artikel"
+    },
+    "related": {
+      "eyebrow": "Jelajahi Lebih Lanjut",
+      "title": "Artikel Lainnya",
+      "subtitle": "Jelajahi tulisan lainnya dari Kamapra.",
+      "allArticles": "Semua artikel",
+      "minRead": "menit baca"
+    }
+  },
+
+  "contact": {
+    "title": "Kontak",
+    "copy_email": "Email disalin",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "instagram": "Instagram",
+    "tiktok": "TikTok",
+    "shutterstock": "Shutterstock"
+  },
+
+  "ai": {
+    "panel_title": "Asisten AI",
+    "placeholder": "Tanyakan sesuatu...",
+    "loading": "Mengetik..."
+  },
+  "rolesHero": {
+    "label": "Freelance Independen",
+    "greeting": "Halo, saya Kamapra.",
+    "introduction": "Saya adalah",
+    "profileTitle": "Mahasiswa & Web Developer",
+    "profileStatus": "Terbuka untuk kolaborasi",
+    "profileContact": "Hubungi"
+  },
+
+  "educationTimeline": {
+    "label": "Perjalanan Saya",
+    "heading": "Mari melihat kembali perjalanan.",
+    "milestones": [
+      {
+        "id": "sertifikasi",
+        "year": "2023",
+        "period": "2023",
+        "title": "Cloud Practitioner",
+        "place": "Penyedia Sertifikasi Contoh",
+        "points": [
+          "Memperdalam dasar layanan cloud, keamanan, dan arsitektur aplikasi.",
+          "Menerapkan hasil pembelajaran pada proyek klien yang lebih besar."
+        ]
+      },
+      {
+        "id": "bootcamp",
+        "year": "2022",
+        "period": "2022",
+        "title": "Full-Stack Web Development",
+        "place": "Akademi Contoh, Daring",
+        "points": [
+          "Program intensif enam bulan tentang React, Next.js, dan basis data.",
+          "Membangun beberapa proyek klien dari tahap perancangan hingga rilis."
+        ]
+      },
+      {
+        "id": "s1",
+        "year": "2018",
+        "period": "2018 - 2022",
+        "title": "S1 Teknik Informatika",
+        "place": "Universitas Contoh, Bali",
+        "points": [
+          "Mempelajari rekayasa perangkat lunak, basis data, dan pengembangan web.",
+          "Menyelesaikan skripsi tentang sistem manajemen tugas berbasis web."
+        ]
+      },
+      {
+        "id": "sma",
+        "year": "2015",
+        "period": "2015 - 2018",
+        "title": "SMA Negeri 1 Contoh",
+        "place": "Denpasar, Bali",
+        "points": [
+          "Mengambil jurusan IPA dan aktif dalam ekstrakurikuler robotik.",
+          "Mulai mempelajari pemrograman dasar secara mandiri."
+        ]
+      },
+      {
+        "id": "smp",
+        "year": "2012",
+        "period": "2012 - 2015",
+        "title": "SMP Negeri 2 Contoh",
+        "place": "Denpasar, Bali",
+        "points": [
+          "Aktif di OSIS dan mengikuti olimpiade IPA tingkat kota.",
+          "Pertama kali membuat blog sederhana untuk dokumentasi tugas."
+        ]
+      },
+      {
+        "id": "sd",
+        "year": "2006",
+        "period": "2006 - 2012",
+        "title": "SD Negeri 1 Contoh",
+        "place": "Denpasar, Bali",
+        "points": [
+          "Mengenal dasar membaca, menulis, dan berhitung.",
+          "Mulai tertarik pada komputer melalui pelajaran muatan lokal."
+        ]
+      }
+    ]
+  },
+  "blogCard": {
+    "noImage": "Tanpa Gambar",
+    "readMore": "Baca selengkapnya",
+    "categories": {
+      "belajar": "Belajar",
+      "kerja": "Kerja",
+      "pendidikan": "Pendidikan",
+      "event": "Event",
+      "liburan": "Liburan",
+      "personal": "Personal"
+    }
+  },
+  "blogTimeline": {
+    "eyebrow": "PERSONAL JOURNAL",
+    "title": "Catatan Perjalanan",
+    "description": "Ruang untuk menyimpan cerita, proses belajar, pengalaman kerja, dan berbagai perjalanan yang membentuk setiap langkah.",
+    "totalPosts": "{count} catatan telah ditulis",
+    "searchPlaceholder": "Cari catatan...",
+    "showing": "Menampilkan {count} catatan",
+    "reset": "Atur ulang",
+    "emptyTitle": "Catatan tidak ditemukan",
+    "emptyDescription": "Coba gunakan kata kunci lain atau ubah kategori yang dipilih.",
+    "filters": {
+      "all": "Semua",
+      "learning": "Belajar",
+      "work": "Kerja",
+      "education": "Pendidikan",
+      "event": "Event",
+      "travel": "Liburan",
+      "personal": "Personal"
+    }
+  },
+  "projects": {
+    "eyebrow": "Kumpulan Karya",
+    "title": "Proyek Pilihan",
+    "description": "Berbagai proyek yang saya kerjakan, mulai dari pengembangan aplikasi dan website hingga eksplorasi desain antarmuka.",
+    "projectCount": "PROYEK",
+    "filters": {
+      "all": "Semua",
+      "application": "Aplikasi",
+      "landingPage": "Landing Page",
+      "companyProfile": "Company Profile",
+      "collegeDesign": "Desain Figma",
+      "empty": "Belum ada proyek dalam kategori ini.",
+      "showing": "Menampilkan",
+      "of": "dari",
+      "viewProject": "Lihat Proyek"
+    },
+    "contact": {
+      "eyebrow": "Punya Ide atau Proyek?",
+      "title": "Mari wujudkan sesuatu bersama",
+      "description": "Punya ide menarik, membutuhkan website, atau ingin berkolaborasi? Saya terbuka untuk berdiskusi dan mengerjakan sesuatu yang bermakna bersama.",
+      "button": "Kirim Pesan"
+    },
+    "detail": {
+      "back": "Kembali ke Projects",
+      "livePreview": "Lihat Website",
+      "repository": "Repository",
+      "overview": "Ringkasan Project",
+      "projectInfo": "Informasi Project",
+      "year": "Tahun",
+      "category": "Kategori",
+      "status": "Status",
+      "myRole": "Kontribusi Saya",
+      "technologies": "Teknologi",
+      "caseStudy": "Studi Kasus",
+      "projectJourney": "Proses Pengerjaan",
+      "endOfProject": "Akhir dari studi kasus",
+      "allProjects": "Semua Project"
+    }
+  },
+  "footer": {
+    "eyebrow": "SAMPAI JUMPA DI KARYA BERIKUTNYA",
+    "heading": "Punya ide atau",
+    "headingAccent": "ingin berkolaborasi?",
+    "description": "Mari berdiskusi, berbagi ide, atau sekadar menyapa. Saya selalu terbuka untuk koneksi baru.",
+    "cta": "Mari terhubung",
+    "navigation": "Jelajahi",
+    "social": "Temukan saya",
+    "locationLabel": "Berbasis di",
+    "availability": "Terbuka untuk proyek dan kolaborasi menarik.",
+    "about": "Tentang",
+    "portfolio": "Portofolio",
+    "gallery": "Galeri",
+    "blog": "Blog",
+    "contact": "Kontak",
+    "rights": "Hak cipta dilindungi.",
+    "tagline": "Belajar, Berkreasi, dan Berkembang."
+  },
+  "certificates": {
+    "eyebrow": "PENCAPAIAN & PEMBELAJARAN",
+    "title": "Sertifikat",
+    "description": "Dokumentasi perjalanan belajar, pelatihan, dan pengalaman profesional dalam pengembangan web.",
+    "total": "Sertifikat diperoleh",
+    "issued": "Diterbitkan",
+    "viewCertificate": "Lihat sertifikat",
+    "note": "Setiap proses adalah bagian dari perjalanan untuk terus berkembang.",
+    "next": "Selanjutnya",
+    "previous": "Sebelumnya"
+  },
+
+  "skills": {
+    "eyebrow": "KEMAMPUAN & TEKNOLOGI",
+    "title": "Tools yang saya gunakan untuk mewujudkan ide.",
+    "description": "Teknologi, tools, dan platform yang saya gunakan dalam proses pengembangan dan eksplorasi kreatif.",
+    "all": "Semua",
+    "total": "Total",
+    "items": "tools",
+    "category": "Kategori",
+    "groups": {
+      "development": {
+        "title": "Languages & Frameworks",
+        "description": "Teknologi utama untuk membangun aplikasi dan website."
+      },
+      "tools": {
+        "title": "Tools & Productivity",
+        "description": "Tools untuk pengembangan, kolaborasi, dan produktivitas."
+      },
+      "design": {
+        "title": "Digital Design",
+        "description": "Tools untuk desain visual dan eksplorasi kreatif."
+      },
+      "ai": {
+        "title": "AI & Automation",
+        "description": "Asisten AI dan tools untuk otomatisasi alur kerja."
+      }
+    },
+    "details": {
+      "html": "Struktur Web",
+      "css": "Styling",
+      "javascript": "Logika Web",
+      "typescript": "Tipe Data",
+      "python": "Logika Pemrograman",
+      "sql": "Manajemen Data",
+      "react": "Library UI",
+      "nextjs": "Keahlian Utama",
+      "vue": "Baru Belajar",
+      "tailwind": "Utility-first CSS",
+      "bootstrap": "Framework UI",
+      "wordpress": "CMS & Web Development",
+      "nodejs": "Runtime Server",
+      "vscode": "Editor Utama",
+      "git": "Version Control",
+      "github": "Kode Hosting",
+      "mysql": "Database Relasional",
+      "supabase": "Backend as a Service",
+      "vercel": "Deployment Web",
+      "notion": "Dokumentasi",
+      "colab": "Python Notebook",
+      "excel": "Olah Data",
+      "word": "Dokumen",
+      "powerpoint": "Presentasi",
+      "figma": "Desain UI/UX",
+      "photoshop": "Edit Gambar",
+      "illustrator": "Vektor Grafis",
+      "canva": "Desain Cepat",
+      "capcut": "Editor Video",
+      "chatgpt": "Asisten Riset",
+      "claude": "Analisis Kode",
+      "gemini": "Asisten AI",
+      "grok": "Analisis Tren",
+      "n8n": "Automasi Alur"
+    }
+  },
+  "gallery": {
+    "eyebrow": "DOKUMENTASI VISUAL",
+    "title": "Potongan cerita dalam setiap frame.",
+    "description": "Kumpulan momen, proses, dan pengalaman yang terdokumentasi melalui fotografi.",
+    "images": "foto",
+    "empty": "Belum ada foto di galeri.",
+    "error": "Gagal memuat galeri."
+  },
+
+  "projectsSection": {
+    "eyebrow": "KARYA PILIHAN",
+    "title": "Hal-hal yang saya bangun.",
+    "description": "Beberapa project yang merepresentasikan proses belajar, eksplorasi, dan pengalaman saya dalam membangun produk digital.",
+    "viewAll": "Lihat semua project",
+    "viewProject": "Lihat project",
+    "projects": [
+      {
+        "slug": "zasgo-mart",
+        "name": "Zasgo Mart",
+        "category": "E-Commerce",
+        "year": "2026",
+        "description": "Pengembangan website toko online untuk mendukung kebutuhan bisnis dan pengalaman belanja digital.",
+        "stack": ["Next.js", "Tailwind CSS"]
+      },
+      {
+        "slug": "mystarspa",
+        "name": "MyStar Spa",
+        "category": "Business Website",
+        "year": "2026",
+        "description": "Website bisnis spa yang dirancang untuk memperkenalkan layanan dan menghadirkan informasi bisnis secara online.",
+        "stack": ["WordPress"]
+      },
+      {
+        "slug": "brasika-asta-dharma",
+        "name": "Brasika Asta Dharma I",
+        "category": "Admin Dashboard",
+        "year": "2025",
+        "description": "Dashboard admin berbasis web untuk mengelola konten dan data dengan integrasi database.",
+        "stack": ["Next.js", "Supabase"]
+      },
+      {
+        "slug": "clamonic",
+        "name": "Clamonic",
+        "category": "Property Website",
+        "year": "2026",
+        "description": "Website properti yang dikembangkan untuk menampilkan informasi dan layanan bisnis properti secara online.",
+        "stack": ["WordPress"]
+      }
+    ]
+  },
+  "contactSection": {
+    "eyebrow": "HUBUNGI SAYA",
+    "title": "MARI",
+    "titleHighlight": "TERHUBUNG",
+    "emailLabel": "EMAIL SAYA",
+    "sendEmail": "Kirim email",
+    "copyEmail": "Salin email",
+    "copied": "Tersalin",
+    "socialTitle": "TEMUKAN SAYA",
+    "backHome": "Kembali ke beranda"
+  },
+  "homeContact": {
+    "label": "Mari Terhubung",
+    "headline": "Punya ide atau",
+    "highlight": "proyek menarik?",
+    "description": "Saya terbuka untuk berdiskusi, berkolaborasi, dan mengembangkan ide menjadi sesuatu yang bermanfaat. Jangan ragu untuk menghubungi saya.",
+    "button": "Hubungi Saya",
+    "copy": "Salin Email",
+    "copied": "Email Tersalin",
+    "availability": "Hubungi saya melalui",
+    "footer": "Mari ciptakan sesuatu yang bermakna bersama."
+  }
+}
