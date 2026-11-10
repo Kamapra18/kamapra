@@ -1,49 +1,57 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Space_Grotesk, Figtree } from "next/font/google";
+import { Suspense } from "react";
+
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/react";
-import Script from "next/script";
-import Snowfall from "./components/Snowfall";
-import { Exo_2, Montserrat } from "next/font/google";
+
+import { LanguageProvider } from "@/context/language-context";
+import { cn } from "@/lib/utils";
+
+import { Navbar } from "@/components/layout/navbar";
+import { Footer } from "@/components/layout/footer";
+import { Chatbot } from "@/components/chatbot/Chatbot";
+
 import ConsoleLog from "./components/feature/ConsolLog";
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
-const exo2 = Exo_2({
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
+// Fonts
+const figtree = Figtree({
   subsets: ["latin"],
-  weight: ["600", "700", "800"],
-  variable: "--font-heading",
+  variable: "--font-sans",
 });
 
-const montserrat = Montserrat({
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
-  weight: ["400", "500"],
-  variable: "--font-body",
+  weight: ["600", "700"],
 });
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
+// Metadata
 export const metadata: Metadata = {
   metadataBase: new URL("https://kamapra.my.id"),
   title: "Kamapra",
-  description: "Website Portofolio Kamapra",
+  description: "Personal portfolio website",
+
   verification: {
     google: "8F1KMMvDIzoKs4jCzzr7bVX3Udy2IhSZjST3gnvRnwk",
   },
+
   icons: {
     icon: "/Kamapra.png",
   },
+
   openGraph: {
     title: "Kamapra",
     description:
-      "Website portofolio I Kadek Mario Prayoga yang mendokumentasikan proses belajar dan karya kecil seputar web development, dari HTML, CSS, Tailwind CSS, Next.js hingga SQL dasar.",
+      "Website portofolio I Kadek Mario Prayoga yang mendokumentasikan proses belajar dan karya kecil seputar web development, dari HTML, CSS, Tailwind CSS, Next.js SQL dasar hingga WordPress.",
     url: "https://www.kamapra.my.id",
     siteName: "Kamapra",
     images: [
@@ -64,34 +72,31 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id">
-      <head>
-        <meta
-          name="google-site-verification"
-          content="8F1KMMvDIzoKs4jCzzr7bVX3Udy2IhSZjST3gnvRnwk"
-        />
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${exo2.variable} ${montserrat.variable} antialiased`}>
-        <Snowfall />
-        <SpeedInsights/>
-        <ConsoleLog />
-        {children}
-        <Analytics />
-        <Script id="chatbase-config" strategy="afterInteractive">
-          {`
-            window.CHATBASE_CONFIG = {
-              chatbotId: "jKZJ1rGBWq4USeYRJMOmW"
-            };
-          `}
-        </Script>
+    <html
+      lang="id"
+      className={cn(
+        "h-full",
+        "antialiased",
+        spaceGrotesk.variable,
+        inter.variable,
+        "font-sans",
+        figtree.variable,
+      )}>
+      <body className="min-h-full flex flex-col antialiased">
+        <LanguageProvider>
+          <Suspense fallback={null}>
+            <Navbar />
+          </Suspense>
 
-        <Script
-          src="https://www.chatbase.co/embed.min.js"
-          strategy="afterInteractive"
-          id="jKZJ1rGBWq4USeYRJMOmW"
-          defer
-        />
+          {children}
+
+          <Footer />
+          <Chatbot />
+        </LanguageProvider>
+
+        <ConsoleLog />
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );

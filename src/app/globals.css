@@ -1,189 +1,525 @@
 @import "tailwindcss";
 
 :root {
-  --background: #030712;
-  --foreground: #ffffff;
-  --accent: #38bdf8;
-
-  /* Pecahan background — pakai sesuai kebutuhan per section */
-  --bg-base: #030712;
-  --bg-navy: linear-gradient(to bottom, #030712 0%, #050f24 60%, #0b1d3a 100%);
-  --bg-glow: radial-gradient(
-    circle at 75% 70%,
-    rgba(22, 78, 142, 0.45) 0%,
-    transparent 45%
-  );
-  --bg-fade-bottom: linear-gradient(to bottom, transparent 70%, #030712 100%);
-  --bg-fade-top: linear-gradient(to top, transparent 70%, #030712 100%);
-
-  --gradient-primary: linear-gradient(to right, #2563eb, #38bdf8);
-  --gradient-secondary: linear-gradient(135deg, #1e40af, #2563eb, #38bdf8);
-
-  --btn-glass-text: #e2e8f0;
-
-  --btn-glass-border: rgba(255, 255, 255, 0.5);
-
-  --btn-glass-bg: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.02) 100%
-  );
-  --btn-glass-bg2: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgba(255, 255, 255, 0.2) 100%
-  );
-
-  /* State Hover & Tap */
-  --btn-glass-border-hover: rgba(255, 255, 255, 0.25);
-  --btn-glass-bg-hover: rgba(255, 255, 255, 0.08);
-  --btn-glass-bg-tap: rgba(255, 255, 255, 0.03);
-
-  /* Shadows (Pendaran biru halus untuk fintech feel) */
-  --btn-glass-shadow-base:
-    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-  --btn-glass-shadow-hover:
-    0 12px 40px 0 rgba(0, 0, 0, 0.5), 0 0 20px 1px rgba(56, 189, 248, 0.15);
-
-  /* Variabel Ikon */
-  --btn-icon-circle-bg: #ffffff;
-  --btn-icon-circle-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-  --btn-icon-arrow-bg: #ffffff;
-  --btn-icon-arrow-stroke: #111827;
-
-  --font-heading: "Exo 2", sans-serif;
-  --font-body: "Rajdhani", sans-serif;
+  --bg: #f9f9f9;
+  --surface: #eeeef1;
+  --border: #d9dade;
+  --text: #121117;
+  --text-muted: #5b5c66;
+  --accent: #00acec;
+  --accent-text: #0079ad;
+  --on-accent: #121117;
 }
 
-html {
-  scroll-behavior: smooth;
-  line-height: 1.5;
-  overflow-x: hidden;
+.dark {
+  --bg: #111018;
+  --surface: #1b1a22;
+  --border: #2a2933;
+  --text: #f9f9f9;
+  --text-muted: #a1a1ad;
+  --accent: #00acec;
+  --accent-text: #00acec;
+  --on-accent: #121117;
 }
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark {
+    --bg: #111018;
+    --surface: #1b1a22;
+    --border: #2a2933;
+    --text: #f9f9f9;
+    --text-muted: #a1a1ad;
+    --accent: #00acec;
+    --accent-text: #00acec;
+    --on-accent: #121117;
+  }
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-heading);
+/* Typography tokens from design.md */
+.h1 {
+  font-size: 48px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
 }
 
-@keyframes bounceSlow {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-@keyframes bounceSlower {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
+.h2 {
+  font-size: 32px;
+  line-height: 1.1;
 }
 
-.animate-bounce-slow {
-  animation: bounceSlow 1s ease-in-out infinite;
-}
-.animate-bounce-slower {
-  animation: bounceSlower 1.4s ease-in-out infinite;
+.h3 {
+  font-size: 22px;
+  line-height: 1.1;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
+.body {
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-.animate-fadeOut {
-  animation: fadeOut 1s ease-out forwards;
+.caption {
+  font-size: 13px;
+  font-family: "JetBrains Mono", monospace;
 }
 
-@keyframes slideInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+/* .article-content img {
+  display: block !important;
+  flex: start !important;
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 800px;
+  object-fit: contain;
+  margin: 2rem auto !important;
+} */
+
+.project-markdown {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.9;
 }
 
-@keyframes slideInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.project-markdown h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
 }
 
-.animate-fadeIn {
-  animation: fadeIn 1s ease-out forwards;
+.project-markdown h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
-.animate-slideInLeft {
-  animation: slideInLeft 1s ease-out forwards;
+.project-markdown p {
+  margin-bottom: 1.25rem;
 }
 
-.animate-slideInRight {
-  animation: slideInRight 1s ease-out forwards;
+.project-markdown ul,
+.project-markdown ol {
+  margin: 1rem 0 1.5rem;
+  padding-left: 1.5rem;
 }
 
-.prose ul {
+.project-markdown ul {
   list-style: disc;
-  padding-left: 1.5rem;
-  margin: 1rem 0;
 }
 
-.prose ol {
+.project-markdown ol {
   list-style: decimal;
-  padding-left: 1.5rem;
-  margin: 1rem 0;
 }
 
-.prose li {
-  display: list-item;
-  margin: 0.4rem 0;
+.project-markdown li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.25rem;
 }
 
-.prose h3,
-h2 {
-  font-size: 1.8rem;
-  margin-top: 0.4rem;
+.project-markdown a {
+  color: var(--accent-text);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
-.prose p {
-  margin-top: 1rem;
+
+.project-markdown strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.project-markdown blockquote {
+  margin: 2rem 0;
+  border-left: 2px solid var(--accent);
+  padding: 0.5rem 0 0.5rem 1.25rem;
+}
+
+.project-markdown img {
+  display: block;
+}
+
+/* ================================
+   BLOG MARKDOWN
+================================ */
+
+.blog-markdown {
+  max-width: 100%;
+  color: var(--text-muted);
+  font-size: 18px;
+  line-height: 1.9;
   text-align: justify;
-  line-height: 2;
+  overflow-wrap: break-word;
+}
+
+/* Headings */
+.blog-markdown h1,
+.blog-markdown h2,
+.blog-markdown h3,
+.blog-markdown h4,
+.blog-markdown h5,
+.blog-markdown h6 {
+  margin-top: 2.5em;
+  margin-bottom: 0.8em;
+  color: var(--text);
+  font-family: var(--font-space-grotesk);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  text-align: left;
+}
+
+.blog-markdown h1 {
+  font-size: 2.5rem;
+}
+
+.blog-markdown h2 {
+  font-size: 2rem;
+}
+
+.blog-markdown h3 {
+  font-size: 1.8rem;
+}
+
+.blog-markdown h4 {
+  font-size: 1.25rem;
+}
+
+/* Paragraph */
+.blog-markdown p {
+  margin-bottom: 1.5rem;
+}
+
+/* Text formatting */
+.blog-markdown strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.blog-markdown em {
+  font-style: italic;
+  font-weight: 800;
+  font-size: 1.8em;
+}
+
+.blog-markdown del {
+  text-decoration: line-through;
+}
+
+/* Links */
+.blog-markdown a {
+  color: var(--accent-text);
+  text-decoration: none;
+  text-underline-offset: 4px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.blog-markdown a:hover {
+  text-decoration: underline;
+}
+
+/* Lists */
+.blog-markdown ul,
+.blog-markdown ol {
+  margin: 1.5rem 0;
+  padding-left: 1.75rem;
+}
+
+.blog-markdown ul {
+  list-style-type: disc;
+}
+
+.blog-markdown ol {
+  list-style-type: decimal;
+}
+
+.blog-markdown li {
+  margin: 0.5rem 0;
+  padding-left: 0.35rem;
+}
+
+.blog-markdown li::marker {
+  color: var(--accent);
+}
+
+.blog-markdown li > p {
+  margin-bottom: 0.5rem;
+}
+
+/* Blockquote */
+.blog-markdown blockquote {
+  margin: 2rem 0;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  border-left: 3px solid var(--accent);
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.blog-markdown blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Inline Code */
+.blog-markdown :not(pre) > code {
+  padding: 0.2rem 0.45rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--accent-text);
+  font-size: 0.88em;
+}
+
+/* Code Block */
+.blog-markdown pre {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.875rem;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.blog-markdown pre code {
+  font-family: var(--font-geist-mono), monospace;
+}
+
+/* Images */
+.blog-markdown img {
+  display: block !important;
+  flex: start !important;
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 800px;
+  object-fit: contain;
+  margin: 2rem auto !important;
+}
+
+/* Image captions */
+.blog-markdown img + em {
+  display: block;
+  margin-top: -2rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* Tables */
+.blog-markdown table {
+  width: 100%;
+  margin: 2rem 0;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.blog-markdown th,
+.blog-markdown td {
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--border);
+}
+
+.blog-markdown th {
+  background: var(--surface);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.blog-markdown tr:nth-child(even) {
+  background: var(--surface);
+}
+
+/* Horizontal Rule */
+.blog-markdown hr {
+  margin: 3rem 0;
+  border: 0;
+  border-top: 1px solid var(--border);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .blog-markdown {
+    font-size: 16px;
+    line-height: 1.85;
+  }
+
+  .blog-markdown h1 {
+    font-size: 2rem;
+  }
+
+  .blog-markdown h2 {
+    font-size: 1.65rem;
+  }
+
+  .blog-markdown h3 {
+    font-size: 1.35rem;
+  }
+
+  .blog-markdown pre {
+    padding: 1rem;
+  }
+
+  .blog-markdown table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .blog-markdown em {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 1em;
+  }
+}
+
+/* ================================
+   CHATBOT MARKDOWN
+================================ */
+
+.chatbot-markdown {
+  overflow-wrap: anywhere;
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.chatbot-markdown > * + * {
+  margin-top: 0.75rem;
+}
+
+.chatbot-markdown h1,
+.chatbot-markdown h2,
+.chatbot-markdown h3 {
+  color: var(--text);
+  font-family: var(--font-space-grotesk);
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+
+.chatbot-markdown h1 {
+  font-size: 1.2rem;
+}
+
+.chatbot-markdown h2 {
+  font-size: 1.1rem;
+}
+
+.chatbot-markdown h3 {
+  font-size: 1rem;
+}
+
+.chatbot-markdown p {
+  margin-bottom: 0.65rem;
+}
+
+.chatbot-markdown strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.chatbot-markdown em {
+  font-style: italic;
+}
+
+.chatbot-markdown ul,
+.chatbot-markdown ol {
+  margin: 0.65rem 0;
+  padding-left: 1.35rem;
+}
+
+.chatbot-markdown ul {
+  list-style: disc;
+}
+
+.chatbot-markdown ol {
+  list-style: decimal;
+}
+
+.chatbot-markdown li {
+  margin: 0.25rem 0;
+  padding-left: 0.2rem;
+}
+
+.chatbot-markdown li::marker {
+  color: var(--accent);
+}
+
+.chatbot-markdown a {
+  color: var(--accent-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.chatbot-markdown blockquote {
+  border-left: 2px solid var(--accent);
+  padding-left: 0.8rem;
+  color: var(--text-muted);
+}
+
+.chatbot-markdown :not(pre) > code {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg);
+  padding: 0.15rem 0.35rem;
+  color: var(--accent-text);
+  font-size: 0.9em;
+}
+
+.chatbot-markdown pre {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  padding: 0.75rem;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.chatbot-markdown pre code {
+  font-family: var(--font-geist-mono), monospace;
+}
+
+.chatbot-markdown table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.chatbot-markdown th,
+.chatbot-markdown td {
+  border: 1px solid var(--border);
+  padding: 0.45rem 0.6rem;
+  text-align: left;
+}
+
+.chatbot-markdown th {
+  background: var(--bg);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.chatbot-markdown hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 1rem 0;
 }
