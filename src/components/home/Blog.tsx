@@ -1,4 +1,4 @@
-import { getAllPosts } from "@/lib/posts";
+import { getAllPosts } from "@/lib/Posts";
 import { RelatedBlogPosts } from "@/components/card/RelateBlogPosts";
 
 export function Blog() {

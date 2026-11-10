@@ -16,7 +16,7 @@ import id from "@/message/id.json";
 import en from "@/message/en.json";
 import ban from "@/message/ban.json";
 
-import type { Post } from "@/lib/posts";
+import type { Post } from "@/lib/Posts";
 
 interface RelatedBlogPostsProps {
   posts: Post[];
