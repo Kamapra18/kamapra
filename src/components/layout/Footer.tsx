@@ -1,12 +1,13 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
 
 import id from "@/message/id.json";
 import en from "@/message/en.json";
 import ban from "@/message/ban.json";
-// import { useEffect, useState } from "react";
+
 import { Suspense } from "react";
 import { CurrentYear } from "@/components/feature/CurrentYears";
 
@@ -23,12 +24,7 @@ export function Footer() {
 
   const messages = lang === "ID" ? id : lang === "EN" ? en : ban;
   const t = messages.footer;
-  // const [year, setYear] = useState<number | null>(null);
 
-  // useEffect(() => {
-  //   setYear(new Date().getFullYear());
-  // }, []);
-  // const year = new Date().getFullYear();
   const navigation = [
     { label: t.about, href: "/about" },
     { label: t.portfolio, href: "/porto" },
@@ -42,25 +38,44 @@ export function Footer() {
       <div className="mx-auto max-w-8xl px-5 sm:px-10 lg:px-20">
         {/* Closing Statement */}
         <section className="relative flex min-h-105 flex-col justify-center overflow-hidden py-16 md:min-h-120 md:py-20">
+          {/* Decorative Circle */}
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute -right-40 -top-64 h-150 w-150 rounded-full border border-(--accent)/20 bg-[radial-gradient(circle,rgba(0,172,236,0.08),transparent_70%)]"
+            className="pointer-events-none absolute -right-40 -top-64 z-0 h-150 w-150 rounded-full border border-(--accent)/20 bg-[radial-gradient(circle,rgba(0,172,236,0.08),transparent_70%)]"
           />
 
+          {/* Profile Image */}
+          <div className="pointer-events-none absolute bottom-0 right-0 z-[1] hidden h-full w-[43%] md:block">
+            <Image
+              src={t.profileImage}
+              alt="Kamapra Profile"
+              fill
+              priority
+              sizes="(max-width: 1024px) 43vw, 600px"
+              className="object-contain object-bottom"
+            />
+
+            {/* Image Gradient */}
+            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/10 to-transparent" />
+          </div>
+
+          {/* Content */}
           <div className="relative z-10 max-w-3xl">
             <div className="mb-8 flex items-center gap-4">
-              {/* <span className="h-[3px] w-12 bg-[var(--accent)]" /> */}
               <span className="text-xs font-semibold uppercase tracking-[0.2em] text-(--text-muted)">
                 {t.eyebrow}
               </span>
             </div>
+
             <h2 className="text-4xl font-semibold leading-[1.12] tracking-tight text-foreground sm:text-5xl md:text-7xl">
               {t.heading}
               <span className="block text-(--accent)">{t.headingAccent}</span>
             </h2>
+
             <p className="mt-7 max-w-xl text-base leading-relaxed text-(--text-muted) md:text-lg">
               {t.description}
             </p>
+
             <Link
               href="/contact"
               className="group mt-10 inline-flex items-center gap-4 border-b-2 border-(--accent) pb-2 text-base font-semibold text-foreground transition-colors hover:text-(--accent)">
@@ -133,9 +148,6 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="flex flex-col gap-4 border-t border-(--border) py-6 text-xs text-(--text-muted) sm:flex-row sm:items-center sm:justify-between">
-          {/* <p suppressHydrationWarning>
-            © {year ?? ""} Kamapra. {t.rights}
-          </p> */}
           <p>
             ©{" "}
             <Suspense fallback="2025">

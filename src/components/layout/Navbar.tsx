@@ -101,7 +101,7 @@ export function Navbar() {
             onClick={handleItemClick}
             className="text-[20px] flex flex-row items-center font-extrabold tracking-tight text-foreground">
             <Image
-              src="/logo/Kamapra.png"
+              src="/Kamapra.png"
               alt="Kamapra"
               width={40}
               height={40}

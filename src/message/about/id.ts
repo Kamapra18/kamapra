@@ -67,3 +67,35 @@ const aboutID = {
 };
 
 export default aboutID;
+
+// magang kominfo buat di education timeline
+// {
+//   "id": "kominfo-internship",
+//   "year": "2026",
+//   "period": "September 2026 - Januari 2027",
+//   "title": "Internship",
+//   "place": "Dinas Komunikasi dan Informatika",
+//   "points": [
+//     "Mendapatkan pengalaman di lingkungan kerja instansi pemerintahan serta mengenal proses pengelolaan data statistik, administrasi, dan penyajian informasi."
+//   ]
+// }
+// {
+//   "id": "kominfo-internship",
+//   "year": "2026",
+//   "period": "September 2026 - January 2027",
+//   "title": "Internship",
+//   "place": "Department of Communication and Informatics",
+//   "points": [
+//     "Gained experience in a government work environment while becoming familiar with statistical data management, administrative tasks, and information presentation."
+//   ]
+// }
+// {
+//   "id": "kominfo-internship",
+//   "year": "2026",
+//   "period": "Séptémber 2026 - Januari 2027",
+//   "title": "Magang",
+//   "place": "Dinas Komunikasi lan Informatika",
+//   "points": [
+//     "Ngamolihang pangalaman ring lingkungan makarya instansi pamaréntahan miwah nguningayang tata cara pangelolaan data statistik, administrasi, lan panyajian informasi."
+//   ]
+// }

@@ -46,7 +46,7 @@
     "first": "I BELIEVE",
     "second": "GOOD THINGS",
     "third": "BEGIN WITH",
-    "mantra": "Keep asking. Keep creating.",
+    "mantra": "You don't have to be perfect to begin.",
     "highlight": "CURIOSITY.",
     "more": "A little more about me",
     "less": "Close story",
@@ -56,8 +56,8 @@
   "profileCard": {
     "name": "I Kadek Mario Prayoga",
     "handle": "kamapra",
-    "email": "emailkamu@example.com",
-    "avatar": "/profile/Mario-eng.jpg"
+    "email": "marioprayoga18@gmail.com",
+    "avatar": "/profile/KamapraJas.png"
   },
   "profileTitle": "Student & Web Developer",
   "profileStatus": "Open to collaboration",
@@ -122,73 +122,69 @@
   },
 
   "educationTimeline": {
-    "label": "My Story",
-    "heading": "Let's go back in time.",
+    "label": "My Journey",
+    "heading": "Every step is part of the journey.",
     "milestones": [
       {
-        "id": "sertifikasi",
+        "id": "madhava-freelance",
+        "year": "2026",
+        "period": "July 2026 - Present",
+        "title": "Freelance Web Developer",
+        "place": "Madhava Enterprises - MAVA",
+        "points": [
+          "Working on freelance web development projects, building websites and delivering digital solutions based on client needs."
+        ]
+      },
+      {
+        "id": "madhava-internship",
+        "year": "2026",
+        "period": "February 2026 - June 2026",
+        "title": "Internship - Web Developer Intern",
+        "place": "Madhava Enterprises",
+        "points": [
+          "Gained hands-on professional experience by contributing to website development and working on real-world projects."
+        ]
+      },
+      {
+        "id": "primakara",
         "year": "2023",
-        "period": "2023",
-        "title": "Cloud Practitioner",
-        "place": "Example Certification Provider",
+        "period": "2023 - Present",
+        "title": "Informatics",
+        "place": "Primakara University",
         "points": [
-          "Deepened knowledge of cloud services, security, and application architecture.",
-          "Applied the knowledge to larger client projects."
+          "Focusing on web development, with a strong interest in exploring both front-end and back-end development.",
+          "Studying programming, software engineering, database management, and their practical applications through various projects."
         ]
       },
       {
-        "id": "bootcamp",
-        "year": "2022",
-        "period": "2022",
-        "title": "Full-Stack Web Development",
-        "place": "Example Academy, Online",
+        "id": "smk",
+        "year": "2020",
+        "period": "2020 - 2023",
+        "title": "Dance",
+        "place": "SMK Negeri 3 Sukawati",
         "points": [
-          "Six-month intensive program covering React, Next.js, and databases.",
-          "Built several client projects from initial sketches to deployment."
-        ]
-      },
-      {
-        "id": "s1",
-        "year": "2018",
-        "period": "2018 - 2022",
-        "title": "Bachelor's Degree in Informatics Engineering",
-        "place": "Example University, Bali",
-        "points": [
-          "Studied software engineering, databases, and web development.",
-          "Graduated with a thesis on a web-based task management system."
-        ]
-      },
-      {
-        "id": "sma",
-        "year": "2015",
-        "period": "2015 - 2018",
-        "title": "Example Senior High School",
-        "place": "Denpasar, Bali",
-        "points": [
-          "Studied science and participated in robotics extracurricular activities.",
-          "Started learning basic programming independently."
+          "Studied traditional dance and developed artistic skills through practice and performances.",
+          "Participated in several performances despite the disruption caused by the pandemic."
         ]
       },
       {
         "id": "smp",
-        "year": "2012",
-        "period": "2012 - 2015",
-        "title": "Example Junior High School",
-        "place": "Denpasar, Bali",
+        "year": "2017",
+        "period": "2017 - 2019",
+        "title": "Junior High School",
+        "place": "SMP Negeri 3 Banjarangkan",
         "points": [
-          "Participated in student council and city-level science olympiads.",
-          "Created a simple blog for the first time to document school assignments."
+          "Completed junior high school education, building a foundation for the next stage of learning."
         ]
       },
       {
         "id": "sd",
-        "year": "2006",
-        "period": "2006 - 2012",
-        "title": "Example Elementary School",
-        "place": "Denpasar, Bali",
+        "year": "2011",
+        "period": "2011 - 2017",
+        "title": "Elementary School",
+        "place": "SD Negeri 1 Nyalian",
         "points": [
-          "Learned the fundamentals of reading, writing, and arithmetic.",
-          "Developed an early interest in computers through school lessons."
+          "Began formal education and developed foundational knowledge and skills for the next stage of learning."
         ]
       }
     ]
@@ -234,6 +230,7 @@
       "all": "All",
       "application": "Application",
       "landingPage": "Landing Page",
+      "college": "College",
       "companyProfile": "Company Profile",
       "collegeDesign": "Figma Design",
       "empty": "No projects found in this category.",
@@ -266,6 +263,7 @@
   },
   "footer": {
     "eyebrow": "UNTIL THE NEXT CREATION",
+    "profileImage": "/profile/KamapraJas.png",
     "heading": "Have an idea or",
     "headingAccent": "want to collaborate?",
     "description": "Let's discuss, share ideas, or simply say hello. I'm always open to new connections.",

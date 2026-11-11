@@ -46,7 +46,7 @@
     "first": "SAYA PERCAYA",
     "second": "HAL BAIK",
     "third": "BERAWAL DARI",
-    "mantra": "Lorem",
+    "mantra": "Tidak harus sempurna untuk memulai.",
     "highlight": "RASA INGIN TAHU.",
     "more": "Lebih jauh tentang saya",
     "less": "Tutup cerita",
@@ -56,8 +56,8 @@
   "profileCard": {
     "name": "I Kadek Mario Prayoga",
     "handle": "kamapra",
-    "email": "emailkamu@example.com",
-    "avatar": "/profile/Mario-id.jpg"
+    "email": "marioprayoga18@gmail.com",
+    "avatar": "/profile/KamapraBatik.png"
   },
   "profileTitle": "Mahasiswa & Web Developer",
   "profileStatus": "Terbuka untuk kolaborasi",
@@ -123,76 +123,73 @@
 
   "educationTimeline": {
     "label": "Perjalanan Saya",
-    "heading": "Mari melihat kembali perjalanan.",
+    "heading": "Setiap langkah adalah bagian dari perjalanan.",
     "milestones": [
       {
-        "id": "sertifikasi",
+        "id": "madhava-freelance",
+        "year": "2026",
+        "period": "Juli 2026 - Sekarang",
+        "title": "Freelance Web Developer",
+        "place": "Madhava Enterprises - MAVA",
+        "points": [
+          "Mengerjakan berbagai proyek pengembangan web secara freelance, membangun website dan menghadirkan solusi digital sesuai kebutuhan klien."
+        ]
+      },
+      {
+        "id": "madhava-internship",
+        "year": "2026",
+        "period": "Februari 2026 - Juni 2026",
+        "title": "Magang - Web Developer Intern",
+        "place": "Madhava Enterprises",
+        "points": [
+          "Memperoleh pengalaman kerja profesional melalui keterlibatan dalam pengembangan website dan pengerjaan proyek nyata."
+        ]
+      },
+      {
+        "id": "primakara",
         "year": "2023",
-        "period": "2023",
-        "title": "Cloud Practitioner",
-        "place": "Penyedia Sertifikasi Contoh",
+        "period": "2023 - Sekarang",
+        "title": "Informatika",
+        "place": "Primakara University",
         "points": [
-          "Memperdalam dasar layanan cloud, keamanan, dan arsitektur aplikasi.",
-          "Menerapkan hasil pembelajaran pada proyek klien yang lebih besar."
+          "Berfokus pada pengembangan web dengan minat mendalam dalam mengeksplorasi bidang front-end maupun back-end.",
+          "Mempelajari pemrograman, rekayasa perangkat lunak, pengelolaan basis data, serta penerapannya dalam berbagai proyek."
         ]
       },
       {
-        "id": "bootcamp",
-        "year": "2022",
-        "period": "2022",
-        "title": "Full-Stack Web Development",
-        "place": "Akademi Contoh, Daring",
+        "id": "smk",
+        "year": "2020",
+        "period": "2020 - 2023",
+        "title": "Seni Tari",
+        "place": "SMK Negeri 3 Sukawati",
         "points": [
-          "Program intensif enam bulan tentang React, Next.js, dan basis data.",
-          "Membangun beberapa proyek klien dari tahap perancangan hingga rilis."
-        ]
-      },
-      {
-        "id": "s1",
-        "year": "2018",
-        "period": "2018 - 2022",
-        "title": "S1 Teknik Informatika",
-        "place": "Universitas Contoh, Bali",
-        "points": [
-          "Mempelajari rekayasa perangkat lunak, basis data, dan pengembangan web.",
-          "Menyelesaikan skripsi tentang sistem manajemen tugas berbasis web."
-        ]
-      },
-      {
-        "id": "sma",
-        "year": "2015",
-        "period": "2015 - 2018",
-        "title": "SMA Negeri 1 Contoh",
-        "place": "Denpasar, Bali",
-        "points": [
-          "Mengambil jurusan IPA dan aktif dalam ekstrakurikuler robotik.",
-          "Mulai mempelajari pemrograman dasar secara mandiri."
+          "Mendalami seni tari tradisional dan mengembangkan keterampilan melalui proses latihan serta pertunjukan.",
+          "Berpartisipasi dalam beberapa pertunjukan seni meskipun kegiatan belajar sempat terdampak pandemi."
         ]
       },
       {
         "id": "smp",
-        "year": "2012",
-        "period": "2012 - 2015",
-        "title": "SMP Negeri 2 Contoh",
-        "place": "Denpasar, Bali",
+        "year": "2017",
+        "period": "2017 - 2019",
+        "title": "Pendidikan Menengah Pertama",
+        "place": "SMP Negeri 3 Banjarangkan",
         "points": [
-          "Aktif di OSIS dan mengikuti olimpiade IPA tingkat kota.",
-          "Pertama kali membuat blog sederhana untuk dokumentasi tugas."
+          "Menyelesaikan pendidikan menengah pertama sebagai fondasi untuk melanjutkan pendidikan ke jenjang berikutnya."
         ]
       },
       {
         "id": "sd",
-        "year": "2006",
-        "period": "2006 - 2012",
-        "title": "SD Negeri 1 Contoh",
-        "place": "Denpasar, Bali",
+        "year": "2011",
+        "period": "2011 - 2017",
+        "title": "Sekolah Dasar",
+        "place": "SD Negeri 1 Nyalian",
         "points": [
-          "Mengenal dasar membaca, menulis, dan berhitung.",
-          "Mulai tertarik pada komputer melalui pelajaran muatan lokal."
+          "Memulai perjalanan pendidikan formal dan membangun dasar pengetahuan serta keterampilan untuk jenjang pendidikan berikutnya."
         ]
       }
     ]
   },
+
   "blogCard": {
     "noImage": "Tanpa Gambar",
     "readMore": "Baca selengkapnya",
@@ -235,6 +232,7 @@
       "application": "Aplikasi",
       "landingPage": "Landing Page",
       "companyProfile": "Company Profile",
+      "college": "Kampus",
       "collegeDesign": "Desain Figma",
       "empty": "Belum ada proyek dalam kategori ini.",
       "showing": "Menampilkan",
@@ -266,6 +264,7 @@
   },
   "footer": {
     "eyebrow": "SAMPAI JUMPA DI KARYA BERIKUTNYA",
+    "profileImage": "/profile/KamapraBatik.png",
     "heading": "Punya ide atau",
     "headingAccent": "ingin berkolaborasi?",
     "description": "Mari berdiskusi, berbagi ide, atau sekadar menyapa. Saya selalu terbuka untuk koneksi baru.",

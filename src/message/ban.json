@@ -46,7 +46,7 @@
     "first": "TIANG PERCAYA",
     "second": "INDIK BECIK",
     "third": "KAWIT SAKING",
-    "mantra": "Terus nakonang. Terus makarya.",
+    "mantra": "SUKSMA LELUHUR",
     "highlight": "RASA INGIN TAHU.",
     "more": "Kenali tiang langkung jero",
     "less": "Tutup carita",
@@ -56,7 +56,7 @@
   "profileCard": {
     "name": "I Kadek Mario Prayoga",
     "handle": "kamapra",
-    "email": "emailkamu@example.com",
+    "email": "marioprayoga18@gmail.com",
     "avatar": "/profile/Mario-ban.jpg"
   },
   "profileTitle": "Mahasiswa miwah Web Developer",
@@ -122,73 +122,69 @@
   },
 
   "educationTimeline": {
-    "label": "Lelintihan Titiang",
-    "heading": "Mangda ngelingang malih perjalanan.",
+    "label": "Lelintihan Pangajah",
+    "heading": "Sabilang pamargin dados bagian saking perjalanan.",
     "milestones": [
       {
-        "id": "sertifikasi",
+        "id": "madhava-freelance",
+        "year": "2026",
+        "period": "Juli 2026 - Mangkin",
+        "title": "Freelance Web Developer",
+        "place": "Madhava Enterprises - MAVA",
+        "points": [
+          "Nglaksanayang makudang-kudang proyek pangembangan web sacara mandiri, ngwangun website miwah ngicenin solusi digital manut kabutuhan klien."
+        ]
+      },
+      {
+        "id": "madhava-internship",
+        "year": "2026",
+        "period": "Pébruari 2026 - Juni 2026",
+        "title": "Magang - Web Developer Intern",
+        "place": "Madhava Enterprises",
+        "points": [
+          "Ngamolihang pangalaman makarya sacara profesional antuk keterlibatan ring pangembangan website miwah nglaksanayang proyek nyata."
+        ]
+      },
+      {
+        "id": "primakara",
         "year": "2023",
-        "period": "2023",
-        "title": "Cloud Practitioner",
-        "place": "Penyedia Sertifikasi Contoh",
+        "period": "2023 - Mangkin",
+        "title": "Informatika",
+        "place": "Primakara University",
         "points": [
-          "Ngalanturang kaweruhan indik layanan cloud, keamanan, miwah arsitektur aplikasi.",
-          "Nerapang kaweruhan punika ring proyek klien sane langkung ageng."
+          "Ngalanturang pangajah ring widang pangembangan web, miwah madue minat sane ageng ring front-end miwah back-end.",
+          "Ngresepang pangaweruh indik pemrograman, rekayasa perangkat lunak, pangelolaan basis data, miwah penerapannyan ring makudang-kudang proyek."
         ]
       },
       {
-        "id": "bootcamp",
-        "year": "2022",
-        "period": "2022",
-        "title": "Full-Stack Web Development",
-        "place": "Akademi Contoh, Online",
+        "id": "smk",
+        "year": "2020",
+        "period": "2020 - 2023",
+        "title": "Seni Tari",
+        "place": "SMK Negeri 3 Sukawati",
         "points": [
-          "Program intensif enem sasih indik React, Next.js, miwah database.",
-          "Ngwangun makudang-kudang proyek klien saking rancangan ngantos rilis."
-        ]
-      },
-      {
-        "id": "s1",
-        "year": "2018",
-        "period": "2018 - 2022",
-        "title": "Sarjana Teknik Informatika",
-        "place": "Universitas Contoh, Bali",
-        "points": [
-          "Ngelajahin rekayasa perangkat lunak, database, miwah pangembangan web.",
-          "Nuntasin skripsi indik sistem manajemen tugas berbasis web."
-        ]
-      },
-      {
-        "id": "sma",
-        "year": "2015",
-        "period": "2015 - 2018",
-        "title": "SMA Negeri 1 Contoh",
-        "place": "Denpasar, Bali",
-        "points": [
-          "Ngalaksanayang pendidikan jurusan IPA miwah aktif ring ekstrakurikuler robotik.",
-          "Wiwit malajah pemrograman dasar sacara mandiri."
+          "Ngrenanin seni tari tradisional miwah ngembangang kawagedan seni antuk latihan lan pagelaran.",
+          "Melu ring makudang-kudang pagelaran seni sané sampun kalaksanayang, yadiastun proses pangajah kapangaruhan olih pandemi."
         ]
       },
       {
         "id": "smp",
-        "year": "2012",
-        "period": "2012 - 2015",
-        "title": "SMP Negeri 2 Contoh",
-        "place": "Denpasar, Bali",
+        "year": "2017",
+        "period": "2017 - 2019",
+        "title": "Sekolah Menengah Pertama",
+        "place": "SMP Negeri 3 Banjarangkan",
         "points": [
-          "Aktif ring OSIS miwah ngiring olimpiade IPA tingkat kota.",
-          "Wiwit ngaryanin blog sederhana antuk dokumentasi tugas."
+          "Nuntasin pangajah ring sekolah menengah pertama pinaka dasar anggen ngalanturang pangajah ring tingkat salanturnyan."
         ]
       },
       {
         "id": "sd",
-        "year": "2006",
-        "period": "2006 - 2012",
-        "title": "SD Negeri 1 Contoh",
-        "place": "Denpasar, Bali",
+        "year": "2011",
+        "period": "2011 - 2017",
+        "title": "Sekolah Dasar",
+        "place": "SD Negeri 1 Nyalian",
         "points": [
-          "Malajah dasar maca, nyurat, miwah matunggal.",
-          "Wiwit demen ring komputer saking pelajaran ring sekolah."
+          "Ngawitin pamargin pangajah formal miwah ngwangun dasar pangaweruh lan kawagedan anggen ngalanturang pangajah."
         ]
       }
     ]
@@ -235,6 +231,7 @@
       "application": "Aplikasi",
       "landingPage": "Landing Page",
       "companyProfile": "Company Profile",
+      "college": "Ngampus",
       "collegeDesign": "Desain Figma",
       "empty": "Durung wenten proyek ring kategori puniki.",
       "showing": "Nampilayang",
@@ -266,6 +263,7 @@
   },
   "footer": {
     "eyebrow": "SAMPAI KETEMU RING KARYA SALANTURNE",
+    "profileImage": "/profile/KamapraBatik.png",
     "heading": "Maduwe ide utawi",
     "headingAccent": "ngajak kolaborasi?",
     "description": "Yuk, mabebaosan, ngawedar ide, utawi sekadar nyapa. Tiang selalu terbuka antuk koneksi anyar.",
