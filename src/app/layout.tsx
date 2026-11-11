@@ -4,14 +4,14 @@ import { Suspense } from "react";
 
 import "./globals.css";
 
-import { LanguageProvider } from "@/context/language-context";
-import { cn } from "@/lib/utils";
+import { LanguageProvider } from "@/context/LanguageContext";
+import { cn } from "@/lib/Utils";
 
-import { Navbar } from "@/components/layout/navbar";
-import { Footer } from "@/components/layout/footer";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 import { Chatbot } from "@/components/chatbot/Chatbot";
 
-import ConsoleLog from "./components/feature/ConsolLog";
+import ConsoleLog from "@/components/layout/ConsolLog";
 
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
