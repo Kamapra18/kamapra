@@ -12,11 +12,19 @@ import { Suspense } from "react";
 import { CurrentYear } from "@/components/feature/CurrentYears";
 
 const socialLinks = [
-  { name: "Instagram", href: "https://www.instagram.com/" },
-  { name: "WhatsApp", href: "https://wa.me/" },
-  { name: "GitHub", href: "https://github.com/" },
-  { name: "LinkedIn", href: "https://www.linkedin.com/" },
-  { name: "TikTok", href: "https://www.tiktok.com/" },
+  { name: "Instagram", href: "https://www.instagram.com/kamapra18" },
+  {
+    name: "WhatsApp",
+    href: "https://wa.me/6281949444963?text=Halo%20saya%20ingin%20tau%20lebih%20lanjut",
+  },
+  { name: "GitHub", href: "https://github.com/Kamapra18" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/kamapra/" },
+  { name: "TikTok", href: "https://www.tiktok.com/@kadekmarioprayoga" },
+  {
+    name: "Spotify",
+    href: "https://open.spotify.com/user/31jqt6j6rne2z6ib545q27zo3ecu?nd=1&dlsi=7b55b6ebb8dc427b",
+  },
+  { name: "Shutterstock", href: "https://www.shutterstock.com/g/Kamapra" },
 ];
 
 export function Footer() {
