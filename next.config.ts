@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
+        hostname: "res.cloudinary.com",
+        pathname: "/dtvet2awa/**",
+      },
+      {
+        protocol: "https",
         hostname: "github-readme-stats.vercel.app",
       },
       {
