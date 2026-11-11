@@ -1,24 +1,29 @@
-import { getAllPosts } from "@/app/lib/posts";
-import TimelineDashboard from "@/app/blog/Timelinedashboard";
-import Navbar from "../components/Navbar";
-import FooterSection from "../components/Footer";
-
 import type { Metadata } from "next";
 
+import { getAllPosts } from "@/lib/Posts";
+import TimelineDashboard from "@/components/blog/TimelineDashboard";
+// import Footer from "@/components/layout/footer";
+
 export const metadata: Metadata = {
-  title: "Blog Kamapra | Cerita, Belajar & Pengalaman",
+  title: "Journal | Kamapra",
   description:
-    "Baca tulisan Kamapra tentang perjalanan belajar web development, pengalaman kerja, pendidikan, event, dan cerita perjalanan di luar dunia digital.",
+    "A collection of thoughts, learning experiences, projects, and personal journeys by Mario Prayoga. Exploring ideas, development, and continuous growth.",
+  openGraph: {
+    title: "Journal | Kamapra",
+    description:
+      "Stories, lessons, projects, and experiences from the journey of learning and growing.",
+    type: "website",
+  },
 };
 
-export default async function TimelinePage() {
-  const posts = await getAllPosts();
+export default function BlogPage() {
+  const posts = getAllPosts();
 
   return (
-    <>
-      <Navbar />
+    <main className="min-h-screen bg-background text-foreground">
       <TimelineDashboard posts={posts} />
-      <FooterSection />
-    </>
+
+      {/* <Footer /> */}
+    </main>
   );
 }

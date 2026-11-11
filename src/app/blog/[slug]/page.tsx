@@ -1,43 +1,38 @@
-import {
-  getAllPosts,
-  getPostBySlug,
-  getPostChapters,
-  type Chapter,
-} from "@/app/lib/posts";
-import PostReader from "@/app/components/card/Postreader";
+import { Suspense } from "react";
+import { notFound } from "next/navigation";
 
-interface BlogPostPageProps {
-  params: Promise<{
-    slug: string;
-  }>;
+import { getAllPosts, getPostBySlug, getPostChapters } from "@/lib/Posts";
+
+import BlogDetailPage from "@/components/feature/BlogDetailPage";
+
+interface PageProps {
+  params: Promise<{ slug: string }>;
 }
 
-export async function generateStaticParams() {
-  const posts = getAllPosts();
-  return posts.map((post) => ({ slug: post.slug }));
+export default function Page({ params }: PageProps) {
+  return (
+    <Suspense
+      fallback={
+        <div className="flex min-h-screen items-center justify-center bg-background">
+          <p className="text-sm text-(--text-muted)">Memuat artikel...</p>
+        </div>
+      }>
+      <BlogContent params={params} />
+    </Suspense>
+  );
 }
 
-export default async function BlogPostPage({ params }: BlogPostPageProps) {
+async function BlogContent({ params }: PageProps) {
   const { slug } = await params;
+
   const post = getPostBySlug(slug);
 
   if (!post) {
-    return (
-      <div className="mx-auto max-w-6xl px-6 py-20 text-center text-slate-300">
-        <p className="text-xl font-semibold text-white">
-          Post tidak ditemukan.
-        </p>
-        <p className="mt-3 text-sm text-slate-400">
-          Pastikan slug post di URL sudah benar.
-        </p>
-      </div>
-    );
+    notFound();
   }
 
-  const chapters: Chapter[] =
-    post.type === "belajar"
-      ? getPostChapters(post.content)
-      : [{ id: "isi", title: post.title, content: post.content.trim() }];
+  const chapters = getPostChapters(post.content);
+  const allPosts = getAllPosts();
 
-  return <PostReader post={post} chapters={chapters} />;
+  return <BlogDetailPage post={post} chapters={chapters} allPosts={allPosts} />;
 }
