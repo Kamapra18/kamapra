@@ -44,8 +44,8 @@ export async function GET() {
       }) => ({
         id: file.id,
         name: file.name,
-        thumbnail: `https://drive.google.com/thumbnail?id=${file.id}&sz=w800`,
-        full: `https://drive.google.com/thumbnail?id=${file.id}&sz=w2400`,
+        thumbnail: `/api/gallery/${file.id}`,
+        full: `/api/gallery/${file.id}`,
         download: `https://drive.google.com/uc?export=download&id=${file.id}`,
         createdTime: file.createdTime,
       }),
