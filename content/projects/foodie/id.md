@@ -9,7 +9,7 @@ status: "Completed"
 
 description: "Landing page restoran kuliner 'Foo die' berbasis Next.js dan Tailwind CSS, dikerjakan untuk UTS mata kuliah Pemrograman Web. Pengalaman pertama saya memakai framework dan men-deploy website."
 
-coverImage: "/galeri/uts.png"
+coverImage: "https://res.cloudinary.com/dtvet2awa/image/upload/v1794404223/FIRSTPROJECT.png"
 
 roles:
   - "Frontend Developer"
@@ -79,7 +79,7 @@ Saya memulai dengan membayangkan alur seorang pengunjung restoran online: pertam
 
 Tampilan dibuat bersih dan menggugah selera, dengan memperhatikan hierarki judul, ruang kosong, dan penataan gambar agar halaman terasa menarik tanpa terlalu ramai.
 
-![Tampilan Landing Page Foo die](/galeri/uts.png)
+![Tampilan Landing Page Foo die](https://res.cloudinary.com/dtvet2awa/image/upload/v1794404223/FIRSTPROJECT.png)
 
 ## Pengembangan
 

@@ -9,7 +9,7 @@ status: "Completed"
 
 description: "Landing page untuk MyStar Spa, bisnis kecantikan dan perawatan tubuh di Sidemen, Karangasem. Proyek client pertama saya saat magang, sekaligus pengalaman pertama memberikan training WordPress kepada client."
 
-coverImage: "/galeri/mystarspa.png"
+coverImage: "https://res.cloudinary.com/dtvet2awa/image/upload/v1794404230/Mystarspa.png"
 
 roles:
   - "WordPress Developer"

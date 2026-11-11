@@ -9,7 +9,7 @@ status: "Completed"
 
 description: "Website company profile untuk Zasgo Mart, jaringan toko ritel modern dengan 8 outlet di Labuan Bajo, Flores, yang menyajikan profil perusahaan, katalog produk, lokasi toko, dan promo."
 
-coverImage: "/images/mystarspa.png"
+coverImage: "https://res.cloudinary.com/dtvet2awa/image/upload/v1794404226/Zasgomart.png"
 
 roles:
   - "Web Developer"
@@ -87,7 +87,7 @@ Proses dimulai dengan memetakan kebutuhan informasi pengunjung. Saya menyusun da
 
 Tampilan dirancang bersih, modern, dan mudah dibaca, sesuai citra ritel modern. Penggunaan ruang kosong, hierarki judul, dan penataan gambar produk dipertimbangkan agar halaman tidak terasa penuh meskipun menampung banyak informasi.
 
-![Website Preview](/images/mystarspa.png)
+![Website Preview](https://res.cloudinary.com/dtvet2awa/image/upload/v1794404226/Zasgomart.png)
 
 ## Development
 

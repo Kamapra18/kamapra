@@ -9,7 +9,7 @@ status: "Completed"
 
 description: "Aplikasi mobile Android pengelolaan keuangan pribadi dengan pencatatan transaksi, target keuangan, dan dashboard interaktif. Proyek pertama saya membuat aplikasi mobile, dikerjakan untuk UAS mata kuliah Pemrograman Mobile."
 
-coverImage: "/galeri/goalfin.png"
+coverImage: "https://res.cloudinary.com/dtvet2awa/image/upload/v1794411563/Goalfin.png"
 
 roles:
   - "Mobile Developer"

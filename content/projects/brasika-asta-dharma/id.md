@@ -9,7 +9,7 @@ status: "Completed"
 
 description: "Website resmi Sekaa Teruna Teruni (STT) Brasika Asta Dharma I, organisasi pemuda di Banjar Pekandelan, Nyalian, Klungkung, yang dikembangkan sebagai proyek kuliah."
 
-coverImage: "/galeri/brasika.png"
+coverImage: "https://res.cloudinary.com/dtvet2awa/image/upload/v1794404226/Brasika.png"
 
 roles:
   - "Frontend Developer"

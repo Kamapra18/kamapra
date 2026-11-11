@@ -9,7 +9,7 @@ status: "Completed"
 
 description: "Proyek website pertama saya, landing page untuk Warung Mennara, usaha kuliner lokal di Denpasar, yang lahir dari tugas kuliah Bisnis dan Digitalisasi UMKM. Memuat daftar menu, lokasi, FAQ, dan order langsung via WhatsApp."
 
-coverImage: "/galeri/warungmennara.png"
+coverImage: "https://res.cloudinary.com/dtvet2awa/image/upload/v1794404224/Clamonic_2.png"
 
 roles:
   - "Frontend Developer"
@@ -79,7 +79,7 @@ Saya memulai dari pertanyaan sederhana: apa yang ingin dicari pelanggan saat mem
 
 Karena ini adalah usaha kuliner, tampilan dibuat hangat, bersih, dan mudah dibaca. Hierarki judul, ruang kosong, dan penataan gambar menu diperhatikan agar halaman terasa menarik tanpa terlalu ramai.
 
-![Tampilan Warung Mennara](/galeri/warungmennara.png)
+![Tampilan Warung Mennara](https://res.cloudinary.com/dtvet2awa/image/upload/v1794404224/Clamonic_2.png)
 
 ## Pengembangan
 

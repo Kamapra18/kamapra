@@ -9,7 +9,7 @@ status: "Completed"
 
 description: "Website manajemen properti dan sistem reservasi untuk Clamonic berbasis WordPress, dikerjakan dalam tim 2 orang selama magang di Madhava, dari tahap prototipe sampai website live."
 
-coverImage: "/galeri/clamonic.com_.png"
+coverImage: "https://res.cloudinary.com/dtvet2awa/image/upload/v1794404224/Clamonic.png"
 
 roles:
   - "Web Developer"
@@ -80,7 +80,7 @@ Pengerjaan dimulai dari prototipe. Di tahap ini saya ikut membantu menyusun kera
 
 Setelah prototipe disepakati, kami lanjut membangun website dengan WordPress. HTML, CSS, dan JavaScript dipakai untuk menyesuaikan tampilan dan perilaku halaman, sehingga hasilnya bisa lebih sesuai kebutuhan dibandingkan sekadar tema bawaan.
 
-![Tampilan Website Clamonic](/galeri/clamonic.com_.png)
+![Tampilan Website Clamonic](https://res.cloudinary.com/dtvet2awa/image/upload/v1794404224/Clamonic.png)
 
 ### Integrasi booking
 

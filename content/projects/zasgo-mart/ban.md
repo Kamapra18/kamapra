@@ -9,7 +9,7 @@ status: "Completed"
 
 description: "Website company profile Zasgo Mart, jaringan toko ritel modern sane madue 8 outlet ring Labuan Bajo, Flores, sane nyihnayang profil perusahaan, katalog produk, genah toko, miwah promo."
 
-coverImage: "/galeri/zasgomart.png"
+coverImage: "https://res.cloudinary.com/dtvet2awa/image/upload/v1794404226/Zasgomart.png"
 
 roles:
   - "Web Developer"
@@ -87,7 +87,7 @@ Proses punika kawitin antuk nyatetang kabutuhan informasi sang sane nyingakin. T
 
 Tampilan kaancangang resik, modern, miwah gampang kawacen, saluwir citra toko ritel modern. Genah kosong, hierarki judul, miwah pata gambar produk kapertimbangang mangda halaman nenten kaanggen sesak sakadi akeh informasi sane kaisi.
 
-![Website Preview](/galeri/zasgomart.png)
+![Website Preview](https://res.cloudinary.com/dtvet2awa/image/upload/v1794404226/Zasgomart.png)
 
 ## Pengembangan
 

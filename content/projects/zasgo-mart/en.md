@@ -9,7 +9,7 @@ status: "Completed"
 
 description: "A company profile website for Zasgo Mart, a modern retail chain with 8 outlets in Labuan Bajo, Flores, featuring the company profile, product catalog, store locations, and promotions."
 
-coverImage: "/galeri/zasgomart.png"
+coverImage: "https://res.cloudinary.com/dtvet2awa/image/upload/v1794404226/Zasgomart.png"
 
 roles:
   - "Web Developer"
@@ -87,7 +87,7 @@ The process began by mapping the information needs of visitors. I drafted a list
 
 The design is clean, modern, and easy to read, matching the image of a modern retail brand. Whitespace, heading hierarchy, and product image placement were carefully considered so that the pages never feel crowded despite holding a lot of information.
 
-![Website Preview](/galeri/zasgomart.png)
+![Website Preview](https://res.cloudinary.com/dtvet2awa/image/upload/v1794404226/Zasgomart.png)
 
 ## Development
 

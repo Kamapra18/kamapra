@@ -9,7 +9,7 @@ status: "Design Completed"
 
 description: "Desain Figma untuk rebranding website company profile Madhava Enterprises, dikerjakan selama magang. Website kemudian dikembangkan dengan WordPress pada URL staging sebelum dimigrasi ke domain utama."
 
-coverImage: "/galeri/madhavaenterprises.mava.co.id_.png"
+coverImage: "https://res.cloudinary.com/dtvet2awa/image/upload/v1794411047/FigmaMadhava.png"
 
 roles:
   - "UI/UX Designer"
@@ -20,11 +20,10 @@ technologies:
   - "WordPress"
   - "HTML"
   - "CSS"
-  - "JavaScript"
 
 links:
   demo: "http://madhavaenterprises.com"
-  figma: ""
+  figma: "https://www.figma.com/proto/5EkEbcoOJPZ71kKBNtjUsc/Portofolio?node-id=26-5359&p=f&t=9WTG4K0ftPzXc9lQ-9&scaling=scale-down&content-scaling=fixed&page-id=24%3A893&starting-point-node-id=26%3A5359&show-proto-sidebar=1"
   repository: ""
 
 featured: false
@@ -80,7 +79,7 @@ Setelah tata letak disepakati, saya mengolah tampilan visualnya, termasuk pemili
 
 Desain yang sudah jadi kemudian menjadi acuan saat website dibangun di WordPress. Dengan begitu, proses implementasi punya pegangan yang jelas dan hasilnya tetap sejalan dengan rancangan.
 
-![Tampilan Website Madhava Enterprises](/galeri/madhavaenterprises.mava.co.id_.png)
+![Tampilan Website Madhava Enterprises](https://res.cloudinary.com/dtvet2awa/image/upload/v1794411050/FigmaMadhava_1.png)
 
 ## Pengembangan
 
