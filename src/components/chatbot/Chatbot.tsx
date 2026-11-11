@@ -145,7 +145,7 @@ function ChatbotContent() {
             <div className="flex items-center gap-3">
               <div className="relative flex size-10 items-center justify-center overflow-hidden rounded-full bg-(--surface)">
                 <Image
-                  src="/logo/Kamapra.png"
+                  src="/Kamapra.png"
                   alt="Kamapra"
                   fill
                   sizes="40px"
