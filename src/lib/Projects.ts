@@ -24,6 +24,7 @@ export type ProjectContent = {
 };
 
 export type Project = ProjectContent & {
+  id: number;
   slug: string;
   translations: Record<ProjectLanguage, ProjectContent>;
 };
@@ -37,11 +38,12 @@ const languageFiles: Record<ProjectLanguage, string> = {
 function parseProjectFile(
   filePath: string,
   fallbackSlug: string,
-): ProjectContent & { slug: string } {
+): ProjectContent & { id: number; slug: string } {
   const fileContent = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(fileContent);
 
   return {
+    id: Number.isFinite(Number(data.id)) ? Number(data.id) : 0,
     title: String(data.title ?? ""),
     slug: String(data.slug ?? fallbackSlug),
     category: String(data.category ?? ""),
@@ -124,6 +126,7 @@ function createProjectFromDirectory(directoryName: string): Project | null {
 
   return {
     ...idContent,
+    id: baseProject.id,
     slug,
     translations,
   };
@@ -133,10 +136,11 @@ function createLegacyProject(fileName: string): Project {
   const filePath = path.join(projectsDirectory, fileName);
   const parsed = parseProjectFile(filePath, fileName.replace(/\.md$/, ""));
 
-  const { slug, ...content } = parsed;
+  const { slug, id, ...content } = parsed;
 
   return {
     ...content,
+    id,
     slug,
     translations: {
       ID: content,
@@ -172,13 +176,15 @@ export function getProjects(): Project[] {
     }
   }
 
-  return projects.sort((a, b) => {
-    if (a.featured !== b.featured) {
-      return Number(b.featured) - Number(a.featured);
-    }
+  // return projects.sort((a, b) => {
+  //   if (a.featured !== b.featured) {
+  //     return Number(b.featured) - Number(a.featured);
+  //   }
 
-    return b.year - a.year;
-  });
+  //   return b.year - a.year;
+  // });
+
+  return projects.sort((a, b) => b.id - a.id);
 }
 
 export function getProjectBySlug(slug: string): Project | undefined {

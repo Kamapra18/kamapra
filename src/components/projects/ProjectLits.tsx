@@ -8,9 +8,10 @@ import type { Project } from "@/lib/Projects";
 type Category =
   | "All"
   | "Application"
+  | "College"
   | "Landing Page"
   | "Company Profile"
-  | "College Design Figma";
+  | "UI/UX Design";
 
 type Props = {
   projects: Project[];
@@ -20,6 +21,7 @@ type Props = {
     landingPage: string;
     companyProfile: string;
     collegeDesign: string;
+    college: string;
     empty: string;
     showing: string;
     of: string;
@@ -33,9 +35,10 @@ export default function ProjectList({ projects, labels }: Props) {
   const filters: { value: Category; label: string }[] = [
     { value: "All", label: labels.all },
     { value: "Application", label: labels.application },
+    { value: "College", label: labels.college },
     { value: "Landing Page", label: labels.landingPage },
     { value: "Company Profile", label: labels.companyProfile },
-    { value: "College Design Figma", label: labels.collegeDesign },
+    { value: "UI/UX Design", label: labels.collegeDesign },
   ];
 
   const filteredProjects = useMemo(() => {
