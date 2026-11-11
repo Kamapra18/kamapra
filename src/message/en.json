@@ -365,43 +365,43 @@
   },
 
   "projectsSection": {
-    "eyebrow": "KARYA PILIHAN",
-    "title": "Karya sane sampun kawangun.",
-    "description": "Pilih-pilihan project sane ngagambarkeun proses malajah, eksplorasi, miwah pengalaman titiang ring ngwangun produk digital.",
-    "viewAll": "Tingalin makasami project",
-    "viewProject": "Tingalin project",
+    "eyebrow": "FEATURED WORK",
+    "title": "Things I've built.",
+    "description": "A selection of projects that reflect my learning, exploration, and experience in building digital products.",
+    "viewAll": "View all projects",
+    "viewProject": "View project",
     "projects": [
       {
         "slug": "zasgo-mart",
         "name": "Zasgo Mart",
-        "category": "E-Commerce",
+        "category": "Company Profile",
         "year": "2026",
-        "description": "Website toko online sane kaanggen nyokong kabutuhan bisnis miwah pengalaman mabelanja digital.",
-        "stack": ["Next.js", "Tailwind CSS"]
+        "description": "A company profile website for a modern retail chain with 8 outlets in Labuan Bajo, featuring a product catalog, store locations, and promotions.",
+        "stack": ["WordPress", "Elementor"]
       },
       {
         "slug": "mystarspa",
         "name": "MyStar Spa",
-        "category": "Business Website",
+        "category": "Landing Page",
         "year": "2026",
-        "description": "Website bisnis spa antuk ngenalin layanan miwah ngicenin informasi bisnis ring online.",
-        "stack": ["WordPress"]
+        "description": "A landing page for a beauty and body care business in Sidemen, Karangasem, with a service list, pricing, a gallery, and WhatsApp reservations.",
+        "stack": ["WordPress", "Elementor"]
       },
       {
-        "slug": "brasika-asta-dharma",
-        "name": "Brasika Asta Dharma I",
-        "category": "Admin Dashboard",
-        "year": "2025",
-        "description": "Dashboard admin berbasis web antuk ngatur konten miwah data sane kasambung sareng database.",
-        "stack": ["Next.js", "Supabase"]
+        "slug": "goalfin",
+        "name": "GoalFin",
+        "category": "Mobile App",
+        "year": "2026",
+        "description": "An Android mobile app for managing personal finances, with transaction tracking, financial goals, and an interactive dashboard.",
+        "stack": ["Expo", "TypeScript", "Supabase"]
       },
       {
         "slug": "clamonic",
         "name": "Clamonic",
-        "category": "Property Website",
+        "category": "Company Profile",
         "year": "2026",
-        "description": "Website properti antuk nampilange informasi properti miwah layanan bisnis ring online.",
-        "stack": ["WordPress"]
+        "description": "A property management and reservation website for villas, guest houses, and glamping, with online booking integration.",
+        "stack": ["WordPress", "JavaScript"]
       }
     ]
   },

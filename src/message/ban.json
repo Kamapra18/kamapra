@@ -366,42 +366,42 @@
 
   "projectsSection": {
     "eyebrow": "KARYA PILIHAN",
-    "title": "Karya sane sampun kauningin.",
-    "description": "Pilih-pilihan project sane ngagambarkeun proses malajah, eksplorasi, miwah pengalaman titiang ring ngwangun produk digital.",
-    "viewAll": "Tingalin makasami project",
-    "viewProject": "Tingalin project",
+    "title": "Sane sampun tiang wangun.",
+    "description": "Makudang-kudang proyek sane nyihnayang proses mlajah, eksplorasi, miwah pangalaman tiang ngwangun produk digital.",
+    "viewAll": "Cingakin sami proyek",
+    "viewProject": "Cingakin proyek",
     "projects": [
       {
         "slug": "zasgo-mart",
         "name": "Zasgo Mart",
-        "category": "E-Commerce",
+        "category": "Company Profile",
         "year": "2026",
-        "description": "Website toko online sane kaanggen nyokong kabutuhan bisnis miwah pengalaman mabelanja digital.",
-        "stack": ["Next.js", "Tailwind CSS", "Supabase"]
+        "description": "Website company profile jaringan toko ritel modern sane madue 8 outlet ring Labuan Bajo, madaging katalog produk, genah toko, miwah promo.",
+        "stack": ["WordPress", "Elementor"]
       },
       {
         "slug": "mystarspa",
-        "name": "Mystarspa",
-        "category": "Hotel Website",
+        "name": "MyStar Spa",
+        "category": "Landing Page",
         "year": "2026",
-        "description": "Website hotel sane kasambung sareng API antuk ngicenin pengalaman digital sane informatif miwah responsif.",
-        "stack": ["Next.js", "Laravel", "REST API"]
+        "description": "Landing page bisnis kecantikan miwah perawatan awak ring Sidemen, Karangasem, madaging daftar layanan, harga, galeri, miwah reservasi antuk WhatsApp.",
+        "stack": ["WordPress", "Elementor"]
       },
       {
-        "slug": "brasika-asta-dharma",
-        "name": "Brasika Asta Dharma I",
-        "category": "Admin Dashboard",
-        "year": "2025",
-        "description": "Dashboard admin antuk ngatur konten miwah data ring aplikasi web sane kasambung sareng database.",
-        "stack": ["Next.js", "Supabase", "Tailwind CSS"]
+        "slug": "goalfin",
+        "name": "GoalFin",
+        "category": "Mobile App",
+        "year": "2026",
+        "description": "Aplikasi mobile Android pangelolaan keuangan pribadi sane madaging pencatatan transaksi, target keuangan, miwah dashboard interaktif.",
+        "stack": ["Expo", "TypeScript", "Supabase"]
       },
       {
         "slug": "clamonic",
         "name": "Clamonic",
         "category": "Company Profile",
         "year": "2026",
-        "description": "Website perusahaan antuk ngatur konten miwah data ring aplikasi web sane kasambung sareng database.",
-        "stack": ["Next.js", "Supabase", "AI"]
+        "description": "Website manajemen properti miwah reservasi majeng ring villa, guest house, lan glamping, sareng integrasi booking online.",
+        "stack": ["WordPress", "JavaScript"]
       }
     ]
   },

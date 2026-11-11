@@ -21,15 +21,19 @@ type Language = keyof typeof messages;
 const projectLinks: Record<string, string> = {
   "zasgo-mart": "",
   mystarspa: "",
-  "brasika-asta-dharma": "",
+  goalfin: "",
   clamonic: "",
 };
 
 const projectImages: Record<string, string> = {
-  "zasgo-mart": "/images/mystarspa.png",
-  mystarspa: "/images/mystarspa.png",
-  "brasika-asta-dharma": "/images/mystarspa.png",
-  clamonic: "/images/mystarspa.png",
+  "zasgo-mart":
+    "https://res.cloudinary.com/dtvet2awa/image/upload/v1794404226/Zasgomart.png",
+  mystarspa:
+    "https://res.cloudinary.com/dtvet2awa/image/upload/v1794404230/Mystarspa.png",
+  goalfin:
+    "https://res.cloudinary.com/dtvet2awa/image/upload/v1794411563/Goalfin.png",
+  clamonic:
+    "https://res.cloudinary.com/dtvet2awa/image/upload/v1794404224/Clamonic.png",
 };
 
 export function ProjectSection() {

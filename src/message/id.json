@@ -375,34 +375,34 @@
       {
         "slug": "zasgo-mart",
         "name": "Zasgo Mart",
-        "category": "E-Commerce",
+        "category": "Company Profile",
         "year": "2026",
-        "description": "Pengembangan website toko online untuk mendukung kebutuhan bisnis dan pengalaman belanja digital.",
-        "stack": ["Next.js", "Tailwind CSS"]
+        "description": "Website company profile untuk jaringan toko ritel modern dengan 8 outlet di Labuan Bajo, memuat katalog produk, lokasi toko, dan promo.",
+        "stack": ["WordPress", "Elementor"]
       },
       {
         "slug": "mystarspa",
         "name": "MyStar Spa",
-        "category": "Business Website",
+        "category": "Landing Page",
         "year": "2026",
-        "description": "Website bisnis spa yang dirancang untuk memperkenalkan layanan dan menghadirkan informasi bisnis secara online.",
-        "stack": ["WordPress"]
+        "description": "Landing page bisnis kecantikan dan perawatan tubuh di Sidemen, Karangasem, lengkap dengan daftar layanan, harga, galeri, dan reservasi via WhatsApp.",
+        "stack": ["WordPress", "Elementor"]
       },
       {
-        "slug": "brasika-asta-dharma",
-        "name": "Brasika Asta Dharma I",
-        "category": "Admin Dashboard",
-        "year": "2025",
-        "description": "Dashboard admin berbasis web untuk mengelola konten dan data dengan integrasi database.",
-        "stack": ["Next.js", "Supabase"]
+        "slug": "goalfin",
+        "name": "GoalFin",
+        "category": "Mobile App",
+        "year": "2026",
+        "description": "Aplikasi mobile Android untuk mengelola keuangan pribadi, dengan pencatatan transaksi, target keuangan, dan dashboard interaktif.",
+        "stack": ["Expo", "TypeScript", "Supabase"]
       },
       {
         "slug": "clamonic",
         "name": "Clamonic",
-        "category": "Property Website",
+        "category": "Company Profile",
         "year": "2026",
-        "description": "Website properti yang dikembangkan untuk menampilkan informasi dan layanan bisnis properti secara online.",
-        "stack": ["WordPress"]
+        "description": "Website manajemen properti dan reservasi untuk villa, guest house, dan glamping, dilengkapi integrasi booking online.",
+        "stack": ["WordPress", "JavaScript"]
       }
     ]
   },
