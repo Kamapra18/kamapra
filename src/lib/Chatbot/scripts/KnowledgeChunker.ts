@@ -1,6 +1,6 @@
 // import "server-only";
 
-import type { KnowledgeDocument } from "./KnowledgeLoader";
+import type { KnowledgeDocument } from "./KnowledeLoader";
 
 export interface KnowledgeChunk {
   id: string;
