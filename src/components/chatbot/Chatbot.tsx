@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { FormEvent, Suspense, useEffect, useState } from "react";
-import { LuMessageCircle, LuX, LuArrowUp } from "react-icons/lu";
+import { LuBot, LuX, LuArrowUp } from "react-icons/lu";
 
 type Message = {
   id: number;
@@ -258,7 +258,7 @@ function ChatbotContent() {
             className="transition-transform duration-300 group-hover:rotate-90"
           />
         ) : (
-          <LuMessageCircle
+          <LuBot
             size={25}
             className="transition-transform duration-300 group-hover:scale-110"
           />
