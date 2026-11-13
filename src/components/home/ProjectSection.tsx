@@ -199,7 +199,7 @@ export function ProjectSection() {
         {/* Bottom link */}
         <div className="mt-12 flex justify-center md:mt-20">
           <Link
-            href="/porto"
+            href="/projects"
             className="group inline-flex items-center gap-3 border border-(--border) px-7 py-3.5 text-sm transition-colors hover:border-foreground md:text-base">
             {t.viewAll}
             <LuArrowUpRight
