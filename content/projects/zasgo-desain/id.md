@@ -1,7 +1,7 @@
 ---
 id: 8
 title: "Zasgo Mart - Desain Website (Figma)"
-slug: "zasgo-mart"
+slug: "zasgo-desain"
 
 category: "UI/UX Design"
 year: 2026
